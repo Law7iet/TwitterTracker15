@@ -8,6 +8,7 @@ auth.set_access_token(credentials.access_token, credentials.access_token_secret)
 api = tweepy.API(auth)
 
 # Putting tweepy.API methods inside Cursor (e.g. API.search);
+# Now q='virus', but any word or group of words can be searched;
 # Excluded retweets and replies;
 # Geocoding: longitude, latitude, radius
 public_tweets = tweepy.Cursor(api.search, q='virus -filter:retweets -filter:replies', lang='it', geocode='41.87839,12.48634,1000km').items(3)
