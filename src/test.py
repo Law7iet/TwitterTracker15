@@ -13,15 +13,16 @@ tweets = tweepy.Cursor(api.search, q='#IngSw2020').items(5)
 
 # Test loader
 import loader.Loader as ld
-x = ld.LOADER('Tweets.json')
+import utils.Converter as cv
+
+x = ld.Loader('Tweets.json')
+y = cv.Converter()
+
 test = x.load()
 print(test)
 
-import utils.Converter as cv
-y = cv.Converter()
-array = y.convert_to_list(tweets)
-aaa = []
-for element in array:
-    aaa.append(y.convert_to_dict_json(element))
-
-x.store(aaa)
+tweets = y.convert_to_list(tweets)
+tmp = []
+for element in tweets:
+    tmp.append(y.convert_to_dict_json(element))
+x.store(tmp)

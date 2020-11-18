@@ -1,6 +1,6 @@
 import json
 
-class LOADER(object):
+class Loader(object):
 
     file_name = 'str'
     data = {}
@@ -24,5 +24,5 @@ class LOADER(object):
             tmp.append(tweet)
         self.data['Tweets'] = tmp
         with open(self.file_name, 'w') as f:
-            json.dump(self.data, f, ensure_ascii=False, indent=4)
+            json.dump(self.data, f, indent=4)
         
