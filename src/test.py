@@ -1,49 +1,27 @@
-import twitter
+# Test tweepy
+import tweepy
+import twitter_app_credentials as credentials
 
-api = twitter.Api(consumer_key="BEuDtS9tVhzVvys2Rsx22r59I",
-                  consumer_secret="rZjHG7MjXBESsWciO4KOb5rP9mYV7brHdJ6JTbMFGWiDdto5sU",
-                  access_token_key="1313485732783230979-86rtYh2axsREPeZPpNSMh3NDkLODDz",
-                  access_token_secret="5rdSV9HE4EbixO0CVuX1L8UukBt76CCSyrSRY2r6wok50")
+auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
+auth.set_access_token(credentials.access_token, credentials.access_token_secret)
+api = tweepy.API(auth)
 
-# esempio online
-x = api.GetSearch(raw_query="q=twitter%20&result_type=recent&since=2014-07-19&count=100")
+# Test twitter_handler
+#import twitter_handler
 
-# test
-data = api.GetSearch(term="coronavirus",
-                  count=5,
-                  locale="it",
-                  )
+tweets = tweepy.Cursor(api.search, q='#IngSw2020').items(5)
 
-# tipo di ritorno: lista di twitter.models.status    
-print(type(data))
-for i in data:
-    print(type(i))
-    
-print('\n')
-    
-# I want to access the list
+# Test loader
+import loader.Loader as ld
+x = ld.LOADER('Tweets.json')
+test = x.load()
+print(test)
 
-# by interation
-for status in data:
-    print(status.text + '\n')
+import utils.Converter as cv
+y = cv.Converter()
+array = y.convert_to_list(tweets)
+aaa = []
+for element in array:
+    aaa.append(y.convert_to_dict_json(element))
 
-#using pop
-status = data.pop()
-print(status)
-
-#indexing
-status = data[0]
-print(status)
-
-# to access twitter.models.Status use the dot notation
-print(status.created_at)
-print(type(status.created_at))
-print(type(status.hashtags))
-print(type(status.id))
-# other ways?
-# Status is no iterable.
-
-id = status.user.id
-user = api.GetUser(user_id=id)
-print(type(user))
-print(user.name)
+x.store(aaa)
