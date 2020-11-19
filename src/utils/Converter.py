@@ -12,7 +12,7 @@ class Converter():
         tweets_list = []
         for tweet in tweets:
             tweets_list.append(tweet)
-            return tweets_list
+        return tweets_list
 
     # Convert a tweet in a json dictionary
     # INPUT: a tweepy.models.Status object

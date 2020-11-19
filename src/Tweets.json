@@ -1,13 +1,676 @@
 {
     "Tweets": [
         {
-            "Tweet1": "1"
-        },
+            "contributors": null, 
+            "truncated": false, 
+            "text": "\u0411\u043e\u043b\u043e\u043d\u044c\u044f \u2014 \u044d\u0442\u043e \u043b\u044e\u0431\u043e\u0432\u044c, \u043a\u043e\u043d\u0435\u0447\u043d\u043e \ud83d\udd05 https://t.co/oSHF3FDkrS", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329442542740451334, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [], 
+                "urls": [], 
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
+                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
+                        "url": "https://t.co/oSHF3FDkrS", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg", 
+                        "id_str": "1329442528228233216", 
+                        "sizes": {
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 2046
+                            }, 
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 679
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 1199
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            32, 
+                            55
+                        ], 
+                        "type": "photo", 
+                        "id": 1329442528228233216, 
+                        "media_url": "http://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg"
+                    }
+                ]
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329442542740451334", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 144218014, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme18/bg.gif", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1321748007856066561/XeIHc_pT_normal.jpg", 
+                "profile_sidebar_fill_color": "F6F6F6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 834, 
+                "profile_sidebar_border_color": "FFFFFF", 
+                "id_str": "144218014", 
+                "profile_background_color": "ACDED6", 
+                "listed_count": 16, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 60350, 
+                "description": "\u043d\u0435\u0436\u043d\u0435\u0435 \u043a \u0441\u0435\u0431\u0435", 
+                "friends_count": 171, 
+                "location": "Bologna, Italy", 
+                "profile_link_color": "0C783B", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1321748007856066561/XeIHc_pT_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/144218014/1603964257", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme18/bg.gif", 
+                "screen_name": "poodarok", 
+                "lang": null, 
+                "profile_background_tile": true, 
+                "favourites_count": 160121, 
+                "name": "\u043f\u0440\u043e\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0439 \u043b\u0435\u0432", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Sat May 15 16:51:16 +0000 2010", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "possibly_sensitive": false, 
+            "lang": "ru", 
+            "created_at": "Thu Nov 19 15:12:56 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "extended_entities": {
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
+                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
+                        "url": "https://t.co/oSHF3FDkrS", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg", 
+                        "id_str": "1329442528228233216", 
+                        "sizes": {
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 2046
+                            }, 
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 679
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 1199
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            32, 
+                            55
+                        ], 
+                        "type": "photo", 
+                        "id": 1329442528228233216, 
+                        "media_url": "http://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg"
+                    }, 
+                    {
+                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
+                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
+                        "url": "https://t.co/oSHF3FDkrS", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMg74uXYA8aWGi.jpg", 
+                        "id_str": "1329442528215654415", 
+                        "sizes": {
+                            "large": {
+                                "h": 1354, 
+                                "resize": "fit", 
+                                "w": 2048
+                            }, 
+                            "small": {
+                                "h": 450, 
+                                "resize": "fit", 
+                                "w": 680
+                            }, 
+                            "medium": {
+                                "h": 793, 
+                                "resize": "fit", 
+                                "w": 1200
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            32, 
+                            55
+                        ], 
+                        "type": "photo", 
+                        "id": 1329442528215654415, 
+                        "media_url": "http://pbs.twimg.com/media/EnMg74uXYA8aWGi.jpg"
+                    }, 
+                    {
+                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
+                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
+                        "url": "https://t.co/oSHF3FDkrS", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMg741WEAAtWlO.jpg", 
+                        "id_str": "1329442528244928512", 
+                        "sizes": {
+                            "large": {
+                                "h": 1332, 
+                                "resize": "fit", 
+                                "w": 2048
+                            }, 
+                            "small": {
+                                "h": 442, 
+                                "resize": "fit", 
+                                "w": 680
+                            }, 
+                            "medium": {
+                                "h": 780, 
+                                "resize": "fit", 
+                                "w": 1200
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            32, 
+                            55
+                        ], 
+                        "type": "photo", 
+                        "id": 1329442528244928512, 
+                        "media_url": "http://pbs.twimg.com/media/EnMg741WEAAtWlO.jpg"
+                    }, 
+                    {
+                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
+                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
+                        "url": "https://t.co/oSHF3FDkrS", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMg75TXIAwRIrW.jpg", 
+                        "id_str": "1329442528370827276", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 543
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 1636
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 959
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            32, 
+                            55
+                        ], 
+                        "type": "photo", 
+                        "id": 1329442528370827276, 
+                        "media_url": "http://pbs.twimg.com/media/EnMg75TXIAwRIrW.jpg"
+                    }
+                ]
+            }, 
+            "metadata": {
+                "iso_language_code": "ru", 
+                "result_type": "recent"
+            }
+        }, 
         {
-            "Tweet2": "2"
-        },
+            "contributors": null, 
+            "truncated": false, 
+            "text": "@zoccoli_antonio @upanizza @HuffPostItalia @COVID19 @ricpuglisi @francedrago Copio anche qui: https://t.co/aNO9gdrkV0", 
+            "is_quote_status": true, 
+            "in_reply_to_status_id": 1329440836489240579, 
+            "id": 1329442470812393475, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [
+                    {
+                        "id": 2722156629, 
+                        "indices": [
+                            0, 
+                            16
+                        ], 
+                        "id_str": "2722156629", 
+                        "screen_name": "zoccoli_antonio", 
+                        "name": "Antonio Zoccoli"
+                    }, 
+                    {
+                        "id": 15604291, 
+                        "indices": [
+                            17, 
+                            26
+                        ], 
+                        "id_str": "15604291", 
+                        "screen_name": "upanizza", 
+                        "name": "Ugo Panizza"
+                    }, 
+                    {
+                        "id": 543774554, 
+                        "indices": [
+                            27, 
+                            42
+                        ], 
+                        "id_str": "543774554", 
+                        "screen_name": "HuffPostItalia", 
+                        "name": "L'HuffPost"
+                    }, 
+                    {
+                        "id": 158904899, 
+                        "indices": [
+                            43, 
+                            51
+                        ], 
+                        "id_str": "158904899", 
+                        "screen_name": "COVID19", 
+                        "name": "Corona"
+                    }, 
+                    {
+                        "id": 225168723, 
+                        "indices": [
+                            52, 
+                            63
+                        ], 
+                        "id_str": "225168723", 
+                        "screen_name": "ricpuglisi", 
+                        "name": "Riccardo Puglisi"
+                    }, 
+                    {
+                        "id": 716321062, 
+                        "indices": [
+                            64, 
+                            76
+                        ], 
+                        "id_str": "716321062", 
+                        "screen_name": "francedrago", 
+                        "name": "Francesco Drago"
+                    }
+                ], 
+                "hashtags": [], 
+                "urls": [
+                    {
+                        "url": "https://t.co/aNO9gdrkV0", 
+                        "indices": [
+                            94, 
+                            117
+                        ], 
+                        "expanded_url": "https://twitter.com/a_presbitero/status/1329441970247360522", 
+                        "display_url": "twitter.com/a_presbitero/s\u2026"
+                    }
+                ]
+            }, 
+            "quoted_status_id": 1329441970247360522, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "quoted_status": {
+                "contributors": null, 
+                "truncated": true, 
+                "text": "@zoccoli_antonio @INFN_ @istsupsan @giorgioparisi Grazie molte della risposta. Al momento, dopo aver contattato gio\u2026 https://t.co/ipBzBS10Nh", 
+                "is_quote_status": false, 
+                "in_reply_to_status_id": 1329440603936059400, 
+                "id": 1329441970247360522, 
+                "favorite_count": 0, 
+                "entities": {
+                    "symbols": [], 
+                    "user_mentions": [
+                        {
+                            "id": 2722156629, 
+                            "indices": [
+                                0, 
+                                16
+                            ], 
+                            "id_str": "2722156629", 
+                            "screen_name": "zoccoli_antonio", 
+                            "name": "Antonio Zoccoli"
+                        }, 
+                        {
+                            "id": 87740980, 
+                            "indices": [
+                                17, 
+                                23
+                            ], 
+                            "id_str": "87740980", 
+                            "screen_name": "INFN_", 
+                            "name": "INFN"
+                        }, 
+                        {
+                            "id": 2446734732, 
+                            "indices": [
+                                24, 
+                                34
+                            ], 
+                            "id_str": "2446734732", 
+                            "screen_name": "istsupsan", 
+                            "name": "Istituto Superiore di Sanit\u00e0"
+                        }, 
+                        {
+                            "id": 30427041, 
+                            "indices": [
+                                35, 
+                                49
+                            ], 
+                            "id_str": "30427041", 
+                            "screen_name": "giorgioparisi", 
+                            "name": "Giorgio Parisi"
+                        }
+                    ], 
+                    "hashtags": [], 
+                    "urls": [
+                        {
+                            "url": "https://t.co/ipBzBS10Nh", 
+                            "indices": [
+                                117, 
+                                140
+                            ], 
+                            "expanded_url": "https://twitter.com/i/web/status/1329441970247360522", 
+                            "display_url": "twitter.com/i/web/status/1\u2026"
+                        }
+                    ]
+                }, 
+                "retweeted": false, 
+                "coordinates": null, 
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+                "in_reply_to_screen_name": "zoccoli_antonio", 
+                "in_reply_to_user_id": 2722156629, 
+                "retweet_count": 0, 
+                "id_str": "1329441970247360522", 
+                "favorited": false, 
+                "user": {
+                    "follow_request_sent": false, 
+                    "has_extended_profile": false, 
+                    "profile_use_background_image": true, 
+                    "default_profile_image": false, 
+                    "id": 1411023120, 
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+                    "verified": false, 
+                    "translator_type": "none", 
+                    "profile_text_color": "333333", 
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
+                    "profile_sidebar_fill_color": "C0DFEC", 
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/7tn5vw2Cv9", 
+                                    "indices": [
+                                        0, 
+                                        23
+                                    ], 
+                                    "expanded_url": "https://sites.google.com/site/presbitero/", 
+                                    "display_url": "sites.google.com/site/presbiter\u2026"
+                                }
+                            ]
+                        }, 
+                        "description": {
+                            "urls": []
+                        }
+                    }, 
+                    "followers_count": 5843, 
+                    "profile_sidebar_border_color": "A8C7F7", 
+                    "id_str": "1411023120", 
+                    "profile_background_color": "022330", 
+                    "listed_count": 138, 
+                    "is_translation_enabled": false, 
+                    "utc_offset": null, 
+                    "statuses_count": 23203, 
+                    "description": "Associate Professor of Economics @SAISHopkins, former @IMFNews (on leave) and @UnivPoliMarche. Father of two. Views are my own, RT \u2260 Endorsement", 
+                    "friends_count": 1599, 
+                    "location": "Bologna, Italy", 
+                    "profile_link_color": "0084B4", 
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
+                    "following": false, 
+                    "geo_enabled": true, 
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1411023120/1530530336", 
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
+                    "screen_name": "a_presbitero", 
+                    "lang": null, 
+                    "profile_background_tile": false, 
+                    "favourites_count": 32212, 
+                    "name": "Andrea Presbitero", 
+                    "notifications": false, 
+                    "url": "https://t.co/7tn5vw2Cv9", 
+                    "created_at": "Tue May 07 19:32:04 +0000 2013", 
+                    "contributors_enabled": false, 
+                    "time_zone": null, 
+                    "protected": false, 
+                    "default_profile": false, 
+                    "is_translator": false
+                }, 
+                "geo": null, 
+                "in_reply_to_user_id_str": "2722156629", 
+                "lang": "it", 
+                "created_at": "Thu Nov 19 15:10:40 +0000 2020", 
+                "in_reply_to_status_id_str": "1329440603936059400", 
+                "place": null, 
+                "metadata": {
+                    "iso_language_code": "it", 
+                    "result_type": "recent"
+                }
+            }, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": "zoccoli_antonio", 
+            "in_reply_to_user_id": 2722156629, 
+            "retweet_count": 0, 
+            "id_str": "1329442470812393475", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 1411023120, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
+                "profile_sidebar_fill_color": "C0DFEC", 
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/7tn5vw2Cv9", 
+                                "indices": [
+                                    0, 
+                                    23
+                                ], 
+                                "expanded_url": "https://sites.google.com/site/presbitero/", 
+                                "display_url": "sites.google.com/site/presbiter\u2026"
+                            }
+                        ]
+                    }, 
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 5843, 
+                "profile_sidebar_border_color": "A8C7F7", 
+                "id_str": "1411023120", 
+                "profile_background_color": "022330", 
+                "listed_count": 138, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 23203, 
+                "description": "Associate Professor of Economics @SAISHopkins, former @IMFNews (on leave) and @UnivPoliMarche. Father of two. Views are my own, RT \u2260 Endorsement", 
+                "friends_count": 1599, 
+                "location": "Bologna, Italy", 
+                "profile_link_color": "0084B4", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1411023120/1530530336", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
+                "screen_name": "a_presbitero", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 32212, 
+                "name": "Andrea Presbitero", 
+                "notifications": false, 
+                "url": "https://t.co/7tn5vw2Cv9", 
+                "created_at": "Tue May 07 19:32:04 +0000 2013", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": "2722156629", 
+            "possibly_sensitive": false, 
+            "lang": "it", 
+            "created_at": "Thu Nov 19 15:12:39 +0000 2020", 
+            "quoted_status_id_str": "1329441970247360522", 
+            "in_reply_to_status_id_str": "1329440836489240579", 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
         {
-            "Tweet3": "3"
+            "contributors": null, 
+            "truncated": false, 
+            "text": "@SuicidioEuropeo Era quindi comunista!", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": 1329174791820095488, 
+            "id": 1329442454307819527, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [
+                    {
+                        "id": 893784158811680769, 
+                        "indices": [
+                            0, 
+                            16
+                        ], 
+                        "id_str": "893784158811680769", 
+                        "screen_name": "SuicidioEuropeo", 
+                        "name": "Suicidio Europeo"
+                    }
+                ], 
+                "hashtags": [], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": "SuicidioEuropeo", 
+            "in_reply_to_user_id": 893784158811680769, 
+            "retweet_count": 0, 
+            "id_str": "1329442454307819527", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 584806981, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/990868010725453824/q2iyilj-_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 182, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "584806981", 
+                "profile_background_color": "C0DEED", 
+                "listed_count": 6, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 2833, 
+                "description": "Il vero sognatore se vede una melanzana immagina una parmigiana!", 
+                "friends_count": 311, 
+                "location": "Bologna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/990868010725453824/q2iyilj-_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "Ruggio66", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 1052, 
+                "name": "Ruggiero Gambino", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Sat May 19 14:31:11 +0000 2012", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": "893784158811680769", 
+            "lang": "it", 
+            "created_at": "Thu Nov 19 15:12:35 +0000 2020", 
+            "in_reply_to_status_id_str": "1329174791820095488", 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
         }
     ]
 }
