@@ -3,578 +3,207 @@
         {
             "contributors": null, 
             "truncated": false, 
-            "text": "\u0411\u043e\u043b\u043e\u043d\u044c\u044f \u2014 \u044d\u0442\u043e \u043b\u044e\u0431\u043e\u0432\u044c, \u043a\u043e\u043d\u0435\u0447\u043d\u043e \ud83d\udd05 https://t.co/oSHF3FDkrS", 
+            "text": "Ciao Pit #IngSw2020", 
             "is_quote_status": false, 
             "in_reply_to_status_id": null, 
-            "id": 1329442542740451334, 
+            "id": 1329750935250350080, 
             "favorite_count": 0, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "retweeted": false, 
+            "coordinates": null, 
             "entities": {
                 "symbols": [], 
                 "user_mentions": [], 
-                "hashtags": [], 
-                "urls": [], 
-                "media": [
+                "hashtags": [
                     {
-                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
-                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
-                        "url": "https://t.co/oSHF3FDkrS", 
-                        "media_url_https": "https://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg", 
-                        "id_str": "1329442528228233216", 
-                        "sizes": {
-                            "large": {
-                                "h": 2048, 
-                                "resize": "fit", 
-                                "w": 2046
-                            }, 
-                            "small": {
-                                "h": 680, 
-                                "resize": "fit", 
-                                "w": 679
-                            }, 
-                            "medium": {
-                                "h": 1200, 
-                                "resize": "fit", 
-                                "w": 1199
-                            }, 
-                            "thumb": {
-                                "h": 150, 
-                                "resize": "crop", 
-                                "w": 150
-                            }
-                        }, 
                         "indices": [
-                            32, 
-                            55
+                            9, 
+                            19
                         ], 
-                        "type": "photo", 
-                        "id": 1329442528228233216, 
-                        "media_url": "http://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg"
+                        "text": "IngSw2020"
                     }
-                ]
+                ], 
+                "urls": []
             }, 
-            "retweeted": false, 
-            "coordinates": null, 
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
             "in_reply_to_screen_name": null, 
-            "in_reply_to_user_id": null, 
+            "id_str": "1329750935250350080", 
             "retweet_count": 0, 
-            "id_str": "1329442542740451334", 
+            "in_reply_to_user_id": null, 
             "favorited": false, 
             "user": {
                 "follow_request_sent": false, 
                 "has_extended_profile": true, 
                 "profile_use_background_image": true, 
-                "default_profile_image": false, 
-                "id": 144218014, 
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme18/bg.gif", 
+                "time_zone": null, 
+                "id": 1313485732783230979, 
+                "default_profile": true, 
                 "verified": false, 
-                "translator_type": "none", 
                 "profile_text_color": "333333", 
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1321748007856066561/XeIHc_pT_normal.jpg", 
-                "profile_sidebar_fill_color": "F6F6F6", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "is_translator": false, 
+                "geo_enabled": true, 
                 "entities": {
                     "description": {
                         "urls": []
                     }
                 }, 
-                "followers_count": 834, 
-                "profile_sidebar_border_color": "FFFFFF", 
-                "id_str": "144218014", 
-                "profile_background_color": "ACDED6", 
-                "listed_count": 16, 
-                "is_translation_enabled": false, 
-                "utc_offset": null, 
-                "statuses_count": 60350, 
-                "description": "\u043d\u0435\u0436\u043d\u0435\u0435 \u043a \u0441\u0435\u0431\u0435", 
-                "friends_count": 171, 
-                "location": "Bologna, Italy", 
-                "profile_link_color": "0C783B", 
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1321748007856066561/XeIHc_pT_normal.jpg", 
-                "following": false, 
-                "geo_enabled": true, 
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/144218014/1603964257", 
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme18/bg.gif", 
-                "screen_name": "poodarok", 
-                "lang": null, 
-                "profile_background_tile": true, 
-                "favourites_count": 160121, 
-                "name": "\u043f\u0440\u043e\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0439 \u043b\u0435\u0432", 
-                "notifications": false, 
-                "url": null, 
-                "created_at": "Sat May 15 16:51:16 +0000 2010", 
-                "contributors_enabled": false, 
-                "time_zone": null, 
+                "followers_count": 3, 
                 "protected": false, 
-                "default_profile": false, 
-                "is_translator": false
+                "id_str": "1313485732783230979", 
+                "default_profile_image": false, 
+                "listed_count": 0, 
+                "lang": null, 
+                "utc_offset": null, 
+                "statuses_count": 4, 
+                "description": "", 
+                "friends_count": 8, 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "notifications": false, 
+                "profile_background_image_url_https": null, 
+                "profile_background_color": "F5F8FA", 
+                "profile_background_image_url": null, 
+                "name": "Han Chu", 
+                "is_translation_enabled": false, 
+                "profile_background_tile": false, 
+                "favourites_count": 3, 
+                "screen_name": "Law_2885", 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:26:22 +0000 2020", 
+                "contributors_enabled": false, 
+                "location": "", 
+                "profile_sidebar_border_color": "C0DEED", 
+                "translator_type": "none", 
+                "following": false
             }, 
             "geo": null, 
             "in_reply_to_user_id_str": null, 
-            "possibly_sensitive": false, 
-            "lang": "ru", 
-            "created_at": "Thu Nov 19 15:12:56 +0000 2020", 
+            "lang": "it", 
+            "created_at": "Fri Nov 20 11:38:23 +0000 2020", 
             "in_reply_to_status_id_str": null, 
-            "place": null, 
-            "extended_entities": {
-                "media": [
-                    {
-                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
-                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
-                        "url": "https://t.co/oSHF3FDkrS", 
-                        "media_url_https": "https://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg", 
-                        "id_str": "1329442528228233216", 
-                        "sizes": {
-                            "large": {
-                                "h": 2048, 
-                                "resize": "fit", 
-                                "w": 2046
-                            }, 
-                            "small": {
-                                "h": 680, 
-                                "resize": "fit", 
-                                "w": 679
-                            }, 
-                            "medium": {
-                                "h": 1200, 
-                                "resize": "fit", 
-                                "w": 1199
-                            }, 
-                            "thumb": {
-                                "h": 150, 
-                                "resize": "crop", 
-                                "w": 150
-                            }
-                        }, 
-                        "indices": [
-                            32, 
-                            55
-                        ], 
-                        "type": "photo", 
-                        "id": 1329442528228233216, 
-                        "media_url": "http://pbs.twimg.com/media/EnMg74xXUAAbItU.jpg"
-                    }, 
-                    {
-                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
-                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
-                        "url": "https://t.co/oSHF3FDkrS", 
-                        "media_url_https": "https://pbs.twimg.com/media/EnMg74uXYA8aWGi.jpg", 
-                        "id_str": "1329442528215654415", 
-                        "sizes": {
-                            "large": {
-                                "h": 1354, 
-                                "resize": "fit", 
-                                "w": 2048
-                            }, 
-                            "small": {
-                                "h": 450, 
-                                "resize": "fit", 
-                                "w": 680
-                            }, 
-                            "medium": {
-                                "h": 793, 
-                                "resize": "fit", 
-                                "w": 1200
-                            }, 
-                            "thumb": {
-                                "h": 150, 
-                                "resize": "crop", 
-                                "w": 150
-                            }
-                        }, 
-                        "indices": [
-                            32, 
-                            55
-                        ], 
-                        "type": "photo", 
-                        "id": 1329442528215654415, 
-                        "media_url": "http://pbs.twimg.com/media/EnMg74uXYA8aWGi.jpg"
-                    }, 
-                    {
-                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
-                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
-                        "url": "https://t.co/oSHF3FDkrS", 
-                        "media_url_https": "https://pbs.twimg.com/media/EnMg741WEAAtWlO.jpg", 
-                        "id_str": "1329442528244928512", 
-                        "sizes": {
-                            "large": {
-                                "h": 1332, 
-                                "resize": "fit", 
-                                "w": 2048
-                            }, 
-                            "small": {
-                                "h": 442, 
-                                "resize": "fit", 
-                                "w": 680
-                            }, 
-                            "medium": {
-                                "h": 780, 
-                                "resize": "fit", 
-                                "w": 1200
-                            }, 
-                            "thumb": {
-                                "h": 150, 
-                                "resize": "crop", 
-                                "w": 150
-                            }
-                        }, 
-                        "indices": [
-                            32, 
-                            55
-                        ], 
-                        "type": "photo", 
-                        "id": 1329442528244928512, 
-                        "media_url": "http://pbs.twimg.com/media/EnMg741WEAAtWlO.jpg"
-                    }, 
-                    {
-                        "expanded_url": "https://twitter.com/poodarok/status/1329442542740451334/photo/1", 
-                        "display_url": "pic.twitter.com/oSHF3FDkrS", 
-                        "url": "https://t.co/oSHF3FDkrS", 
-                        "media_url_https": "https://pbs.twimg.com/media/EnMg75TXIAwRIrW.jpg", 
-                        "id_str": "1329442528370827276", 
-                        "sizes": {
-                            "small": {
-                                "h": 680, 
-                                "resize": "fit", 
-                                "w": 543
-                            }, 
-                            "large": {
-                                "h": 2048, 
-                                "resize": "fit", 
-                                "w": 1636
-                            }, 
-                            "medium": {
-                                "h": 1200, 
-                                "resize": "fit", 
-                                "w": 959
-                            }, 
-                            "thumb": {
-                                "h": 150, 
-                                "resize": "crop", 
-                                "w": 150
-                            }
-                        }, 
-                        "indices": [
-                            32, 
-                            55
-                        ], 
-                        "type": "photo", 
-                        "id": 1329442528370827276, 
-                        "media_url": "http://pbs.twimg.com/media/EnMg75TXIAwRIrW.jpg"
-                    }
-                ]
+            "place": {
+                "country_code": "IT", 
+                "url": "https://api.twitter.com/1.1/geo/id/1140a5ddcd176000.json", 
+                "country": "Italy", 
+                "place_type": "poi", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "full_name": "La Bolognese", 
+                "attributes": {}, 
+                "id": "1140a5ddcd176000", 
+                "name": "La Bolognese"
             }, 
             "metadata": {
-                "iso_language_code": "ru", 
+                "iso_language_code": "it", 
                 "result_type": "recent"
             }
         }, 
         {
             "contributors": null, 
             "truncated": false, 
-            "text": "@zoccoli_antonio @upanizza @HuffPostItalia @COVID19 @ricpuglisi @francedrago Copio anche qui: https://t.co/aNO9gdrkV0", 
-            "is_quote_status": true, 
-            "in_reply_to_status_id": 1329440836489240579, 
-            "id": 1329442470812393475, 
+            "text": "Contenuti interessanti p.2\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329471686891237379, 
             "favorite_count": 0, 
-            "entities": {
-                "symbols": [], 
-                "user_mentions": [
-                    {
-                        "id": 2722156629, 
-                        "indices": [
-                            0, 
-                            16
-                        ], 
-                        "id_str": "2722156629", 
-                        "screen_name": "zoccoli_antonio", 
-                        "name": "Antonio Zoccoli"
-                    }, 
-                    {
-                        "id": 15604291, 
-                        "indices": [
-                            17, 
-                            26
-                        ], 
-                        "id_str": "15604291", 
-                        "screen_name": "upanizza", 
-                        "name": "Ugo Panizza"
-                    }, 
-                    {
-                        "id": 543774554, 
-                        "indices": [
-                            27, 
-                            42
-                        ], 
-                        "id_str": "543774554", 
-                        "screen_name": "HuffPostItalia", 
-                        "name": "L'HuffPost"
-                    }, 
-                    {
-                        "id": 158904899, 
-                        "indices": [
-                            43, 
-                            51
-                        ], 
-                        "id_str": "158904899", 
-                        "screen_name": "COVID19", 
-                        "name": "Corona"
-                    }, 
-                    {
-                        "id": 225168723, 
-                        "indices": [
-                            52, 
-                            63
-                        ], 
-                        "id_str": "225168723", 
-                        "screen_name": "ricpuglisi", 
-                        "name": "Riccardo Puglisi"
-                    }, 
-                    {
-                        "id": 716321062, 
-                        "indices": [
-                            64, 
-                            76
-                        ], 
-                        "id_str": "716321062", 
-                        "screen_name": "francedrago", 
-                        "name": "Francesco Drago"
-                    }
-                ], 
-                "hashtags": [], 
-                "urls": [
-                    {
-                        "url": "https://t.co/aNO9gdrkV0", 
-                        "indices": [
-                            94, 
-                            117
-                        ], 
-                        "expanded_url": "https://twitter.com/a_presbitero/status/1329441970247360522", 
-                        "display_url": "twitter.com/a_presbitero/s\u2026"
-                    }
-                ]
-            }, 
-            "quoted_status_id": 1329441970247360522, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
             "retweeted": false, 
             "coordinates": null, 
-            "quoted_status": {
-                "contributors": null, 
-                "truncated": true, 
-                "text": "@zoccoli_antonio @INFN_ @istsupsan @giorgioparisi Grazie molte della risposta. Al momento, dopo aver contattato gio\u2026 https://t.co/ipBzBS10Nh", 
-                "is_quote_status": false, 
-                "in_reply_to_status_id": 1329440603936059400, 
-                "id": 1329441970247360522, 
-                "favorite_count": 0, 
-                "entities": {
-                    "symbols": [], 
-                    "user_mentions": [
-                        {
-                            "id": 2722156629, 
-                            "indices": [
-                                0, 
-                                16
-                            ], 
-                            "id_str": "2722156629", 
-                            "screen_name": "zoccoli_antonio", 
-                            "name": "Antonio Zoccoli"
-                        }, 
-                        {
-                            "id": 87740980, 
-                            "indices": [
-                                17, 
-                                23
-                            ], 
-                            "id_str": "87740980", 
-                            "screen_name": "INFN_", 
-                            "name": "INFN"
-                        }, 
-                        {
-                            "id": 2446734732, 
-                            "indices": [
-                                24, 
-                                34
-                            ], 
-                            "id_str": "2446734732", 
-                            "screen_name": "istsupsan", 
-                            "name": "Istituto Superiore di Sanit\u00e0"
-                        }, 
-                        {
-                            "id": 30427041, 
-                            "indices": [
-                                35, 
-                                49
-                            ], 
-                            "id_str": "30427041", 
-                            "screen_name": "giorgioparisi", 
-                            "name": "Giorgio Parisi"
-                        }
-                    ], 
-                    "hashtags": [], 
-                    "urls": [
-                        {
-                            "url": "https://t.co/ipBzBS10Nh", 
-                            "indices": [
-                                117, 
-                                140
-                            ], 
-                            "expanded_url": "https://twitter.com/i/web/status/1329441970247360522", 
-                            "display_url": "twitter.com/i/web/status/1\u2026"
-                        }
-                    ]
-                }, 
-                "retweeted": false, 
-                "coordinates": null, 
-                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
-                "in_reply_to_screen_name": "zoccoli_antonio", 
-                "in_reply_to_user_id": 2722156629, 
-                "retweet_count": 0, 
-                "id_str": "1329441970247360522", 
-                "favorited": false, 
-                "user": {
-                    "follow_request_sent": false, 
-                    "has_extended_profile": false, 
-                    "profile_use_background_image": true, 
-                    "default_profile_image": false, 
-                    "id": 1411023120, 
-                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
-                    "verified": false, 
-                    "translator_type": "none", 
-                    "profile_text_color": "333333", 
-                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
-                    "profile_sidebar_fill_color": "C0DFEC", 
-                    "entities": {
-                        "url": {
-                            "urls": [
-                                {
-                                    "url": "https://t.co/7tn5vw2Cv9", 
-                                    "indices": [
-                                        0, 
-                                        23
-                                    ], 
-                                    "expanded_url": "https://sites.google.com/site/presbitero/", 
-                                    "display_url": "sites.google.com/site/presbiter\u2026"
-                                }
-                            ]
-                        }, 
-                        "description": {
-                            "urls": []
-                        }
-                    }, 
-                    "followers_count": 5843, 
-                    "profile_sidebar_border_color": "A8C7F7", 
-                    "id_str": "1411023120", 
-                    "profile_background_color": "022330", 
-                    "listed_count": 138, 
-                    "is_translation_enabled": false, 
-                    "utc_offset": null, 
-                    "statuses_count": 23203, 
-                    "description": "Associate Professor of Economics @SAISHopkins, former @IMFNews (on leave) and @UnivPoliMarche. Father of two. Views are my own, RT \u2260 Endorsement", 
-                    "friends_count": 1599, 
-                    "location": "Bologna, Italy", 
-                    "profile_link_color": "0084B4", 
-                    "profile_image_url": "http://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
-                    "following": false, 
-                    "geo_enabled": true, 
-                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1411023120/1530530336", 
-                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
-                    "screen_name": "a_presbitero", 
-                    "lang": null, 
-                    "profile_background_tile": false, 
-                    "favourites_count": 32212, 
-                    "name": "Andrea Presbitero", 
-                    "notifications": false, 
-                    "url": "https://t.co/7tn5vw2Cv9", 
-                    "created_at": "Tue May 07 19:32:04 +0000 2013", 
-                    "contributors_enabled": false, 
-                    "time_zone": null, 
-                    "protected": false, 
-                    "default_profile": false, 
-                    "is_translator": false
-                }, 
-                "geo": null, 
-                "in_reply_to_user_id_str": "2722156629", 
-                "lang": "it", 
-                "created_at": "Thu Nov 19 15:10:40 +0000 2020", 
-                "in_reply_to_status_id_str": "1329440603936059400", 
-                "place": null, 
-                "metadata": {
-                    "iso_language_code": "it", 
-                    "result_type": "recent"
-                }
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            27, 
+                            37
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
             }, 
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
-            "in_reply_to_screen_name": "zoccoli_antonio", 
-            "in_reply_to_user_id": 2722156629, 
+            "in_reply_to_screen_name": null, 
+            "id_str": "1329471686891237379", 
             "retweet_count": 0, 
-            "id_str": "1329442470812393475", 
+            "in_reply_to_user_id": null, 
             "favorited": false, 
             "user": {
                 "follow_request_sent": false, 
-                "has_extended_profile": false, 
+                "has_extended_profile": true, 
                 "profile_use_background_image": true, 
-                "default_profile_image": false, 
-                "id": 1411023120, 
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+                "time_zone": null, 
+                "id": 808856414, 
+                "default_profile": true, 
                 "verified": false, 
-                "translator_type": "none", 
                 "profile_text_color": "333333", 
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
-                "profile_sidebar_fill_color": "C0DFEC", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "is_translator": false, 
+                "geo_enabled": false, 
                 "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/7tn5vw2Cv9", 
-                                "indices": [
-                                    0, 
-                                    23
-                                ], 
-                                "expanded_url": "https://sites.google.com/site/presbitero/", 
-                                "display_url": "sites.google.com/site/presbiter\u2026"
-                            }
-                        ]
-                    }, 
                     "description": {
                         "urls": []
                     }
                 }, 
-                "followers_count": 5843, 
-                "profile_sidebar_border_color": "A8C7F7", 
-                "id_str": "1411023120", 
-                "profile_background_color": "022330", 
-                "listed_count": 138, 
-                "is_translation_enabled": false, 
-                "utc_offset": null, 
-                "statuses_count": 23203, 
-                "description": "Associate Professor of Economics @SAISHopkins, former @IMFNews (on leave) and @UnivPoliMarche. Father of two. Views are my own, RT \u2260 Endorsement", 
-                "friends_count": 1599, 
-                "location": "Bologna, Italy", 
-                "profile_link_color": "0084B4", 
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1146392019205574657/-VqZbRMK_normal.jpg", 
-                "following": false, 
-                "geo_enabled": true, 
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1411023120/1530530336", 
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
-                "screen_name": "a_presbitero", 
-                "lang": null, 
-                "profile_background_tile": false, 
-                "favourites_count": 32212, 
-                "name": "Andrea Presbitero", 
-                "notifications": false, 
-                "url": "https://t.co/7tn5vw2Cv9", 
-                "created_at": "Tue May 07 19:32:04 +0000 2013", 
-                "contributors_enabled": false, 
-                "time_zone": null, 
+                "followers_count": 16, 
                 "protected": false, 
-                "default_profile": false, 
-                "is_translator": false
+                "id_str": "808856414", 
+                "default_profile_image": false, 
+                "listed_count": 0, 
+                "lang": null, 
+                "utc_offset": null, 
+                "statuses_count": 1050, 
+                "description": "Work in progress...", 
+                "friends_count": 25, 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "notifications": false, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "profile_background_color": "C0DEED", 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/808856414/1599654912", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "name": "Marco", 
+                "is_translation_enabled": false, 
+                "profile_background_tile": false, 
+                "favourites_count": 278, 
+                "screen_name": "MarkDNazaret", 
+                "url": null, 
+                "created_at": "Fri Sep 07 13:16:17 +0000 2012", 
+                "contributors_enabled": false, 
+                "location": "Tuscany, Italy", 
+                "profile_sidebar_border_color": "C0DEED", 
+                "translator_type": "none", 
+                "following": false
             }, 
             "geo": null, 
-            "in_reply_to_user_id_str": "2722156629", 
-            "possibly_sensitive": false, 
+            "in_reply_to_user_id_str": null, 
             "lang": "it", 
-            "created_at": "Thu Nov 19 15:12:39 +0000 2020", 
-            "quoted_status_id_str": "1329441970247360522", 
-            "in_reply_to_status_id_str": "1329440836489240579", 
+            "created_at": "Thu Nov 19 17:08:45 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
             "place": null, 
             "metadata": {
                 "iso_language_code": "it", 
@@ -584,77 +213,74 @@
         {
             "contributors": null, 
             "truncated": false, 
-            "text": "@SuicidioEuropeo Era quindi comunista!", 
+            "text": "#IngSw2020 prova", 
             "is_quote_status": false, 
-            "in_reply_to_status_id": 1329174791820095488, 
-            "id": 1329442454307819527, 
+            "in_reply_to_status_id": null, 
+            "id": 1329898842234482692, 
             "favorite_count": 0, 
             "entities": {
                 "symbols": [], 
-                "user_mentions": [
+                "user_mentions": [], 
+                "hashtags": [
                     {
-                        "id": 893784158811680769, 
                         "indices": [
                             0, 
-                            16
+                            10
                         ], 
-                        "id_str": "893784158811680769", 
-                        "screen_name": "SuicidioEuropeo", 
-                        "name": "Suicidio Europeo"
+                        "text": "IngSw2020"
                     }
                 ], 
-                "hashtags": [], 
                 "urls": []
             }, 
             "retweeted": false, 
             "coordinates": null, 
             "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
-            "in_reply_to_screen_name": "SuicidioEuropeo", 
-            "in_reply_to_user_id": 893784158811680769, 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
             "retweet_count": 0, 
-            "id_str": "1329442454307819527", 
+            "id_str": "1329898842234482692", 
             "favorited": false, 
             "user": {
                 "follow_request_sent": false, 
-                "has_extended_profile": false, 
+                "has_extended_profile": true, 
                 "profile_use_background_image": true, 
-                "default_profile_image": false, 
-                "id": 584806981, 
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "default_profile_image": true, 
+                "id": 1321028474522505218, 
+                "profile_background_image_url_https": null, 
                 "verified": false, 
                 "translator_type": "none", 
                 "profile_text_color": "333333", 
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/990868010725453824/q2iyilj-_normal.jpg", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
                 "profile_sidebar_fill_color": "DDEEF6", 
                 "entities": {
                     "description": {
                         "urls": []
                     }
                 }, 
-                "followers_count": 182, 
+                "followers_count": 5, 
                 "profile_sidebar_border_color": "C0DEED", 
-                "id_str": "584806981", 
-                "profile_background_color": "C0DEED", 
-                "listed_count": 6, 
+                "id_str": "1321028474522505218", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
                 "is_translation_enabled": false, 
                 "utc_offset": null, 
-                "statuses_count": 2833, 
-                "description": "Il vero sognatore se vede una melanzana immagina una parmigiana!", 
-                "friends_count": 311, 
-                "location": "Bologna", 
+                "statuses_count": 1, 
+                "description": "", 
+                "friends_count": 16, 
+                "location": "", 
                 "profile_link_color": "1DA1F2", 
-                "profile_image_url": "http://pbs.twimg.com/profile_images/990868010725453824/q2iyilj-_normal.jpg", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
                 "following": false, 
                 "geo_enabled": true, 
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
-                "screen_name": "Ruggio66", 
+                "profile_background_image_url": null, 
+                "screen_name": "vitadiste", 
                 "lang": null, 
                 "profile_background_tile": false, 
-                "favourites_count": 1052, 
-                "name": "Ruggiero Gambino", 
+                "favourites_count": 0, 
+                "name": "vitadiste.nti", 
                 "notifications": false, 
                 "url": null, 
-                "created_at": "Sat May 19 14:31:11 +0000 2012", 
+                "created_at": "Tue Oct 27 09:58:38 +0000 2020", 
                 "contributors_enabled": false, 
                 "time_zone": null, 
                 "protected": false, 
@@ -662,10 +288,2408 @@
                 "is_translator": false
             }, 
             "geo": null, 
-            "in_reply_to_user_id_str": "893784158811680769", 
+            "in_reply_to_user_id_str": null, 
+            "lang": "pt", 
+            "created_at": "Fri Nov 20 21:26:06 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Cardano al Campo, Lombardia", 
+                "url": "https://api.twitter.com/1.1/geo/id/0057a226bf63b10c.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                8.7232962, 
+                                45.63377
+                            ], 
+                            [
+                                8.788478, 
+                                45.63377
+                            ], 
+                            [
+                                8.788478, 
+                                45.6603081
+                            ], 
+                            [
+                                8.7232962, 
+                                45.6603081
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "0057a226bf63b10c", 
+                "name": "Cardano al Campo"
+            }, 
+            "metadata": {
+                "iso_language_code": "pt", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Ciao Pit #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329750935250350080, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            9, 
+                            19
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329750935250350080", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 1313485732783230979, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 3, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313485732783230979", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 4, 
+                "description": "", 
+                "friends_count": 8, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "Law_2885", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 3, 
+                "name": "Han Chu", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:26:22 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
             "lang": "it", 
-            "created_at": "Thu Nov 19 15:12:35 +0000 2020", 
-            "in_reply_to_status_id_str": "1329174791820095488", 
+            "created_at": "Fri Nov 20 11:38:23 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "La Bolognese", 
+                "url": "https://api.twitter.com/1.1/geo/id/1140a5ddcd176000.json", 
+                "country": "Italy", 
+                "place_type": "poi", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ], 
+                            [
+                                13.39039606385509, 
+                                43.63097320601864
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "1140a5ddcd176000", 
+                "name": "La Bolognese"
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Contenuti interessanti p.2\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329471686891237379, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            27, 
+                            37
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329471686891237379", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 808856414, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 16, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "808856414", 
+                "profile_background_color": "C0DEED", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 1051, 
+                "description": "Work in progress...", 
+                "friends_count": 25, 
+                "location": "Tuscany, Italy", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/808856414/1599654912", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "MarkDNazaret", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 279, 
+                "name": "Marco", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Fri Sep 07 13:16:17 +0000 2012", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Thu Nov 19 17:08:45 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Contenuti interessanti p.1\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329471604791922688, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            27, 
+                            37
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329471604791922688", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 808856414, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 16, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "808856414", 
+                "profile_background_color": "C0DEED", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 1051, 
+                "description": "Work in progress...", 
+                "friends_count": 25, 
+                "location": "Tuscany, Italy", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1303672002528632833/HEEx0u7__normal.jpg", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/808856414/1599654912", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "MarkDNazaret", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 279, 
+                "name": "Marco", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Fri Sep 07 13:16:17 +0000 2012", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Thu Nov 19 17:08:25 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "01 #IngSw2020 https://t.co/WTEY9NAa4W", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329421617735364608, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            3, 
+                            13
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": [], 
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Law_2885/status/1329421617735364608/photo/1", 
+                        "display_url": "pic.twitter.com/WTEY9NAa4W", 
+                        "url": "https://t.co/WTEY9NAa4W", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMN6drXEAAndOr.jpg", 
+                        "id_str": "1329421613054496768", 
+                        "sizes": {
+                            "large": {
+                                "h": 1152, 
+                                "resize": "fit", 
+                                "w": 2048
+                            }, 
+                            "small": {
+                                "h": 383, 
+                                "resize": "fit", 
+                                "w": 680
+                            }, 
+                            "medium": {
+                                "h": 675, 
+                                "resize": "fit", 
+                                "w": 1200
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            14, 
+                            37
+                        ], 
+                        "type": "photo", 
+                        "id": 1329421613054496768, 
+                        "media_url": "http://pbs.twimg.com/media/EnMN6drXEAAndOr.jpg"
+                    }
+                ]
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329421617735364608", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 1313485732783230979, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 3, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313485732783230979", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 4, 
+                "description": "", 
+                "friends_count": 8, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "Law_2885", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 3, 
+                "name": "Han Chu", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:26:22 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "possibly_sensitive": false, 
+            "lang": "und", 
+            "created_at": "Thu Nov 19 13:49:47 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Falconara Marittima, Marche", 
+                "url": "https://api.twitter.com/1.1/geo/id/d29a7ad0546ba9d8.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                13.3277291, 
+                                43.5903648
+                            ], 
+                            [
+                                13.4223362, 
+                                43.5903648
+                            ], 
+                            [
+                                13.4223362, 
+                                43.6510625
+                            ], 
+                            [
+                                13.3277291, 
+                                43.6510625
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "d29a7ad0546ba9d8", 
+                "name": "Falconara Marittima"
+            }, 
+            "extended_entities": {
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Law_2885/status/1329421617735364608/photo/1", 
+                        "display_url": "pic.twitter.com/WTEY9NAa4W", 
+                        "url": "https://t.co/WTEY9NAa4W", 
+                        "media_url_https": "https://pbs.twimg.com/media/EnMN6drXEAAndOr.jpg", 
+                        "id_str": "1329421613054496768", 
+                        "sizes": {
+                            "large": {
+                                "h": 1152, 
+                                "resize": "fit", 
+                                "w": 2048
+                            }, 
+                            "small": {
+                                "h": 383, 
+                                "resize": "fit", 
+                                "w": 680
+                            }, 
+                            "medium": {
+                                "h": 675, 
+                                "resize": "fit", 
+                                "w": 1200
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            14, 
+                            37
+                        ], 
+                        "type": "photo", 
+                        "id": 1329421613054496768, 
+                        "media_url": "http://pbs.twimg.com/media/EnMN6drXEAAndOr.jpg"
+                    }
+                ]
+            }, 
+            "metadata": {
+                "iso_language_code": "und", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "00\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1329406433310478337, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            3, 
+                            13
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1329406433310478337", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 1313485732783230979, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 3, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313485732783230979", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 4, 
+                "description": "", 
+                "friends_count": 8, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313485827910098946/lVRP8ek6_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "Law_2885", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 3, 
+                "name": "Han Chu", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:26:22 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "und", 
+            "created_at": "Thu Nov 19 12:49:27 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Falconara Marittima, Marche", 
+                "url": "https://api.twitter.com/1.1/geo/id/d29a7ad0546ba9d8.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                13.3277291, 
+                                43.5903648
+                            ], 
+                            [
+                                13.4223362, 
+                                43.5903648
+                            ], 
+                            [
+                                13.4223362, 
+                                43.6510625
+                            ], 
+                            [
+                                13.3277291, 
+                                43.6510625
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "d29a7ad0546ba9d8", 
+                "name": "Falconara Marittima"
+            }, 
+            "metadata": {
+                "iso_language_code": "und", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Caro Mirko ti scrivoooo #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328721994750181378, 
+            "favorite_count": 1, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            24, 
+                            34
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328721994750181378", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": false, 
+                "default_profile_image": false, 
+                "id": 625462256, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "000000", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1328033389258149888/EQJldrrm_normal.jpg", 
+                "profile_sidebar_fill_color": "000000", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 47, 
+                "profile_sidebar_border_color": "000000", 
+                "id_str": "625462256", 
+                "profile_background_color": "000000", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 363, 
+                "description": "Computer Science @ Bologna \ud83d\udc69\ud83c\udffb\u200d\ud83d\udcbb| Traveller \ud83c\udf0d| Serie tv addicted \ud83c\udf39", 
+                "friends_count": 49, 
+                "location": "Ravenna, Emilia Romagna", 
+                "profile_link_color": "19CF86", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1328033389258149888/EQJldrrm_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/625462256/1561839386", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "canali_martina", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 8522, 
+                "name": "Ina\ud83c\udf80", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Jul 03 10:56:48 +0000 2012", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Tue Nov 17 15:29:44 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Faenza, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/fc739da2ce6c5a88.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                11.7610261, 
+                                44.2101118
+                            ], 
+                            [
+                                12.0306381, 
+                                44.2101118
+                            ], 
+                            [
+                                12.0306381, 
+                                44.380118
+                            ], 
+                            [
+                                11.7610261, 
+                                44.380118
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "fc739da2ce6c5a88", 
+                "name": "Faenza"
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "#IngSw2020 prova", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328719166958874629, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            0, 
+                            10
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328719166958874629", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1239565561685774345, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 0, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1239565561685774345", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 1, 
+                "description": "", 
+                "friends_count": 0, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "Bianca38951212", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 5, 
+                "name": "Bianca", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Mon Mar 16 14:54:02 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "pt", 
+            "created_at": "Tue Nov 17 15:18:30 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Ozzano dell'Emilia, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/0643d4146ba6d804.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                11.4021467, 
+                                44.3580101
+                            ], 
+                            [
+                                11.5513628, 
+                                44.3580101
+                            ], 
+                            [
+                                11.5513628, 
+                                44.4908002
+                            ], 
+                            [
+                                11.4021467, 
+                                44.4908002
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "0643d4146ba6d804", 
+                "name": "Ozzano dell'Emilia"
+            }, 
+            "metadata": {
+                "iso_language_code": "pt", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Ciao Mirko\ud83e\udd18\ud83c\udffb #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328719153264472073, 
+            "favorite_count": 1, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            13, 
+                            23
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328719153264472073", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": false, 
+                "default_profile_image": false, 
+                "id": 625462256, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "000000", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1328033389258149888/EQJldrrm_normal.jpg", 
+                "profile_sidebar_fill_color": "000000", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 47, 
+                "profile_sidebar_border_color": "000000", 
+                "id_str": "625462256", 
+                "profile_background_color": "000000", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 363, 
+                "description": "Computer Science @ Bologna \ud83d\udc69\ud83c\udffb\u200d\ud83d\udcbb| Traveller \ud83c\udf0d| Serie tv addicted \ud83c\udf39", 
+                "friends_count": 49, 
+                "location": "Ravenna, Emilia Romagna", 
+                "profile_link_color": "19CF86", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1328033389258149888/EQJldrrm_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/625462256/1561839386", 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "canali_martina", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 8522, 
+                "name": "Ina\ud83c\udf80", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Jul 03 10:56:48 +0000 2012", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Tue Nov 17 15:18:27 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Faenza, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/fc739da2ce6c5a88.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                11.7610261, 
+                                44.2101118
+                            ], 
+                            [
+                                12.0306381, 
+                                44.2101118
+                            ], 
+                            [
+                                12.0306381, 
+                                44.380118
+                            ], 
+                            [
+                                11.7610261, 
+                                44.380118
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "fc739da2ce6c5a88", 
+                "name": "Faenza"
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Test streaming #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328521100804956161, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            15, 
+                            25
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328521100804956161", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1313493976239013888, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 4, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313493976239013888", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 9, 
+                "description": "", 
+                "friends_count": 4, 
+                "location": "Modena, Emilia Romagna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "FreGuerzo", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 1, 
+                "name": "Francesca Guerzoni", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:59:31 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Tue Nov 17 02:11:27 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Modena, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/9974c57b7c2b41f5.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                10.7820402, 
+                                44.5628476
+                            ], 
+                            [
+                                11.0117907, 
+                                44.5628476
+                            ], 
+                            [
+                                11.0117907, 
+                                44.7266492
+                            ], 
+                            [
+                                10.7820402, 
+                                44.7266492
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "9974c57b7c2b41f5", 
+                "name": "Modena"
+            }, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Prova geolocalizzazione #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328499599242375168, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            24, 
+                            34
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328499599242375168", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1313493976239013888, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 4, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313493976239013888", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 9, 
+                "description": "", 
+                "friends_count": 4, 
+                "location": "Modena, Emilia Romagna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "FreGuerzo", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 1, 
+                "name": "Francesca Guerzoni", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:59:31 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Tue Nov 17 00:46:01 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Farmacia Madonnina", 
+                "url": "https://api.twitter.com/1.1/geo/id/0fc2b82798955001.json", 
+                "country": "Italy", 
+                "place_type": "poi", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                10.90108, 
+                                44.65678
+                            ], 
+                            [
+                                10.90108, 
+                                44.65678
+                            ], 
+                            [
+                                10.90108, 
+                                44.65678
+                            ], 
+                            [
+                                10.90108, 
+                                44.65678
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "0fc2b82798955001", 
+                "name": "Farmacia Madonnina"
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "#ingsw2020 test immagine diversa posizione https://t.co/a5ATnwbOYO", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328025991906734083, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            0, 
+                            10
+                        ], 
+                        "text": "ingsw2020"
+                    }
+                ], 
+                "urls": [], 
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1328025991906734083/photo/1", 
+                        "display_url": "pic.twitter.com/a5ATnwbOYO", 
+                        "url": "https://t.co/a5ATnwbOYO", 
+                        "media_url_https": "https://pbs.twimg.com/media/Em4YmFlXIAAEbb-.jpg", 
+                        "id_str": "1328025982733852672", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            43, 
+                            66
+                        ], 
+                        "type": "photo", 
+                        "id": 1328025982733852672, 
+                        "media_url": "http://pbs.twimg.com/media/Em4YmFlXIAAEbb-.jpg"
+                    }
+                ]
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328025991906734083", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 157307459, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "666666", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "profile_sidebar_fill_color": "252429", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 28, 
+                "profile_sidebar_border_color": "181A1E", 
+                "id_str": "157307459", 
+                "profile_background_color": "1A1B1F", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 17, 
+                "description": ";)", 
+                "friends_count": 42, 
+                "location": "Bologna", 
+                "profile_link_color": "2FC2EF", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "screen_name": "Marty_Acco", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 620, 
+                "name": "Martina Accorsi", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Sat Jun 19 13:00:01 +0000 2010", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "possibly_sensitive": false, 
+            "lang": "it", 
+            "created_at": "Sun Nov 15 17:24:04 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Modena, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/9974c57b7c2b41f5.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                10.7820402, 
+                                44.5628476
+                            ], 
+                            [
+                                11.0117907, 
+                                44.5628476
+                            ], 
+                            [
+                                11.0117907, 
+                                44.7266492
+                            ], 
+                            [
+                                10.7820402, 
+                                44.7266492
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "9974c57b7c2b41f5", 
+                "name": "Modena"
+            }, 
+            "extended_entities": {
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1328025991906734083/photo/1", 
+                        "display_url": "pic.twitter.com/a5ATnwbOYO", 
+                        "url": "https://t.co/a5ATnwbOYO", 
+                        "media_url_https": "https://pbs.twimg.com/media/Em4YmFlXIAAEbb-.jpg", 
+                        "id_str": "1328025982733852672", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            43, 
+                            66
+                        ], 
+                        "type": "photo", 
+                        "id": 1328025982733852672, 
+                        "media_url": "http://pbs.twimg.com/media/Em4YmFlXIAAEbb-.jpg"
+                    }
+                ]
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "#ingsw2020 test multiple immagini e posizione https://t.co/iBhXFPEPws", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1328025196637392897, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            0, 
+                            10
+                        ], 
+                        "text": "ingsw2020"
+                    }
+                ], 
+                "urls": [], 
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1328025196637392897/photo/1", 
+                        "display_url": "pic.twitter.com/iBhXFPEPws", 
+                        "url": "https://t.co/iBhXFPEPws", 
+                        "media_url_https": "https://pbs.twimg.com/media/Em4X2mzW8AEhBTd.jpg", 
+                        "id_str": "1328025167017209857", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            46, 
+                            69
+                        ], 
+                        "type": "photo", 
+                        "id": 1328025167017209857, 
+                        "media_url": "http://pbs.twimg.com/media/Em4X2mzW8AEhBTd.jpg"
+                    }
+                ]
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1328025196637392897", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 157307459, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "666666", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "profile_sidebar_fill_color": "252429", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 28, 
+                "profile_sidebar_border_color": "181A1E", 
+                "id_str": "157307459", 
+                "profile_background_color": "1A1B1F", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 17, 
+                "description": ";)", 
+                "friends_count": 42, 
+                "location": "Bologna", 
+                "profile_link_color": "2FC2EF", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "screen_name": "Marty_Acco", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 620, 
+                "name": "Martina Accorsi", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Sat Jun 19 13:00:01 +0000 2010", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "possibly_sensitive": false, 
+            "lang": "it", 
+            "created_at": "Sun Nov 15 17:20:55 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": {
+                "full_name": "Pieve di Cento, Emilia Romagna", 
+                "url": "https://api.twitter.com/1.1/geo/id/2e6e43bc938527fc.json", 
+                "country": "Italy", 
+                "place_type": "city", 
+                "bounding_box": {
+                    "type": "Polygon", 
+                    "coordinates": [
+                        [
+                            [
+                                11.2773869, 
+                                44.6993649
+                            ], 
+                            [
+                                11.3884174, 
+                                44.6993649
+                            ], 
+                            [
+                                11.3884174, 
+                                44.7803585
+                            ], 
+                            [
+                                11.2773869, 
+                                44.7803585
+                            ]
+                        ]
+                    ]
+                }, 
+                "contained_within": [], 
+                "country_code": "IT", 
+                "attributes": {}, 
+                "id": "2e6e43bc938527fc", 
+                "name": "Pieve di Cento"
+            }, 
+            "extended_entities": {
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1328025196637392897/photo/1", 
+                        "display_url": "pic.twitter.com/iBhXFPEPws", 
+                        "url": "https://t.co/iBhXFPEPws", 
+                        "media_url_https": "https://pbs.twimg.com/media/Em4X2mzW8AEhBTd.jpg", 
+                        "id_str": "1328025167017209857", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            46, 
+                            69
+                        ], 
+                        "type": "photo", 
+                        "id": 1328025167017209857, 
+                        "media_url": "http://pbs.twimg.com/media/Em4X2mzW8AEhBTd.jpg"
+                    }, 
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1328025196637392897/photo/1", 
+                        "display_url": "pic.twitter.com/iBhXFPEPws", 
+                        "url": "https://t.co/iBhXFPEPws", 
+                        "media_url_https": "https://pbs.twimg.com/media/Em4X3baXEAAMwe0.jpg", 
+                        "id_str": "1328025181139439616", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            46, 
+                            69
+                        ], 
+                        "type": "photo", 
+                        "id": 1328025181139439616, 
+                        "media_url": "http://pbs.twimg.com/media/Em4X3baXEAAMwe0.jpg"
+                    }
+                ]
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Test 2 #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327743186022920193, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            7, 
+                            17
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327743186022920193", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1318469344691691520, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 1, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1318469344691691520", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 3, 
+                "description": "", 
+                "friends_count": 0, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_background_image_url": null, 
+                "screen_name": "DamianoScevola", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 0, 
+                "name": "Damiano Scevola", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 20 08:29:26 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Sat Nov 14 22:40:18 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Test 1 #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327743120860209154, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            7, 
+                            17
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327743120860209154", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1318469344691691520, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 1, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1318469344691691520", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 3, 
+                "description": "", 
+                "friends_count": 0, 
+                "location": "", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_background_image_url": null, 
+                "screen_name": "DamianoScevola", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 0, 
+                "name": "Damiano Scevola", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 20 08:29:26 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Sat Nov 14 22:40:02 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Project\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327742443375255552, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            8, 
+                            18
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327742443375255552", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 2209295529, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313581595660607491/VDfIdVSW_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 17, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "2209295529", 
+                "profile_background_color": "C0DEED", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 6, 
+                "description": "", 
+                "friends_count": 72, 
+                "location": "Montenero di Bisaccia-Bologna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313581595660607491/VDfIdVSW_normal.jpg", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "lucagenova_", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 4, 
+                "name": "#LucaJett", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Thu Dec 05 20:26:41 +0000 2013", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Sat Nov 14 22:37:21 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Prova search tweets by user\n#IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327742236801556481, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            28, 
+                            38
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327742236801556481", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 2209295529, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1313581595660607491/VDfIdVSW_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 17, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "2209295529", 
+                "profile_background_color": "C0DEED", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 6, 
+                "description": "", 
+                "friends_count": 72, 
+                "location": "Montenero di Bisaccia-Bologna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1313581595660607491/VDfIdVSW_normal.jpg", 
+                "following": false, 
+                "geo_enabled": false, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+                "screen_name": "lucagenova_", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 4, 
+                "name": "#LucaJett", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Thu Dec 05 20:26:41 +0000 2013", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Sat Nov 14 22:36:32 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "#ingsw2020 test per immagini https://t.co/bcJs4oRPKe", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327597400853254144, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            0, 
+                            10
+                        ], 
+                        "text": "ingsw2020"
+                    }
+                ], 
+                "urls": [], 
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1327597400853254144/photo/1", 
+                        "display_url": "pic.twitter.com/bcJs4oRPKe", 
+                        "url": "https://t.co/bcJs4oRPKe", 
+                        "media_url_https": "https://pbs.twimg.com/media/EmySy7oW8AASwmR.jpg", 
+                        "id_str": "1327597393865535488", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            29, 
+                            52
+                        ], 
+                        "type": "photo", 
+                        "id": 1327597393865535488, 
+                        "media_url": "http://pbs.twimg.com/media/EmySy7oW8AASwmR.jpg"
+                    }
+                ]
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327597400853254144", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 157307459, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "666666", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "profile_sidebar_fill_color": "252429", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 28, 
+                "profile_sidebar_border_color": "181A1E", 
+                "id_str": "157307459", 
+                "profile_background_color": "1A1B1F", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 17, 
+                "description": ";)", 
+                "friends_count": 42, 
+                "location": "Bologna", 
+                "profile_link_color": "2FC2EF", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/524920815922712576/GFAPQyZm_normal.jpeg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif", 
+                "screen_name": "Marty_Acco", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 620, 
+                "name": "Martina Accorsi", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Sat Jun 19 13:00:01 +0000 2010", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "possibly_sensitive": false, 
+            "lang": "it", 
+            "created_at": "Sat Nov 14 13:01:00 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "extended_entities": {
+                "media": [
+                    {
+                        "expanded_url": "https://twitter.com/Marty_Acco/status/1327597400853254144/photo/1", 
+                        "display_url": "pic.twitter.com/bcJs4oRPKe", 
+                        "url": "https://t.co/bcJs4oRPKe", 
+                        "media_url_https": "https://pbs.twimg.com/media/EmySy7oW8AASwmR.jpg", 
+                        "id_str": "1327597393865535488", 
+                        "sizes": {
+                            "small": {
+                                "h": 680, 
+                                "resize": "fit", 
+                                "w": 317
+                            }, 
+                            "large": {
+                                "h": 2048, 
+                                "resize": "fit", 
+                                "w": 956
+                            }, 
+                            "medium": {
+                                "h": 1200, 
+                                "resize": "fit", 
+                                "w": 560
+                            }, 
+                            "thumb": {
+                                "h": 150, 
+                                "resize": "crop", 
+                                "w": 150
+                            }
+                        }, 
+                        "indices": [
+                            29, 
+                            52
+                        ], 
+                        "type": "photo", 
+                        "id": 1327597393865535488, 
+                        "media_url": "http://pbs.twimg.com/media/EmySy7oW8AASwmR.jpg"
+                    }
+                ]
+            }, 
+            "metadata": {
+                "iso_language_code": "it", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "Test2 #IngSw2020", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1327021066057867267, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            6, 
+                            16
+                        ], 
+                        "text": "IngSw2020"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1327021066057867267", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": true, 
+                "profile_use_background_image": true, 
+                "default_profile_image": true, 
+                "id": 1313493976239013888, 
+                "profile_background_image_url_https": null, 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 4, 
+                "profile_sidebar_border_color": "C0DEED", 
+                "id_str": "1313493976239013888", 
+                "profile_background_color": "F5F8FA", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 9, 
+                "description": "", 
+                "friends_count": 4, 
+                "location": "Modena, Emilia Romagna", 
+                "profile_link_color": "1DA1F2", 
+                "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": null, 
+                "screen_name": "FreGuerzo", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 1, 
+                "name": "Francesca Guerzoni", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Tue Oct 06 14:59:31 +0000 2020", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": true, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "en", 
+            "created_at": "Thu Nov 12 22:50:51 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
+            "place": null, 
+            "metadata": {
+                "iso_language_code": "en", 
+                "result_type": "recent"
+            }
+        }, 
+        {
+            "contributors": null, 
+            "truncated": false, 
+            "text": "provapaolo paoloprova #IngSw2020 #paoloprova", 
+            "is_quote_status": false, 
+            "in_reply_to_status_id": null, 
+            "id": 1326882531363459073, 
+            "favorite_count": 0, 
+            "entities": {
+                "symbols": [], 
+                "user_mentions": [], 
+                "hashtags": [
+                    {
+                        "indices": [
+                            22, 
+                            32
+                        ], 
+                        "text": "IngSw2020"
+                    }, 
+                    {
+                        "indices": [
+                            33, 
+                            44
+                        ], 
+                        "text": "paoloprova"
+                    }
+                ], 
+                "urls": []
+            }, 
+            "retweeted": false, 
+            "coordinates": null, 
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+            "in_reply_to_screen_name": null, 
+            "in_reply_to_user_id": null, 
+            "retweet_count": 0, 
+            "id_str": "1326882531363459073", 
+            "favorited": false, 
+            "user": {
+                "follow_request_sent": false, 
+                "has_extended_profile": false, 
+                "profile_use_background_image": true, 
+                "default_profile_image": false, 
+                "id": 1300022744, 
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme10/bg.gif", 
+                "verified": false, 
+                "translator_type": "none", 
+                "profile_text_color": "333333", 
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1315287589230972935/dSvh8poH_normal.jpg", 
+                "profile_sidebar_fill_color": "DDEEF6", 
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                }, 
+                "followers_count": 10, 
+                "profile_sidebar_border_color": "FFFFFF", 
+                "id_str": "1300022744", 
+                "profile_background_color": "000000", 
+                "listed_count": 0, 
+                "is_translation_enabled": false, 
+                "utc_offset": null, 
+                "statuses_count": 1, 
+                "description": "May we meet again", 
+                "friends_count": 6, 
+                "location": "Italy", 
+                "profile_link_color": "1D8508", 
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1315287589230972935/dSvh8poH_normal.jpg", 
+                "following": false, 
+                "geo_enabled": true, 
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme10/bg.gif", 
+                "screen_name": "gabboevans", 
+                "lang": null, 
+                "profile_background_tile": false, 
+                "favourites_count": 0, 
+                "name": "Gabriele Evangelista", 
+                "notifications": false, 
+                "url": null, 
+                "created_at": "Mon Mar 25 15:53:31 +0000 2013", 
+                "contributors_enabled": false, 
+                "time_zone": null, 
+                "protected": false, 
+                "default_profile": false, 
+                "is_translator": false
+            }, 
+            "geo": null, 
+            "in_reply_to_user_id_str": null, 
+            "lang": "it", 
+            "created_at": "Thu Nov 12 13:40:22 +0000 2020", 
+            "in_reply_to_status_id_str": null, 
             "place": null, 
             "metadata": {
                 "iso_language_code": "it", 

@@ -1,3 +1,9 @@
+'''
+Created on 20 nov 2020
+
+@author: L
+'''
+
 import json
 
 class Loader(object):
@@ -8,7 +14,7 @@ class Loader(object):
     # Set the correct file name
     def __init__(self, file_name):
         self.file_name = file_name
-        with open('Tweets.json') as f:
+        with open(file_name) as f:
             self.data = json.load(f)
 
     # Load (return) the stored json data
