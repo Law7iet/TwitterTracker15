@@ -1,11 +1,44 @@
 # Progetto di Ingegneria del software 2020
 
+## Struttura del Progetto
+```
+IngSw2020
+|- src
+|   |- twitter
+|   |   |- __init__.py
+|   |   |- Twitter_app_credentials.py
+|   |   |- Twitter_handler.py
+|   |
+|   |- utility
+|   |   |- converter
+|   |   |   |- __init__.py
+|   |   |   |- Converter.py
+|   |   |
+|   |   |- loader
+|   |   |   |- __init__.py
+|   |   |   |- Loader.py
+|   |   |
+|   |   |- __init__.py
+|   |
+|   |- Test.py
+|   |- Tweets.json
+|
+|- README.md
+```
+Dove:
+- `Tweets.json` contiene i tweet raccolti.
+- `Test.py` è il file *main* da eseguire.
+- `twitter` è un modulo contenente la classe `Twitter_handler.py` che ricerca tweets, e `Twitter_app_credentials.py`, che contiene le infomazioni per il login.
+- `utility` è un package contente due moduli:
+    - `converter`, che contiene la classe `Converter.py`, utile per convertire degli oggetti complessi in tipi di Python.
+    - `loader`, che contiene la classe `Loader.py`, ed è l'oggetto responsabile del caricamentento e conservazione dei tweet raccolti.
+
 ### api.search
 Ricerca gli ultimi post
 
-## Tweet ID
+### Tweet ID
 I tweet sono detti anche status.
-Hanno ID unici che rappresentano 
+Hanno ID unici che rappresentano
 
 ### Coordinate
 Su Google, possono essere in diversi formati:
