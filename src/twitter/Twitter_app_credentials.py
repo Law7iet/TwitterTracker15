@@ -1,3 +1,9 @@
+'''
+Created on 20 nov 2020
+
+@author: L
+'''
+
 # Twitter app credentials
 
 consumer_key = 'BEuDtS9tVhzVvys2Rsx22r59I'
