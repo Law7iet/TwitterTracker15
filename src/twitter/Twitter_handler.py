@@ -24,31 +24,28 @@ class Twitter_handler(object):
         self.convertitore = cv.Converter()
         
     # Search tweets based on the string passed in input
-    # INPUT: the string to search, the language and the number of tweets
+    # INPUT: ...
     # OUTPUT: a list of dict, cointaing the tweets in JSON
-    def search_string(self, content, lang, items):
-        tweets = tweepy.Cursor(self.api.search, q = content, lang = lang, result_type = 'recent').items(items)
+    def search_string(self, content, language, type, counts, date_since, date_until):
+        #tweets = tweepy.Cursor(self.api.search, q = content, lang = language, result_type = type, since = date_since, until = date_until).items(counts)
+        tweets = tweepy.Cursor(self.api.search, q = content, lang = language, result_type = type).items(counts)
         tweets = self.convertitore.convert_to_Status_list(tweets)
         tweets = self.convertitore.convert_to_dict_list(tweets)
         return tweets
 
     # Search tweets based on the geolocation
-    # INPUT: the string to search, the language, the coordinates in decimal degrees, the range of the area, the measure unit and the number of tweets
+    # INPUT: ...
     # OUTPUT: a list of dict, cointaing the tweets in JSON
-    def search_geo(self, content, lang, coordinate_x, coordinate_y, area, measure, items):
-        coordinate = str(coordinate_x) + ',' + str(coordinate_y) + ',' + str(area) + measure
-        tweets = tweepy.Cursor(self.api.search, q = content, lang = lang, geocode = coordinate, result_type = 'recent').items(items)
+    def search_geo(self, content, geo, lang, result_type, items, since, until):
+        tweets = tweepy.Cursor(self.api.search, q = content, geo = geo, result_type = result_type, since = since, until = until).items(items)
         tweets = self.convertitore.convert_to_Status_list(tweets)
         tweets = self.convertitore.convert_to_dict_list(tweets)
         return tweets
     
-    # Search tweets based on the time:
-    # INPUT the string to search, the language, 2 Python tuples {YYYY, MM, DD}, cointaining the dates in numbers and the number of tweets
-    # OUTPUT: a list of dict, cointaing the tweets in JSON
-    def search_date(self, content, lang, start, end, items):
-        date_since = str(start[0]) + '-' + str(start[1]) + '-' + str(start[2])
-        date_until = str(end[0]) + '-' + str(end[1]) + '-' + str(end[2])
-        tweets = tweepy.Cursor(self.api.search, q = content, lang = lang, since = date_since, until = date_until, result_type = "recent").items(items)
-        tweets = self.convertitore.convert_to_Status_list(tweets)
-        tweets = self.convertitore.convert_to_dict_list(tweets)
-        return tweets
+    def search(self, *args):
+        if len(args) == 6:
+            return self.search_string(args[0], args[1], args[2], args[3], args[4], args[5])
+        elif len(args) == 7:
+            return self.search_geo(args[0], args[1], args[2], args[3], args[4], args[5], args[6])
+        else:
+            print('Errore.')

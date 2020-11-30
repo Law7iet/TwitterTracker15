@@ -12,10 +12,12 @@ geolocalizzazione_x = '43.6242'
 geolocalizzazione_y = '13.404'
 area = '10'
 misura = 'km'
-data_inizio = {'2020', '11', '18'}
-data_fine = {'2020', '11', '19'}
-elementi = 2
-    
-#tweets = ricerca.search_geo(stringa, lingua, geolocalizzazione_x, geolocalizzazione_y, area, misura, elementi)
-tweets = ricerca.search_string(stringa, lingua, elementi)
-caricatore.store(tweets)
+data_inizio = {'2020', '11', '23'}
+data_fine = {'2020', '11', '28'}
+elementi = 5
+result_type = 'recent'
+
+tweets = ricerca.search(stringa, lingua, result_type, elementi, data_inizio, data_fine)
+for element in tweets:
+    print(element["text"])
+#caricatore.store(tweets)
