@@ -23,12 +23,22 @@ class Loader(object):
         return self.data['Tweets']
         
     # Store tweets in the original file, appending it
+    # It deletes duplicates
     # INPUT: Python array
     def store(self, tweets):
         tmp = self.data['Tweets']
         for tweet in tweets:
-            tmp.append(tweet)
+            copy = False
+            for element in tmp:
+                if element['id'] == tweet['id']:
+                    copy = True
+            if copy == False:
+                tmp.append(tweet)
         self.data['Tweets'] = tmp
         with open(self.file_name, 'w') as f:
             json.dump(self.data, f, indent=4)
         
+    # Clean the tweets in Tweets.json
+    def clean(self):
+        with open(self.file_name, 'w') as f:
+            f.open('{ "Tweets": [] }')
