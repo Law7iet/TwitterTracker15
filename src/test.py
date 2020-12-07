@@ -1,4 +1,4 @@
-x = 11.11
-y = 11.11
+from graphics import window
 
-z = x + y
+x = window.Window()
+x.run()

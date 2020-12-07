@@ -38,6 +38,13 @@ class Twitter_handler():
     # INPUT: ...
     # OUTPUT: a list of dict, cointaing the tweets in JSON
     def search_geo(self, content, geo, language, res_type, counts, date_since, date_until):
+        print(content)
+        print(geo)
+        print(language)
+        print(res_type)
+        print(counts)
+        print(date_since)
+        print(date_until)
         tweets = tweepy.Cursor(self.api.search, q = content, geo = geo, lang = language, result_type = res_type, since = date_since, until = date_until).items(counts)
         tweets = self.convertitore.convert_to_Status_list(tweets)
         tweets = self.convertitore.convert_to_dict_list(tweets)
