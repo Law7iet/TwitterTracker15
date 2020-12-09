@@ -17,7 +17,7 @@ class MainApplication(tk.Tk):
         # Definizione della grandezza della finestra
         self.geometry("1000x1000")
         # Titolo finestra
-        tk.Tk.wm_title(self, "Porcodio")
+        tk.Tk.wm_title(self, "Titolo")
         # Insieme degli oggetti (?)
         container = tk.Frame(self)
         container.pack(side = "top", fill = "both", expand = True)
