@@ -1,4 +1,4 @@
-from graphics import window
-
-x = window.Window()
-x.run()
+from graphics import main_application
+  
+app = main_application.Main_application()
+app.mainloop()

@@ -1,6 +1,6 @@
 import tkinter as tk
-from tkinter import ttk
 import tkmacosx as tkmac
+#from graphics import page_0
 import page_0
 
 class Page_2(tk.Frame):

@@ -15,11 +15,11 @@ if __name__ == '__main__':
     
     stringa = '#IngSw2020'
     lingua = 'it'
-    falconara = '43.6242,13.404,2km'
-    bologna = '44,5075,11,3514,20km'
-    data_inizio_tupla = ('2020', '11', '20')
-    data_inizio = '2020-11-29'
-    data_fine = '2020-12-07'
+    falconara = '43.6242,13.404,20km'
+    bologna = '44.5075,11.3514,10km'
+    data_inizio_tupla = ('2020', '12', '1')
+    data_inizio = '2020-12-04'
+    data_fine = '2020-12-11'
     elementi = 20
     result_type = 'recent'
     
@@ -34,9 +34,6 @@ if __name__ == '__main__':
     for element in tweets:
         print(tmp)
         print(element["text"])
-        print(element["place"]["full_name"])
-        print(element["place"]["bounding_box"]["coordinates"][0])
         tmp += 1
-    
-    print(len(tweets))
-#    caricatore.store(tweets)
+
+    #caricatore.store(tweets)

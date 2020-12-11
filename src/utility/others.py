@@ -43,7 +43,7 @@ def convert_coordinates_to_degrees(coordinates):
 def is_in(coordinates, radius, place):
     
     coordinates = [float(coordinates[0]), float(coordinates[1])]
-    radius = radius[0 : -2];
+    radius = radius[0 : -2]
     radius = float(radius)
     
     coordinates_km = convert_coordinates_to_km(coordinates)
