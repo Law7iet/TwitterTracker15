@@ -1,13 +1,3 @@
-'''
-<<<<<<< HEAD:src/utility/loader/Loader.py
-Created on 20 nov 2020
-=======
-Created on 3 dic 2020
->>>>>>> Han:src/utility/loader.py
-
-@author: L
-'''
-
 import json
 
 class Loader():

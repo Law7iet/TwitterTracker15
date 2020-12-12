@@ -47,16 +47,17 @@ class Page_2(tk.Frame):
         tk.Grid.columnconfigure(self, 0, weight = 1)
 
     def get(self):
-        tweets = self.ricerca.search_user(self.id_utente.get(), self.data_inizio.get_date(), self.data_fine.get_date())
-        i = 1
-        for tweet in tweets:
-            print(i)
-            print(tweet["text"])
-            print(tweet["created_at"])
-#            print(tweet["place"]["full_name"])
-#            print(tweet["place"]["bounding_box"]["coordinates"][0])
-            i += 1
-        return tweets
+        list_tweets = self.ricerca.search_user(self.id_utente.get(), self.data_inizio.get_date(), self.data_fine.get_date())
+        for tweets in list_tweets:
+            i = 1
+            for tweet in tweets:
+                print(i)
+                print(tweet["text"])
+                print(tweet["created_at"])
+    #            print(tweet["place"]["full_name"])
+    #            print(tweet["place"]["bounding_box"]["coordinates"][0])
+                i += 1
+        return list_tweets
     
     def check(self):
         # Stampa i valori ottenuti e il loro tipo

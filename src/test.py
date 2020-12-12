@@ -30,4 +30,4 @@ for element in tweets:
     print(element["created_at"])
     tmp += 1
 
-#caricatore.store(tweets)
+caricatore.store(tweets)
