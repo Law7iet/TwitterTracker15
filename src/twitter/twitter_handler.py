@@ -71,7 +71,10 @@ class Twitter_handler():
         tweets = self.api.user_timeline(identifier, count=200)
         tweets = self.convertitore.convert_to_Status_list(tweets)
         tweets = self.convertitore.convert_to_dict_list(tweets)
-
+        data_inizio = str(data_inizio)
+        data_fine = str(data_fine)
+        data_inizio = data_inizio.split('-')
+        data_fine = data_fine.split('-')
         # delete old tweets
         i = 0
         flag = True

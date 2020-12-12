@@ -1,10 +1,9 @@
 import tkinter as tk
-#from tkinter import ttk
 import tkmacosx as tkmac
-#from graphics import page_0
-import page_0
-from twitter.twitter_handler import Twitter_handler
 import tkcalendar
+from twitter.twitter_handler import Twitter_handler
+import page_0 # OPPPURE from graphics import page_0
+
 
 class Page_1(tk.Frame):
     
@@ -20,7 +19,7 @@ class Page_1(tk.Frame):
 #        stile.theme_use('clam')
         
         # Titolo
-        self.title = tk.Label(self, text = "Ricerca dei tweets", bg = "orange")
+        self.titolo = tk.Label(self, text = "Ricerca dei tweets", bg = "orange")
         # Descrizioni del form
         self.descr_parola_chiave = tk.Label(self, text = "Parola Chiave:")
         self.descr_coordinate = tk.Label(self, text = "Coordinate:")
@@ -50,7 +49,7 @@ class Page_1(tk.Frame):
         self.pag_0 = tkmac.Button(self, text = "Torna alla Home", command = lambda: controller.show_frame(page_0.Page_0))
         
         # Grid
-        self.title.grid(row = 0, column = 0, columnspan = 2, sticky = "nsew")
+        self.titolo.grid(row = 0, column = 0, columnspan = 2, sticky = "nsew")
         self.descr_parola_chiave.grid(row = 1, column = 0, sticky = "nsw")
         self.parola_chiave.grid(row = 1, column = 1, sticky = "nse")
         self.descr_coordinate.grid(row = 2, column = 0, sticky = "nsw")
@@ -68,6 +67,7 @@ class Page_1(tk.Frame):
         self.descr_data_fine.grid(row = 8, column = 0, sticky = "nsw")
         self.data_fine.grid(row = 8, column = 1, sticky = "nse")
         self.cerca.grid(row = 9, column = 0, columnspan = 2, sticky = "nsew")
+        self.pag_0.grid(row = 10, column = 0, columnspan = 2, sticky = "nsew")
         # Layout
         tk.Grid.columnconfigure(self, 0, weight = 1)
     
@@ -78,7 +78,7 @@ class Page_1(tk.Frame):
         for tweet in tweets:
             print(i)
             print(tweet["text"])
-#            print(tweet["created_at"])
+            print(tweet["created_at"])
 #            print(tweet["place"]["full_name"])
 #            print(tweet["place"]["bounding_box"]["coordinates"][0])
             i += 1
