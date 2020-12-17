@@ -4,12 +4,14 @@ import tkcalendar
 from twitter.twitter_handler import Twitter_handler
 from utility.loader import Loader
 from tkinter.filedialog import askopenfile
+from tkinter import ttk
 
 class Page_1(tk.Frame):
 
     caricatore = Loader()
     language = ["it", "en", "fr", "de", "es"]
-    filter = ["mixed", "popular", "recent"]
+    # popular non funziona
+    filter = ["mixed", "recent"]
     ricerca = Twitter_handler()
     tweets = []
 
@@ -18,11 +20,11 @@ class Page_1(tk.Frame):
         from graphics.page_0 import Page_0
 
         # Inizializzazione del frame
-        tk.Frame.__init__(self, parent, bg = "yellow")
+        tk.Frame.__init__(self, parent, bg = "white")
 
         # Lo stile per il calendario
-#        stile = ttk.Style(parent)
-#        stile.theme_use('clam')
+        stile = ttk.Style(parent)
+        stile.theme_use('clam')
 
         # Titolo
         self.titolo = tk.Label(self, text = "Ricerca dei tweets", bg = "orange")
@@ -81,8 +83,8 @@ class Page_1(tk.Frame):
         self.salva.grid(row = 11, column = 1, sticky = "nsew")
         self.pag_0.grid(row = 12, column = 0, columnspan = 2, sticky = "nsew")
         # Layout
-        tk.Grid.columnconfigure(self, 0, weight = 1)
-        tk.Grid.columnconfigure(self, 1, weight = 1)
+        tk.Grid.columnconfigure(self, 0, weight = 1, uniform = 'equispaziato')
+        tk.Grid.columnconfigure(self, 1, weight = 1, uniform = 'equispaziato')
 
 
     def get(self):
@@ -120,7 +122,7 @@ class Page_1(tk.Frame):
         self.caricatore.store(self.tweets)
 
     def print_tweets(self):
-        i = 0
+        i = 1
         for tweet in self.tweets:
             print(i)
             print(tweet["text"])

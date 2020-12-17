@@ -1,14 +1,10 @@
-from utility.converter import Converter
-from utility.others import is_in
+from utility.others import is_in, convert_ItemIterator_to_list
 import tweepy
 from twitter import twitter_app_credentials as credentials
 
 class Twitter_handler():
 
-    convertitore = ''
     tweets = []
-    auth = ''
-    api = ''
 
     # Create the authentication
     # Create the object convertitore
@@ -16,24 +12,21 @@ class Twitter_handler():
         self.auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         self.auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.api = tweepy.API(self.auth)
-        self.convertitore = Converter()
 
     # Search tweets based on the string passed in input
     # INPUT: ...
     # OUTPUT: a list of dict, cointaing the tweets in JSON
     def search_string(self, content, language, res_type, counts, date_since, date_until):
         tweets = tweepy.Cursor(self.api.search, q = content, lang = language, result_type = res_type, since = date_since, until = date_until).items(counts)
-        tweets = self.convertitore.convert_to_Status_list(tweets)
-        tweets = self.convertitore.convert_to_dict_list(tweets)
+        tweets = convert_ItemIterator_to_list(tweets)
         return tweets
 
     # Search tweets based on the geolocation
     # INPUT: ...
     # OUTPUT: a list of dict, cointaing the tweets in JSON
     def search_geo(self, content, geo, language, res_type, counts, date_since, date_until):
-        tweets = tweepy.Cursor(self.api.search, q = content, geo = geo, lang = language, result_type = res_type, since = date_since, until = date_until).items(counts)
-        tweets = self.convertitore.convert_to_Status_list(tweets)
-        tweets = self.convertitore.convert_to_dict_list(tweets)
+        tweets = tweepy.Cursor(self.api.search, q = content, geo = geo, lang = language, result_type = res_type, since = date_since, until = date_until).items(100)
+        tweets = convert_ItemIterator_to_list(tweets)
 
         geolocated_tweets = []
         geo = geo.split(',')
@@ -44,7 +37,7 @@ class Twitter_handler():
                 coordinates = place["bounding_box"]
                 if coordinates["coordinates"] != None:
                     coordinates = (coordinates["coordinates"])[0]
-                    if is_in([geo[1], geo[0]], geo[2], coordinates) == True:
+                    if is_in([geo[1], geo[0]], geo[2], coordinates) == True and len(geolocated_tweets) < int(counts):
                         geolocated_tweets.append(tweet)
 
         return geolocated_tweets
@@ -69,9 +62,8 @@ class Twitter_handler():
         months = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
 
         for identifier in identifiers:
-            tweets = self.api.user_timeline(identifier, count=200)
-            tweets = self.convertitore.convert_to_Status_list(tweets)
-            tweets = self.convertitore.convert_to_dict_list(tweets)
+            tweets = self.api.user_timeline(identifier, count = 200)
+            tweets = convert_ItemIterator_to_list(tweets)
             # delete old tweets
             i = 0
             flag = True
@@ -110,4 +102,5 @@ class Twitter_handler():
 
             # add tweets in the main list
             list_tweets.append(tweets)
+
         return list_tweets

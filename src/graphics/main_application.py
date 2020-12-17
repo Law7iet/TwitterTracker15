@@ -11,7 +11,7 @@ class Main_application(tk.Tk):
         # Titolo finestra
         tk.Tk.wm_title(self, "Titolo")
         # Grandezza della finestra
-        self.geometry("500x500")
+        self.geometry("400x400")
         # Tema/Stile
 #        s = ttk.Style(self)
 #        s.theme_use('clam')

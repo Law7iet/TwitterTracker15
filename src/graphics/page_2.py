@@ -4,26 +4,27 @@ import tkcalendar
 from twitter.twitter_handler import Twitter_handler
 from utility.loader import Loader
 from tkinter.filedialog import askopenfile
+from tkinter import ttk
 
 class Page_2(tk.Frame):
 
     caricatore = Loader()
     ricerca = Twitter_handler()
-    tweets = []
+    list_tweets = []
 
     def __init__(self, parent, controller):
         # Import locale per evitare dipendenze circolari
         from graphics.page_0 import Page_0
 
         # Inizializzazione del frame
-        tk.Frame.__init__(self, parent)
+        tk.Frame.__init__(self, parent, bg = "white")
 
         # Lo stile per il calendario
-#        stile = ttk.Style(parent)
-#        stile.theme_use('clam')
+        stile = ttk.Style(parent)
+        stile.theme_use('clam')
 
         # Titolo
-        self.titolo = tk.Label(self, text = "Ricerca dei tweets di un utente")
+        self.titolo = tk.Label(self, text = "Ricerca dei tweets di un utente", bg = "orange")
         # Descrizioni del form
         self.descr_id_utente = tk.Label(self, text = "ID utente:")
         self.descr_data_inizio = tk.Label(self, text = "Dal giorno:")
@@ -55,13 +56,13 @@ class Page_2(tk.Frame):
         self.salva.grid(row = 6, column = 1, sticky = "nsew")
         self.pag_0.grid(row = 7, column = 0, columnspan = 2, sticky = "nsew")
         # Layout
-        tk.Grid.columnconfigure(self, 0, weight = 1)
-        tk.Grid.columnconfigure(self, 1, weight = 1)
+        tk.Grid.columnconfigure(self, 0, weight = 1, uniform = 'equispaziato')
+        tk.Grid.columnconfigure(self, 1, weight = 1, uniform = 'equispaziato')
 
     def get(self):
-        list_tweets = self.ricerca.search_user(self.id_utente.get(), self.data_inizio.get_date(), self.data_fine.get_date())
-
-        return list_tweets
+        self.list_tweets = self.ricerca.search_user(self.id_utente.get(), self.data_inizio.get_date(), self.data_fine.get_date())
+        self.print_tweets()
+        return self.list_tweets
 
     def check(self):
         # Stampa i valori ottenuti e il loro tipo
@@ -84,11 +85,11 @@ class Page_2(tk.Frame):
 
     def print_tweets(self):
         i = 1
-        for tweets in list_tweets:
+        for tweets in self.list_tweets:
             print(i)
             j = 1
             for tweet in tweets:
-                print(i)
+                print(j)
                 print(tweet["text"])
                 print(tweet["created_at"])
 #                print(tweet["place"]["full_name"])
