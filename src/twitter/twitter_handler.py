@@ -1,14 +1,7 @@
-'''
-Created on 3 dic 2020
-
-@author: L
-'''
-
 from utility.converter import Converter
 from utility.others import is_in
 import tweepy
 from twitter import twitter_app_credentials as credentials
-
 
 class Twitter_handler():
 
@@ -59,10 +52,8 @@ class Twitter_handler():
     def search(self, *args):
         if args[1] == ',':
             return self.search_string(args[0], args[2], args[3], args[4], args[5], args[6])
-        elif len(args) == 7:
-            return self.search_geo(args[0], args[1], args[2], args[3], args[4], args[5], args[6])
         else:
-            print('Errore.')
+            return self.search_geo(args[0], args[1], args[2], args[3], args[4], args[5], args[6])
 
     # Search an user tweets posted after a given date
     # INPUT: the user id and a date
@@ -73,12 +64,10 @@ class Twitter_handler():
         data_fine = str(data_fine)
         data_inizio = data_inizio.split('-')
         data_fine = data_fine.split('-')
-        
         identifiers = identifiers.split(', ')
-        
         list_tweets = []
         months = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
-        
+
         for identifier in identifiers:
             tweets = self.api.user_timeline(identifier, count=200)
             tweets = self.convertitore.convert_to_Status_list(tweets)

@@ -1,61 +1,53 @@
 # Progetto di Ingegneria del software 2020
-
 ## Struttura del Progetto
 ```
 IngSw2020
 |- src
+|   |- graphics
+|   |   |- __init__.py
+|   |   |- main_application.py
+|   |   |- page_0.py
+|   |   |- page_1.py
+|   |   |- page_2.py
+|   |
 |   |- twitter
 |   |   |- __init__.py
-|   |   |- Twitter_app_credentials.py
-|   |   |- Twitter_handler.py
+|   |   |- twitter_app_credentials.py
+|   |   |- twitter_handler.py
 |   |
 |   |- utility
-|   |   |- converter
-|   |   |   |- __init__.py
-|   |   |   |- Converter.py
-|   |   |
-|   |   |- loader
-|   |   |   |- __init__.py
-|   |   |   |- Loader.py
-|   |   |
 |   |   |- __init__.py
+|   |   |- converter.py
+|   |   |- loader.py
+|   |   |- others.py
 |   |
-|   |- Test.py
+|   |- main.py
+|   |- test.py
 |   |- Tweets.json
 |
 |- README.md
 ```
 Dove:
-- `Tweets.json` contiene i tweet raccolti.
-- `Test.py` è il file *main* da eseguire.
-- `twitter` è un modulo contenente la classe `Twitter_handler.py` che ricerca tweets, e `Twitter_app_credentials.py`, che contiene le infomazioni per il login.
-- `utility` è un package contente due moduli:
-    - `converter`, che contiene la classe `Converter.py`, utile per convertire degli oggetti complessi in tipi di Python.
-    - `loader`, che contiene la classe `Loader.py`, ed è l'oggetto responsabile del caricamentento e conservazione dei tweet raccolti.
-
-### api.search
-Ricerca gli ultimi post
-
-### Tweet ID
-I tweet sono detti anche status.
-Hanno ID unici che rappresentano
-
-### Coordinate
-Su Google, possono essere in diversi formati:
-- DMS (gradi, minuti e secondi): `xx°xx'xx″ yy°yy'yy″`
-- DDM (gradi e minuti decimali): `xx xx.xx, yy yy.yy`
-- DD (gradi decimali): `xx.xx, yy.yy`
-Di default il primo valore è N e il secondo è E.
-Nelle API di Tweepy userò il formato DD nella seguente sintassi:
-```
-geocode='xx.xx,yy.yy,z'
-```
-dove `z` indica il raggio e l'unità di misura `xkm`.
-
-Quando si cercando "tutti" i tweets, per efficienza si cercano solamente i primi 100.
+- `README.py` è il seguente documento, indica la struttura, i file presenti ed eventuali annotazioni
+- `src` è il folder contente tutti i codici sorgente
+    - `graphics` è il modulo contente la parte grafica
+        - `main_application.py` è l'applicazione principale
+        - `page_0.py` è la pagina home
+        - `page_1.py` è la pagina per la ricerca dei tweet
+        - `page_2.py` è la pagina per la ricerca dei tweet degli utenti
+    - `twitter` è il modulo contente la parte della raccolta dei tweet
+        - `twitter_app_credentials.py` è il file contenente le credenziali per l'accesso alle API di Twitter
+        - `twitter_handler.py` è l'oggetto che ricerca i tweet
+    - `utility` è un modulo contente oggetti di utilità
+        - `converter.py` è la classe che converte alcuni oggetti di *Tweepy* in tipi di Python e viceversa
+        - `loader.py` è la classe che carica/scarica nel file `Tweet.json` i tweet
+        - `other.py` funzioni per le coordinate e geolocalizzazione (da realizzarlo in oggetti)
+    - `main.py` è il file principale da eseguire
+    - `test.py` è il file contente le funzioni da provare localmente (senza GUI).
+    - `Tweets.json` contiene i tweet raccolti.
 
 ### tweepy.models.status
-Tale oggetto (che viene ritornato dalle funzioni di ricerca) può essere convertito in un dizionario in formato json mediante il metodo `_json`.
+Tale oggetto (che viene ritornato dalle funzioni di ricerca) può essere convertito in un dizionario in formato json mediante il metodo con l'oggetto `Converter`.
 Le chiavi che lo compongono sono descritte in questo [link](https://www.geeksforgeeks.org/python-status-object-in-tweepy/). Le chiavi più importanti sono:
 - *created_at*, data di creazione;
 - *id*, l'identificativo dello status;
@@ -64,3 +56,25 @@ Le chiavi che lo compongono sono descritte in questo [link](https://www.geeksfor
 - *user*, l'utente che ha pubblicato lo status;
 - *place*, *geo* e *coordinates*, per la geolocalizzazione;
 - *retweet_count* e *favorite_count*, come misure di valutazione.
+
+### LE COORDINATE SONO DI TIPO [LONGITUDINE, LATITUDINE]
+### converter va dentro others
+### link ad un tweet sapendo il suo id: twitter.com/anyuser/status/id
+### Loader
+Classe con attributi:
+- file_name, il path del nome del file
+- data, i dati del file
+Metodi:
+- costruttore, apre un file di default e lo usa come contenitore di tweet; se non esiste lo crea, altrimenti lo utilizza (non sovrascrive i vecchi dati)
+- set, seleziona il file e inserisce in "data" i dati del file
+- load, prende in input i tweet da caricare nel file. I duplicati non vengono caricati.
+
+# file.json
+E' una raccolta di tweet che segue la seconda struttura:
+{'Tweets' = [
+		{tweet},
+		{tweet},
+		{tweet}
+	]
+}
+

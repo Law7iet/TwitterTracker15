@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-#from graphics import page_0, page_1, page_2
-import page_0, page_1, page_2
+from graphics import page_0, page_1, page_2
 
+# Ooggetto che definisce l'applicazione
 class Main_application(tk.Tk):
 
     def __init__(self, *args, **kwargs):
