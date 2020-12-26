@@ -1,4 +1,6 @@
 import math
+import requests
+from urllib.parse import urlencode
 
 # Calcola approssimativamente il centro di un quadrato
 # Il quadrato e' descritto mediante 4 coordinate che rappresentano i suoi vertici
@@ -76,12 +78,23 @@ def is_in(coordinates, radius, place):
             return True
     return False
 
-# Converte l'oggetto tweepy.cursor.ItemIterator in una lista di dizionari
-# Ogni elemento di tipo dizionario nella lista e' un tweet
-# INPUT: l'oggetto tweepy.cursor.ItemIterator
-# OUTPUT una lista composta da dizionari
-def convert_ItemIterator_to_list(tweets):
-    tweets_list = []
-    for tweet in tweets:
-        tweets_list.append(tweet._json)
-    return tweets_list
+# Cerca le coordinate di un luogo.
+# Il luogo è dato dalla stringa (può essere una via, una citta,..)
+# INPUT: una stringa
+# OUTPUT: una lista composta da due valori
+def address_to_coordinates(address):
+    api_key = 'AIzaSyAR2Ha_6_KY2827W7UzJ2s3Y7tj6d4f0QI'
+    endpoint = 'https://maps.googleapis.com/maps/api/geocode/json'
+    params = {'address': address, 'key': api_key}
+    url_params = urlencode(params)
+    url = endpoint + '?' + url_params
+    r = requests.get(url)
+    if r.status_code not in range(200, 299):
+        return []
+    else:
+        try:
+            print(r.json())
+            coordinate = r.json()['results'][0]['geometry']['location']
+            return [coordinate['lng'], coordinate['lat']]
+        except:
+            return []

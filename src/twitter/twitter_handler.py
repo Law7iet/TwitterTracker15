@@ -1,36 +1,45 @@
-from utility.others import is_in, convert_ItemIterator_to_list
+from utility.others import is_in
 import tweepy
 from twitter import twitter_app_credentials as credentials
 
+# E' la classe che si occupa di cercare i tweet usando le API di Twitter
 class Twitter_handler():
 
-    tweets = []
-
-    # Create the authentication
-    # Create the object convertitore
+    # Inizializza le credeziali
+    # INPUT: niente
+    # OUTPUT: niente
     def __init__(self):
         self.auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         self.auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.api = tweepy.API(self.auth)
 
-    # Search tweets based on the string passed in input
-    # INPUT: ...
-    # OUTPUT: a list of dict, cointaing the tweets in JSON
+    # Converte l'oggetto tweepy.cursor.ItemIterator in una lista di dizionari
+    # Ogni elemento di tipo dizionario nella lista e' un tweet
+    # INPUT: l'oggetto tweepy.cursor.ItemIterator
+    # OUTPUT una lista composta da dizionari
+    def convert_ItemIterator_to_list(self, tweets):
+        tweets_list = []
+        for tweet in tweets:
+            tweets_list.append(tweet._json)
+        return tweets_list
+
+    # Cerca i tweets con una certa stringa
+    # INPUT: una sequenza di strighe; le stringhe sono la parola chiave, la lingua, il filtro, il numero, la data d'inizio e fine di ricerca
+    # OUTPUT: una lista di dizionari, che rappresentano il JSON dei vari tweet
     def search_string(self, content, language, res_type, counts, date_since, date_until):
         tweets = tweepy.Cursor(self.api.search, q = content, lang = language, result_type = res_type, since = date_since, until = date_until).items(counts)
-        tweets = convert_ItemIterator_to_list(tweets)
+        tweets = self.convert_ItemIterator_to_list(tweets)
         return tweets
 
-    # Search tweets based on the geolocation
-    # INPUT: ...
-    # OUTPUT: a list of dict, cointaing the tweets in JSON
+    # Cerca i tweets con una certa stringa
+    # INPUT: una sequenza di strighe; le stringhe sono la parola chiave, la geocodifica, la lingua, il filtro, il numero, la data d'inizio e fine di ricerca
+    # OUTPUT: una lista di dizionari, che rappresentano il JSON dei vari tweet
     def search_geo(self, content, geo, language, res_type, counts, date_since, date_until):
         tweets = tweepy.Cursor(self.api.search, q = content, geo = geo, lang = language, result_type = res_type, since = date_since, until = date_until).items(100)
-        tweets = convert_ItemIterator_to_list(tweets)
-
+        tweets = self.convert_ItemIterator_to_list(tweets)
         geolocated_tweets = []
         geo = geo.split(',')
-
+        # controlla se il tweet è all'interno dell'area
         for tweet in tweets:
             if tweet["place"] != None:
                 place = tweet["place"]
@@ -42,15 +51,18 @@ class Twitter_handler():
 
         return geolocated_tweets
 
+    # Funzione di smistamento: in base agli argomenti ottenuti dal form chiama la specifica funzione di ricerca
+    # INPUT: una sequenza arbitraria di valori
+    # OUTPUT: in base ai paramentri, ritorna il valore di una funzione di ricerca
     def search(self, *args):
-        if args[1] == ',':
+        if args[1] == 'NULL':
             return self.search_string(args[0], args[2], args[3], args[4], args[5], args[6])
         else:
             return self.search_geo(args[0], args[1], args[2], args[3], args[4], args[5], args[6])
 
-    # Search an user tweets posted after a given date
-    # INPUT: the user id and a date
-    # OUTPUT: a list of dict, coinaining the tweets in JSON
+    # Ricerca i tweets di un singolo utente, oppure di un gruppo di utenti
+    # INPUT: l'id dell'utente o degli utenti separati da una virgola e le date di inizo e di fine
+    # OUTPUT: una lista di liste di dizionari; la prima lista ha come elementi i differenti utenti, la seconda lista è l'insieme dei tweet di un utente e il dizionario rappresenta un tweet di tipo JSON
     def search_user(self, identifiers, data_inizio, data_fine):
         # setup
         data_inizio = str(data_inizio)
@@ -63,8 +75,8 @@ class Twitter_handler():
 
         for identifier in identifiers:
             tweets = self.api.user_timeline(identifier, count = 200)
-            tweets = convert_ItemIterator_to_list(tweets)
-            # delete old tweets
+            tweets = self.convert_ItemIterator_to_list(tweets)
+            # cancella i vecchi tweet
             i = 0
             flag = True
             while i < len(tweets) and flag:
@@ -82,7 +94,7 @@ class Twitter_handler():
                 i += 1
             tweets = tweets[0:(i - 1)]
 
-            # delete recent tweets
+            # cancella i tweet recenti
             i = 0
             flag = True
             while i < len(tweets) and flag:
@@ -100,7 +112,7 @@ class Twitter_handler():
                 i += 1
             tweets = tweets[(i - 1):]
 
-            # add tweets in the main list
+            # aggiunge i tweet nella lista principale
             list_tweets.append(tweets)
 
         return list_tweets

@@ -4,6 +4,7 @@ import tkcalendar
 import list_tweets as listtw
 from twitter.twitter_handler import Twitter_handler
 from utility.loader import Loader
+from utility.others import address_to_coordinates
 from tkinter.filedialog import askopenfile
 from tkinter import ttk
 from tkinter.constants import DISABLED, NORMAL
@@ -33,8 +34,8 @@ class Form():
         self.button_persona = tkmac.Button(self.container, text = "Ricerca per Persona", command=self.check_state)
         # Descrizioni del form
         self.descr_parola_chiave = tk.Label(self.container, text = "Parola Chiave:")
-        self.descr_coordinate = tk.Label(self.container, text = "Coordinate:")
-        self.descr_raggio = tk.Label(self.container, text = "Raggio:")
+        self.descr_coordinate = tk.Label(self.container, text = "Città, stato:")
+        self.descr_raggio = tk.Label(self.container, text = "Raggio in km:")
         self.descr_lingua = tk.Label(self.container, text = "Lingua:")
         self.descr_filtro = tk.Label(self.container, text = "Filtro:")
         self.descr_numero = tk.Label(self.container, text = "Numero:")
@@ -90,7 +91,12 @@ class Form():
         tk.Grid.columnconfigure(self.container, 1, weight = 1, uniform = 'equispaziato')
 
     def get(self):
-        geocodifica = self.coordinate.get() + "," + self.raggio.get()
+        tmp1 = address_to_coordinates(self.coordinate.get())
+        tmp2 = self.raggio.get()
+        try:
+            geocodifica = str(tmp1[1]) + "," + str(tmp1[0]) + "," + str(tmp2) + "km"
+        except:
+            geocodifica = 'NULL'
         self.tweets = self.ricerca.search(self.parola_chiave.get(), geocodifica, self.lingua.get(), self.filtro.get(), int(self.numero.get()), self.data_inizio.get_date(), self.data_fine.get_date())
         self.print_tweets()
 
@@ -126,19 +132,19 @@ class Form():
         self.get()
 
     def print_tweets_person(self):
-#        i = 1
-#        for tweets in self.tweets:
-#            print(i)
-#            j = 1
-#            for tweet in tweets:
-#                print(j)
-#                print(tweet["id"])
-#                print(tweet["text"])
-#                print(tweet["created_at"])
-#                print(tweet["place"]["full_name"])
-#                print(tweet["place"]["bounding_box"]["coordinates"][0])
-#                j += 1
-#            i += 1
+        i = 1
+        for tweets in self.tweets:
+            print(i)
+            j = 1
+            for tweet in tweets:
+                print(j)
+                print(tweet["id"])
+                print(tweet["text"])
+                print(tweet["created_at"])
+                print(tweet["place"]["full_name"])
+                print(tweet["place"]["bounding_box"]["coordinates"][0])
+                j += 1
+            i += 1
 
         lista = listtw.ListTweets(self.tweets)
         lista.build_list_person()
@@ -196,6 +202,9 @@ class Form():
         self.data_inizio.grid(row = 8, column = 1, sticky = "nse")
         self.descr_data_fine.grid(row = 9, column = 0, sticky = "nsw")
         self.data_fine.grid(row = 9, column = 1, sticky = "nse")
+        self.seleziona.grid(row = 11, column = 0, columnspan = 2, sticky = "nsew")
+        self.carica.grid(row = 12, column = 0, sticky = "nsew")
+        self.salva.grid(row = 12, column = 1, sticky = "nsew")
 
         self.cerca['command'] = self.check
 
@@ -215,7 +224,11 @@ class Form():
         self.data_inizio.grid(row = 3, column = 1, sticky = "nse")
         self.descr_data_fine.grid(row = 4, column = 0, sticky = "nsw")
         self.data_fine.grid(row = 4, column = 1, sticky = "nse")
-        self.cerca['command']=self.get_person
+        self.seleziona.grid_forget()
+        self.carica.grid_forget()
+        self.salva.grid_forget()
+        
+        self.cerca['command'] = self.get_person
 
     def get_container(self):
         return self.container
