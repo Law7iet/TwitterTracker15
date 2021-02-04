@@ -1,0 +1,1479 @@
+{
+    "Tweets": [
+        {
+            "created_at": "Sun Jan 03 18:14:05 +0000 2021",
+            "id": 1345795584125526030,
+            "id_str": "1345795584125526030",
+            "text": "Il vaccino anti COVID-19 NON PU\u00d2 PROTEGGERE PRIMA DI 14 GIORNI. \u00c8 impossibile. Per questo, se una persona appena va\u2026 https://t.co/YA2H5OvGww",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/YA2H5OvGww",
+                        "expanded_url": "https://twitter.com/i/web/status/1345795584125526030",
+                        "display_url": "twitter.com/i/web/status/1\u2026",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "it"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 732817452569141248,
+                "id_str": "732817452569141248",
+                "name": "Roberto Burioni",
+                "screen_name": "RobertoBurioni",
+                "location": "Milano, Lombardia",
+                "description": "Medico, Professore di Virologia all\u2019Universit\u00e0 San Raffaele, Milano - Direttore scientifico Medical Facts",
+                "url": "https://t.co/gggehnphSZ",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/gggehnphSZ",
+                                "expanded_url": "http://www.medicalfacts.it",
+                                "display_url": "medicalfacts.it",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 265760,
+                "friends_count": 1266,
+                "listed_count": 547,
+                "created_at": "Wed May 18 06:17:50 +0000 2016",
+                "favourites_count": 28487,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 13815,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/732817452569141248/1590162528",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 1970,
+            "favorite_count": 8484,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 16:18:23 +0000 2021",
+            "id": 1345766467166498816,
+            "id_str": "1345766467166498816",
+            "text": "75.332 deceduti con #Covid_19 nel nostro paese. Manteniamo le regole di sicurezza, facciamo ognuno il proprio dover\u2026 https://t.co/3i34nLkezP",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Covid_19",
+                        "indices": [
+                            20,
+                            29
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/3i34nLkezP",
+                        "expanded_url": "https://twitter.com/i/web/status/1345766467166498816",
+                        "display_url": "twitter.com/i/web/status/1\u2026",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "it"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1380510872,
+                "id_str": "1380510872",
+                "name": "Alessandro Gassmann \ud83c\udf33",
+                "screen_name": "GassmanGassmann",
+                "location": "ACTOR-DIRECTOR-SCRIPT WRITER-",
+                "description": "-Haters free profile \ud83d\udeab Mi-Fran\u00e7ais\ud83c\uddeb\ud83c\uddf7,un quarto Italiano\ud83c\uddee\ud83c\uddf9,ein viertel Deutsch \ud83c\udde9\ud83c\uddea... European. UNHCR goodwill ambassador",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 283592,
+                "friends_count": 943,
+                "listed_count": 562,
+                "created_at": "Thu Apr 25 21:58:34 +0000 2013",
+                "favourites_count": 18643,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 75203,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1342125517378613251/E63OmWBU_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1342125517378613251/E63OmWBU_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1380510872/1604257699",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 127,
+            "favorite_count": 1673,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sat Jan 02 18:45:11 +0000 2021",
+            "id": 1345441022835351552,
+            "id_str": "1345441022835351552",
+            "text": "Guardate cosa scriveva il ministro #Bonafede nel 2010 sui vaccini. Ironia della sorte: oggi \u00e8 testimonial della vac\u2026 https://t.co/na0xwctbyB",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Bonafede",
+                        "indices": [
+                            35,
+                            44
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/na0xwctbyB",
+                        "expanded_url": "https://twitter.com/i/web/status/1345441022835351552",
+                        "display_url": "twitter.com/i/web/status/1\u2026",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "it"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 399004979,
+                "id_str": "399004979",
+                "name": "Nicola Porro",
+                "screen_name": "NicolaPorro",
+                "location": "",
+                "description": "Vicedirettore del @ilgiornale, conduttore televisivo e giornalista. Tutti i giorni la sua zuppa su https://t.co/GPJd1eo4b8",
+                "url": "https://t.co/GPJd1eo4b8",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/GPJd1eo4b8",
+                                "expanded_url": "http://nicolaporro.it",
+                                "display_url": "nicolaporro.it",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/GPJd1eo4b8",
+                                "expanded_url": "http://nicolaporro.it",
+                                "display_url": "nicolaporro.it",
+                                "indices": [
+                                    99,
+                                    122
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 398050,
+                "friends_count": 564,
+                "listed_count": 1073,
+                "created_at": "Wed Oct 26 21:12:49 +0000 2011",
+                "favourites_count": 996,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 17264,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/3676523965/db7451c1f0e61b881034852701f69888_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/3676523965/db7451c1f0e61b881034852701f69888_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/399004979/1589387610",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 420,
+            "favorite_count": 1050,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:59 +0000 2021",
+            "id": 1345882632840765441,
+            "id_str": "1345882632840765441",
+            "text": "@Titti14760140 @PoliticaPerJedi Prove concrete? Dia un'occhiata al numero di morti covid e a quello dei vaccini effettuati.",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "Titti14760140",
+                        "name": "Titti",
+                        "id": 1248557329882271744,
+                        "id_str": "1248557329882271744",
+                        "indices": [
+                            0,
+                            14
+                        ]
+                    },
+                    {
+                        "screen_name": "PoliticaPerJedi",
+                        "name": "Yoda",
+                        "id": 696595370395172864,
+                        "id_str": "696595370395172864",
+                        "indices": [
+                            15,
+                            31
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": 1345827674464399360,
+            "in_reply_to_status_id_str": "1345827674464399360",
+            "in_reply_to_user_id": 1248557329882271744,
+            "in_reply_to_user_id_str": "1248557329882271744",
+            "in_reply_to_screen_name": "Titti14760140",
+            "user": {
+                "id": 2789842566,
+                "id_str": "2789842566",
+                "name": "dario",
+                "screen_name": "dariodalb10",
+                "location": "",
+                "description": "Giurista, pianista, napolista. \nIo sono sinistro, tutto sinistro: di piede, di fede, di cervello (cit. Lui)",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 164,
+                "friends_count": 365,
+                "listed_count": 1,
+                "created_at": "Thu Sep 04 14:18:42 +0000 2014",
+                "favourites_count": 20230,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 19054,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1043969247268020224/UxDwoH6U_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1043969247268020224/UxDwoH6U_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2789842566/1537736664",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:49 +0000 2021",
+            "id": 1345882590549569540,
+            "id_str": "1345882590549569540",
+            "text": "RT @RobertoBurioni: Il vaccino anti COVID-19 NON PU\u00d2 PROTEGGERE PRIMA DI 14 GIORNI. \u00c8 impossibile. Per questo, se una persona appena vaccin\u2026",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "RobertoBurioni",
+                        "name": "Roberto Burioni",
+                        "id": 732817452569141248,
+                        "id_str": "732817452569141248",
+                        "indices": [
+                            3,
+                            18
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2196257090,
+                "id_str": "2196257090",
+                "name": "jade",
+                "screen_name": "jadegiuriati",
+                "location": "Milano, Italy",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 113,
+                "friends_count": 262,
+                "listed_count": 0,
+                "created_at": "Fri Nov 15 16:30:46 +0000 2013",
+                "favourites_count": 43135,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 7433,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1331318561839706113/8MHTdzNg_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1331318561839706113/8MHTdzNg_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2196257090/1584722385",
+                "profile_link_color": "981CEB",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Sun Jan 03 18:14:05 +0000 2021",
+                "id": 1345795584125526030,
+                "id_str": "1345795584125526030",
+                "text": "Il vaccino anti COVID-19 NON PU\u00d2 PROTEGGERE PRIMA DI 14 GIORNI. \u00c8 impossibile. Per questo, se una persona appena va\u2026 https://t.co/YA2H5OvGww",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/YA2H5OvGww",
+                            "expanded_url": "https://twitter.com/i/web/status/1345795584125526030",
+                            "display_url": "twitter.com/i/web/status/1\u2026",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "it",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 732817452569141248,
+                    "id_str": "732817452569141248",
+                    "name": "Roberto Burioni",
+                    "screen_name": "RobertoBurioni",
+                    "location": "Milano, Lombardia",
+                    "description": "Medico, Professore di Virologia all\u2019Universit\u00e0 San Raffaele, Milano - Direttore scientifico Medical Facts",
+                    "url": "https://t.co/gggehnphSZ",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/gggehnphSZ",
+                                    "expanded_url": "http://www.medicalfacts.it",
+                                    "display_url": "medicalfacts.it",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 265760,
+                    "friends_count": 1266,
+                    "listed_count": 547,
+                    "created_at": "Wed May 18 06:17:50 +0000 2016",
+                    "favourites_count": 28487,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 13815,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/732817452569141248/1590162528",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": false,
+                    "follow_request_sent": false,
+                    "notifications": false,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 1970,
+                "favorite_count": 8484,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "it"
+            },
+            "is_quote_status": false,
+            "retweet_count": 1970,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:32 +0000 2021",
+            "id": 1345882520106262529,
+            "id_str": "1345882520106262529",
+            "text": "RT @RobertoBurioni: Il vaccino anti COVID-19 NON PU\u00d2 PROTEGGERE PRIMA DI 14 GIORNI. \u00c8 impossibile. Per questo, se una persona appena vaccin\u2026",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "RobertoBurioni",
+                        "name": "Roberto Burioni",
+                        "id": 732817452569141248,
+                        "id_str": "732817452569141248",
+                        "indices": [
+                            3,
+                            18
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1192772778,
+                "id_str": "1192772778",
+                "name": "Celeste Sebastiani",
+                "screen_name": "Celli_Seba",
+                "location": "milano",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 289,
+                "friends_count": 293,
+                "listed_count": 0,
+                "created_at": "Mon Feb 18 10:50:29 +0000 2013",
+                "favourites_count": 21120,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 16032,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/921128080512561152/SFRgHdh6_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/921128080512561152/SFRgHdh6_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1192772778/1507426292",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Sun Jan 03 18:14:05 +0000 2021",
+                "id": 1345795584125526030,
+                "id_str": "1345795584125526030",
+                "text": "Il vaccino anti COVID-19 NON PU\u00d2 PROTEGGERE PRIMA DI 14 GIORNI. \u00c8 impossibile. Per questo, se una persona appena va\u2026 https://t.co/YA2H5OvGww",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/YA2H5OvGww",
+                            "expanded_url": "https://twitter.com/i/web/status/1345795584125526030",
+                            "display_url": "twitter.com/i/web/status/1\u2026",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "it",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 732817452569141248,
+                    "id_str": "732817452569141248",
+                    "name": "Roberto Burioni",
+                    "screen_name": "RobertoBurioni",
+                    "location": "Milano, Lombardia",
+                    "description": "Medico, Professore di Virologia all\u2019Universit\u00e0 San Raffaele, Milano - Direttore scientifico Medical Facts",
+                    "url": "https://t.co/gggehnphSZ",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/gggehnphSZ",
+                                    "expanded_url": "http://www.medicalfacts.it",
+                                    "display_url": "medicalfacts.it",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 265760,
+                    "friends_count": 1266,
+                    "listed_count": 547,
+                    "created_at": "Wed May 18 06:17:50 +0000 2016",
+                    "favourites_count": 28487,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 13815,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1042017366371172353/vKWCPQ_6_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/732817452569141248/1590162528",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": false,
+                    "follow_request_sent": false,
+                    "notifications": false,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 1970,
+                "favorite_count": 8484,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "it"
+            },
+            "is_quote_status": false,
+            "retweet_count": 1970,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:32 +0000 2021",
+            "id": 1345882518487261189,
+            "id_str": "1345882518487261189",
+            "text": "RT @CalaminiciM: Ma da 1 a 10 quanto fanno schifo i tg che oggi davano la notizia della dottoressa che, dopo aver fatto la prima dose di va\u2026",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "CalaminiciM",
+                        "name": "m.carmen calaminici",
+                        "id": 1325373512,
+                        "id_str": "1325373512",
+                        "indices": [
+                            3,
+                            15
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 417070549,
+                "id_str": "417070549",
+                "name": "Giuliano Ravera",
+                "screen_name": "raveragiuliano",
+                "location": "Genova italia",
+                "description": "Produttore video, soprattutto news.",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 650,
+                "friends_count": 1548,
+                "listed_count": 6,
+                "created_at": "Sun Nov 20 13:51:07 +0000 2011",
+                "favourites_count": 10218,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 50952,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1862129673/foto_20giuliano_20ravera_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1862129673/foto_20giuliano_20ravera_normal.jpg",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Sun Jan 03 19:35:29 +0000 2021",
+                "id": 1345816067696963585,
+                "id_str": "1345816067696963585",
+                "text": "Ma da 1 a 10 quanto fanno schifo i tg che oggi davano la notizia della dottoressa che, dopo aver fatto la prima dos\u2026 https://t.co/S3kDTzmYcI",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/S3kDTzmYcI",
+                            "expanded_url": "https://twitter.com/i/web/status/1345816067696963585",
+                            "display_url": "twitter.com/i/web/status/1\u2026",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "it",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 1325373512,
+                    "id_str": "1325373512",
+                    "name": "m.carmen calaminici",
+                    "screen_name": "CalaminiciM",
+                    "location": "",
+                    "description": "sono di sinistra praticamente da sempre .Sto qui per condividere riflessioni ,non per litigare. Niente maleducazione , razzismo , omofobia e stupidit\u00e0",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 7262,
+                    "friends_count": 4938,
+                    "listed_count": 9,
+                    "created_at": "Wed Apr 03 20:35:16 +0000 2013",
+                    "favourites_count": 145691,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 90240,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1343621166787944452/f9yOVqMQ_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1343621166787944452/f9yOVqMQ_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1325373512/1607648004",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": false,
+                    "follow_request_sent": false,
+                    "notifications": false,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 150,
+                "favorite_count": 1015,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "it"
+            },
+            "is_quote_status": false,
+            "retweet_count": 150,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:27 +0000 2021",
+            "id": 1345882499864522754,
+            "id_str": "1345882499864522754",
+            "text": "#Vaccini #Covid in ritardo in Lombardia, #Gallera: \u00abMedici in ferie\u00bb. E la #Lega d\u00e0 l\u2019avviso di sfratto all\u2019assesso\u2026 https://t.co/TCTY6k8Zwr",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Vaccini",
+                        "indices": [
+                            0,
+                            8
+                        ]
+                    },
+                    {
+                        "text": "Covid",
+                        "indices": [
+                            9,
+                            15
+                        ]
+                    },
+                    {
+                        "text": "Gallera",
+                        "indices": [
+                            41,
+                            49
+                        ]
+                    },
+                    {
+                        "text": "Lega",
+                        "indices": [
+                            75,
+                            80
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/TCTY6k8Zwr",
+                        "expanded_url": "https://twitter.com/i/web/status/1345882499864522754",
+                        "display_url": "twitter.com/i/web/status/1\u2026",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 232908749,
+                "id_str": "232908749",
+                "name": "Andrea Franchini \uf8ff",
+                "screen_name": "AndFranchini",
+                "location": "Toscana, Italia",
+                "description": "Grigia \u00e8 ogni teoria, verde \u00e8 l\u2019albero della vita (Goethe)",
+                "url": "https://t.co/brDDKsUZQi",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/brDDKsUZQi",
+                                "expanded_url": "http://bit.ly/2YKK9HW",
+                                "display_url": "bit.ly/2YKK9HW",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 26778,
+                "friends_count": 11690,
+                "listed_count": 262,
+                "created_at": "Sat Jan 01 18:19:16 +0000 2011",
+                "favourites_count": 390127,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 528815,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "68C9EF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme5/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme5/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1155194364467077121/1djNGvzR_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1155194364467077121/1djNGvzR_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/232908749/1607544341",
+                "profile_link_color": "68C9EF",
+                "profile_sidebar_border_color": "2B5741",
+                "profile_sidebar_fill_color": "2B5741",
+                "profile_text_color": "12A0DC",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:22 +0000 2021",
+            "id": 1345882475319468033,
+            "id_str": "1345882475319468033",
+            "text": "Covid: Russia, nuovo picco di contagi, 24.822 in 24\u00a0ore https://t.co/BiEAhcly3h",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/BiEAhcly3h",
+                        "expanded_url": "https://ntelikanis.com/covid-russia-nuovo-picco-di-contagi-24-822-in-24-ore/",
+                        "display_url": "ntelikanis.com/covid-russia-n\u2026",
+                        "indices": [
+                            56,
+                            79
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://publicize.wp.com/\" rel=\"nofollow\">WordPress.com</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1382511290,
+                "id_str": "1382511290",
+                "name": "PAPAGOLDENS",
+                "screen_name": "LAST_TIME_DEALS",
+                "location": "https://ntelikanis.com",
+                "description": "DO YOUR BEST FOR A BETTER TOMMOROW!!!\nhttps://t.co/GPVndelf4P\nhttps://t.co/wNDGOjDeWb",
+                "url": "https://t.co/rWHlxbrFAv",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/rWHlxbrFAv",
+                                "expanded_url": "https://www.youtube.com/channel/UClxcl7rD7A_N7fbsiZF_oww/",
+                                "display_url": "youtube.com/channel/UClxcl\u2026",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/GPVndelf4P",
+                                "expanded_url": "https://ntelikanis.com",
+                                "display_url": "ntelikanis.com",
+                                "indices": [
+                                    38,
+                                    61
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/wNDGOjDeWb",
+                                "expanded_url": "https://www.instagram.com/kingntelikanis/",
+                                "display_url": "instagram.com/kingntelikanis/",
+                                "indices": [
+                                    62,
+                                    85
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 680,
+                "friends_count": 854,
+                "listed_count": 32,
+                "created_at": "Fri Apr 26 17:54:17 +0000 2013",
+                "favourites_count": 3616,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 237813,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FCEBB6",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/3780230951/8db747afb7a5f6aeeeeb638a0c0dd2d8_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/3780230951/8db747afb7a5f6aeeeeb638a0c0dd2d8_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1382511290/1548777502",
+                "profile_link_color": "CE7834",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "78C0A8",
+                "profile_text_color": "5E412F",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "it"
+        },
+        {
+            "created_at": "Sun Jan 03 23:59:19 +0000 2021",
+            "id": 1345882462543622149,
+            "id_str": "1345882462543622149",
+            "text": "RT @PonytaEle: Portogallo: morto poche ore dopo il vaccino Pzifer un operatore sanitario di soli 41 anni \ud83c\udd98\ufe0f @ladyonorato @SennaGianMarco @M\u2026",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "PonytaEle",
+                        "name": "PonytaEle\ud83c\udf38\ud83c\uddee\ud83c\uddf9\u2764\ud83c\uddfa\ud83c\uddf8\ud83c\uddef\ud83c\uddf5",
+                        "id": 555300363,
+                        "id_str": "555300363",
+                        "indices": [
+                            3,
+                            13
+                        ]
+                    },
+                    {
+                        "screen_name": "ladyonorato",
+                        "name": "Francesca Donato",
+                        "id": 849274159,
+                        "id_str": "849274159",
+                        "indices": [
+                            108,
+                            120
+                        ]
+                    },
+                    {
+                        "screen_name": "SennaGianMarco",
+                        "name": "GianMarco Senna",
+                        "id": 388546504,
+                        "id_str": "388546504",
+                        "indices": [
+                            121,
+                            136
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "it",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 903357817020706816,
+                "id_str": "903357817020706816",
+                "name": "Marylu",
+                "screen_name": "Marylu58121349",
+                "location": "N\u00e1poles, Campania",
+                "description": "Covid: psico pseudo Pandemia\n#SpegnilaTv\n#AccendiilCervello",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 651,
+                "friends_count": 726,
+                "listed_count": 1,
+                "created_at": "Thu Aug 31 20:44:21 +0000 2017",
+                "favourites_count": 54940,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 42918,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1023599523053166592/MdIXWGyx_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1023599523053166592/MdIXWGyx_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/903357817020706816/1532880211",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Sun Jan 03 17:16:32 +0000 2021",
+                "id": 1345781099608346624,
+                "id_str": "1345781099608346624",
+                "text": "Portogallo: morto poche ore dopo il vaccino Pzifer un operatore sanitario di soli 41 anni \ud83c\udd98\ufe0f @ladyonorato\u2026 https://t.co/c6ERzmBMU9",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [
+                        {
+                            "screen_name": "ladyonorato",
+                            "name": "Francesca Donato",
+                            "id": 849274159,
+                            "id_str": "849274159",
+                            "indices": [
+                                93,
+                                105
+                            ]
+                        }
+                    ],
+                    "urls": [
+                        {
+                            "url": "https://t.co/c6ERzmBMU9",
+                            "expanded_url": "https://twitter.com/i/web/status/1345781099608346624",
+                            "display_url": "twitter.com/i/web/status/1\u2026",
+                            "indices": [
+                                107,
+                                130
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "it",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 555300363,
+                    "id_str": "555300363",
+                    "name": "PonytaEle\ud83c\udf38\ud83c\uddee\ud83c\uddf9\u2764\ud83c\uddfa\ud83c\uddf8\ud83c\uddef\ud83c\uddf5",
+                    "screen_name": "PonytaEle",
+                    "location": "Italia",
+                    "description": "Ragazza nerd PATRIOTA amante dell'Italia, USA, Giappone, Taiwan, Hong Kong | SALVINI + TRUMP \ud83c\uddee\ud83c\uddf9\u2764\ud83c\uddfa\ud83c\uddf8\ud83d\udc38 | NO sardine, sono un \ud83d\udc31 | ITALEXIT | NO CCP | NO NWO",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 2411,
+                    "friends_count": 1251,
+                    "listed_count": 9,
+                    "created_at": "Mon Apr 16 15:48:08 +0000 2012",
+                    "favourites_count": 86363,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 203879,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1324958629557116928/ZpbtSJEH_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1324958629557116928/ZpbtSJEH_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/555300363/1588750417",
+                    "profile_link_color": "FF0099",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": false,
+                    "follow_request_sent": false,
+                    "notifications": false,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 110,
+                "favorite_count": 134,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "it"
+            },
+            "is_quote_status": false,
+            "retweet_count": 110,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "it"
+        }
+    ]
+}

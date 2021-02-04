@@ -1,4 +1,5 @@
 from utility.others import is_in
+import Converter as cv
 import tweepy
 from twitter import twitter_app_credentials as credentials
 
@@ -12,6 +13,11 @@ class Twitter_handler():
         self.auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         self.auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.api = tweepy.API(self.auth)
+        self.convertitore = cv.Converter()
+        self.tweets = []
+        self.tweets_to_save = ""
+        self.extended_lang = ""
+
 
     # Converte l'oggetto tweepy.cursor.ItemIterator in una lista di dizionari
     # Ogni elemento di tipo dizionario nella lista e' un tweet
@@ -39,6 +45,7 @@ class Twitter_handler():
         tweets = self.convert_ItemIterator_to_list(tweets)
         geolocated_tweets = []
         geo = geo.split(',')
+        
         # controlla se il tweet è all'interno dell'area
         for tweet in tweets:
             if tweet["place"] != None:
@@ -48,7 +55,7 @@ class Twitter_handler():
                     coordinates = (coordinates["coordinates"])[0]
                     if is_in([geo[1], geo[0]], geo[2], coordinates) == True and len(geolocated_tweets) < int(counts):
                         geolocated_tweets.append(tweet)
-
+        
         return geolocated_tweets
 
     # Funzione di smistamento: in base agli argomenti ottenuti dal form chiama la specifica funzione di ricerca
@@ -111,8 +118,30 @@ class Twitter_handler():
                             flag = False
                 i += 1
             tweets = tweets[(i - 1):]
-
+            print(tweets)
             # aggiunge i tweet nella lista principale
             list_tweets.append(tweets)
 
         return list_tweets
+    
+        # Returning tweets in string format for the wordcloud 
+        # TO ADD: CONVERTER 
+    def get_tweets_for_wordcloud(self, query, lang, result_type, starting_date, ending_date, max_results):
+        self.tweets = tweepy.Cursor(self.api.search, q=query + " -filter:retweets -filter:replies", lang=lang, result_type=result_type, since=starting_date, until=ending_date, tweet_mode="extended").items(max_results)
+        for tweet in self.tweets:
+            self.tweets_to_save += tweet.full_text + " "
+        return self.tweets_to_save
+    
+    # Return: extended language for the wordcloud
+    def extend_lang(self, lang):
+        if(lang == "it"):
+            self.extended_lang = "italian"
+        elif(lang == "en"):
+            self.extended_lang = "english"
+        elif(lang == "fr"):
+            self.extended_lang = "french"
+        elif(lang == "es"):
+            self.extended_lang = "spanish"        
+        return self.extended_lang
+
+

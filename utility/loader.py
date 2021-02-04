@@ -1,4 +1,5 @@
 import json
+from tkinter.filedialog import askopenfile
 
 # Loader e' l'oggetto responsabile del caricamento e scaricamento dei tweet raccolti
 class Loader():
@@ -47,6 +48,10 @@ class Loader():
     # INPUT: una lista di tweet (dizionari)
     # OUTPUT: niente
     def store(self, tweets):
+        
+        f = askopenfile(mode = 'r', filetypes = [('JSON Files', '*.json')])
+        self.set(f.name)
+        
         tmp = self.data['Tweets']
         for tweet in tweets:
             copy = False
