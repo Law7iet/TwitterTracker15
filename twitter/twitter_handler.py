@@ -18,7 +18,6 @@ class Twitter_handler():
         self.tweets_to_save = ""
         self.extended_lang = ""
 
-
     # Converte l'oggetto tweepy.cursor.ItemIterator in una lista di dizionari
     # Ogni elemento di tipo dizionario nella lista e' un tweet
     # INPUT: l'oggetto tweepy.cursor.ItemIterator
@@ -70,6 +69,60 @@ class Twitter_handler():
     # Ricerca i tweets di un singolo utente, oppure di un gruppo di utenti
     # INPUT: l'id dell'utente o degli utenti separati da una virgola e le date di inizo e di fine
     # OUTPUT: una lista di liste di dizionari; la prima lista ha come elementi i differenti utenti, la seconda lista è l'insieme dei tweet di un utente e il dizionario rappresenta un tweet di tipo JSON
+    def search_user(self, identifier, data_inizio, data_fine):
+        # setup
+        data_inizio = str(data_inizio)
+        data_fine = str(data_fine)
+        data_inizio = data_inizio.split('-')
+        data_fine = data_fine.split('-')
+        months = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
+        tweets = self.api.user_timeline(identifier, count = 200)
+        tweets = self.convert_ItemIterator_to_list(tweets)
+        # cancella i nuovi tweet
+        i = 0
+        flag = True
+        while i < len(tweets) and flag:
+            tmp = tweets[i]
+            tmp = tmp['created_at'].split()
+            month = months[tmp[1]]
+            if int(tmp[5]) < int(data_fine[0]):
+                flag = False
+            elif int(tmp[5]) == int(data_fine[0]):
+                if int(month) < int(data_fine[1]):
+                    flag = False
+                elif int(month) == int(data_fine[1]):
+                    if int(tmp[2]) < int(data_fine[2]):
+                        flag = False
+            i += 1
+        tweets = tweets[(i - 1):]
+        # cancella i vecchi tweet
+        i = 0
+        flag = True
+        while i < len(tweets) and flag:
+            tmp = tweets[i]
+            tmp = tmp['created_at'].split()
+            month = months[tmp[1]]
+            if int(tmp[5]) < int(data_inizio[0]):
+                flag = False
+            elif int(tmp[5]) == int(data_inizio[0]):
+                if int(month) < int(data_inizio[1]):
+                    flag = False
+                elif int(month) == int(data_inizio[1]):
+                    if int(tmp[2]) < int(data_inizio[2]):
+                        flag = False
+            print(i)
+            i += 1
+        tweets = tweets[:(i -1)]
+        return tweets
+    
+    # Returning tweets in string format for the wordcloud 
+    # TO ADD: CONVERTER 
+    def get_tweets_for_wordcloud(self, query, lang, result_type, starting_date, ending_date, max_results):
+        self.tweets = tweepy.Cursor(self.api.search, q=query + " -filter:retweets -filter:replies", lang=lang, result_type=result_type, since=starting_date, until=ending_date, tweet_mode="extended").items(max_results)
+        for tweet in self.tweets:
+            self.tweets_to_save += tweet.full_text + " "
+        return self.tweets_to_save
+
     def search_user(self, identifiers, data_inizio, data_fine):
         # setup
         data_inizio = str(data_inizio)
@@ -77,9 +130,7 @@ class Twitter_handler():
         data_inizio = data_inizio.split('-')
         data_fine = data_fine.split('-')
         identifiers = identifiers.split(', ')
-        list_tweets = []
         months = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
-
         for identifier in identifiers:
             tweets = self.api.user_timeline(identifier, count = 200)
             tweets = self.convert_ItemIterator_to_list(tweets)
@@ -100,7 +151,6 @@ class Twitter_handler():
                             flag = False
                 i += 1
             tweets = tweets[0:(i - 1)]
-
             # cancella i tweet recenti
             i = 0
             flag = True
@@ -118,18 +168,11 @@ class Twitter_handler():
                             flag = False
                 i += 1
             tweets = tweets[(i - 1):]
-            print(tweets)
-            # aggiunge i tweet nella lista principale
-            list_tweets.append(tweets)
+        # Creating a single string for the wordcloud
+        for tweet in tweets:
+            self.tweets_to_save += tweet["text"] + " "
 
-        return list_tweets
-    
-        # Returning tweets in string format for the wordcloud 
-        # TO ADD: CONVERTER 
-    def get_tweets_for_wordcloud(self, query, lang, result_type, starting_date, ending_date, max_results):
-        self.tweets = tweepy.Cursor(self.api.search, q=query + " -filter:retweets -filter:replies", lang=lang, result_type=result_type, since=starting_date, until=ending_date, tweet_mode="extended").items(max_results)
-        for tweet in self.tweets:
-            self.tweets_to_save += tweet.full_text + " "
+        #return list_tweets
         return self.tweets_to_save
     
     # Return: extended language for the wordcloud

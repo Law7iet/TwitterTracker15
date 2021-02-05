@@ -211,13 +211,13 @@ class Form():
         wordcloud = Word_cloud(self.ricerca.extend_lang(self.lingua.get()))
          
         if file_name == "":
-            print("ciao")
-           # word_cloud_format = self.ricerca.get_tweets_for_wordcloud(self.parola_chiave.get(), self.lingua.get(), self.filtro.get(), self.data_inizio.get_date(), self.data_fine.get_date(), int(self.numero.get()))       
-           # wordcloud.generate_wordcloud(1,word_cloud_format)
-          #  self.tweetChart.barChart(tweets=self.tweets)
-           # self.tweetChart.pieChart(tweets=self.tweets)
+            print("1")
+            word_cloud_format = self.ricerca.get_tweets_for_wordcloud(self.parola_chiave.get(), self.lingua.get(), self.filtro.get(), self.data_inizio.get_date(), self.data_fine.get_date(), int(self.numero.get()))       
+            wordcloud.generate_wordcloud(1,word_cloud_format)
+            self.tweetChart.barChart(tweets=self.tweets)
+            self.tweetChart.pieChart(tweets=self.tweets)
         else:
-            
+            print("2")
             wordcloud.generate_wordcloud(2, file_name)
             self.tweetChart.barChart(file_name=file_name)
             self.tweetChart.pieChart(file_name=file_name)
