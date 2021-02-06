@@ -34,7 +34,7 @@ class Loader():
     # OUTPUT: niente
     def set(self, file_name):
         self.file_name = file_name
-        f = open(os.path.dirname(__file__) + '/../' + self.file_name)
+        f = open(self.file_name)
         self.data = json.load(f)
         f.close()
 
