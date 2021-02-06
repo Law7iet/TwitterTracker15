@@ -20,7 +20,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
 <style>
-                #map_bcdaa250c2794484a926603a52bdbcf0 {
+                #map_c2b8ae812f864ab2a55e59b0ac5193ac {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -28,9 +28,6 @@
                     top: 0.0%;
                 }
             </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" rel="stylesheet"/>
 </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light mx-auto bg-dark">
@@ -46,19 +43,9 @@
         <img src="piechart.jpeg" class="chartTweet" alt=" Pie Chart "style="display:none; width:80%; margin: 20 auto auto auto;">
         <img src="barchart.jpeg" class="chartTweet" alt=" Bar Chart "style="display:none; width:80%; margin: 20 auto auto auto;">
 <div id='listatweet' style='display:none;'>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1356922946699329536?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1356943885533147138?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1356888273063464962?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116657148301315?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116638894694400?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116631596617729?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116631160418305?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116627477757958?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116623094702082?ref_src=twsrc%5Etfw"></a></blockquote>
-<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/1357116622708817920?ref_src=twsrc%5Etfw"></a></blockquote>
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<div class="folium-map" id="map_bcdaa250c2794484a926603a52bdbcf0"></div>
+<div class="folium-map" id="map_c2b8ae812f864ab2a55e59b0ac5193ac"></div>
 <script>
 
 function set_button(button){ 
@@ -116,7 +103,6 @@ function show_list(){
 }
 
 
-   
 function show_map(){
 
     if(document.getElementById('listatweet').style.display === 'block')
@@ -133,9 +119,7 @@ function show_map(){
     
     set_button('map');
 
-}   
-     
-        
+}        
 
 function show_word_cloud(){
 
@@ -154,7 +138,6 @@ function show_word_cloud(){
 }        
 
 
-
 function show_chart(){
 
     if(document.getElementById('listatweet').style.display === 'block')
@@ -171,8 +154,8 @@ function show_chart(){
 </script>
 <script>    
     
-            var map_bcdaa250c2794484a926603a52bdbcf0 = L.map(
-                "map_bcdaa250c2794484a926603a52bdbcf0",
+            var map_c2b8ae812f864ab2a55e59b0ac5193ac = L.map(
+                "map_c2b8ae812f864ab2a55e59b0ac5193ac",
                 {
                     center: [44.0, 14.0],
                     crs: L.CRS.EPSG3857,
@@ -186,55 +169,11 @@ function show_chart(){
 
         
     
-            var tile_layer_24e497881ee04550baa4250283834018 = L.tileLayer(
+            var tile_layer_c26e2ec1682744e997a531364a10d38c = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_bcdaa250c2794484a926603a52bdbcf0);
+            ).addTo(map_c2b8ae812f864ab2a55e59b0ac5193ac);
         
-    
-            var marker_cluster_c4461c690538486b9cf8a79582d5eb5b = L.markerClusterGroup(
-                {}
-            );
-            map_bcdaa250c2794484a926603a52bdbcf0.addLayer(marker_cluster_c4461c690538486b9cf8a79582d5eb5b);
-        
-    
-            var marker_0fbcd67e8c364881bccf3eaf50789dfd = L.marker(
-                [41.89940927220346, 12.486445711074486],
-                {}
-            ).addTo(marker_cluster_c4461c690538486b9cf8a79582d5eb5b);
-        
-    
-        var popup_4cecfcd0e76b4a759cd9c97bdb9574d3 = L.popup({"maxWidth": 1000});
-
-        
-            var i_frame_7594b30690c840a8b2afb6d5dbb484a8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8c2NyaXB0IGFzeW5jIHNyYz0iaHR0cHM6Ly9wbGF0Zm9ybS50d2l0dGVyLmNvbS93aWRnZXRzLmpzIiBjaGFyc2V0PSJ1dGYtOCI+PC9zY3JpcHQ+PGJsb2NrcXVvdGUgY2xhc3M9InR3aXR0ZXItdHdlZXQgdHctYWxpZ24tY2VudGVyIiBkYXRhLWxhbmc9ImVuIj48cCBsYW5nPSJlbiIgZGlyPSJsdHIiPjxhIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vdml0YWRpc3RlL3N0YXR1cy8xMzU2OTIyOTQ2Njk5MzI5NTM2P3JlZl9zcmM9dHdzcmMlNUV0ZnciPjwvYT48L2Jsb2NrcXVvdGU+" width="600" style="border:none !important;" height="400"></iframe>`)[0];
-            popup_4cecfcd0e76b4a759cd9c97bdb9574d3.setContent(i_frame_7594b30690c840a8b2afb6d5dbb484a8);
-        
-
-        marker_0fbcd67e8c364881bccf3eaf50789dfd.bindPopup(popup_4cecfcd0e76b4a759cd9c97bdb9574d3)
-        ;
-
-        
-    
-    
-            marker_0fbcd67e8c364881bccf3eaf50789dfd.bindTooltip(
-                `<div>
-                     Wed Feb 03 11:10:15 +0000 2021
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-                var lat_lng_popup_387c8d258b0b4536889fbe4fd8a80e56 = L.popup();
-                function latLngPop(e) {
-                    lat_lng_popup_387c8d258b0b4536889fbe4fd8a80e56
-                        .setLatLng(e.latlng)
-                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
-                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_bcdaa250c2794484a926603a52bdbcf0);
-                    }
-                map_bcdaa250c2794484a926603a52bdbcf0.on('click', latLngPop);
-            
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

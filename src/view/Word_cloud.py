@@ -1,5 +1,6 @@
 # Word cloud creation from tweets 
 
+import os
 import nltk
 from nltk.corpus import stopwords  
 import re
@@ -51,7 +52,7 @@ class Word_cloud:
         # Generate the wordcloud 
         wordcloud = WordCloud(stopwords=self.stop_words, background_color="black").generate(self.final_text)
         # Display the generated wordcloud in a PNG image
-        wordcloud.to_file("wordcloud.jpeg")
+        wordcloud.to_file(os.path.dirname(__file__) + "/../wordcloud.jpeg")
   
     
    

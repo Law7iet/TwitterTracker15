@@ -93,7 +93,6 @@ def address_to_coordinates(address):
         return []
     else:
         try:
-            print(r.json())
             coordinate = r.json()['results'][0]['geometry']['location']
             return [coordinate['lng'], coordinate['lat']]
         except:

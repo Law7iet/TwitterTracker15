@@ -109,5 +109,3 @@ class Mappa_Person(list):
         folium.LayerControl().add_to(m)
         m.save("mappa.html")
         return  m
-    
-

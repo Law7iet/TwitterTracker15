@@ -1,4 +1,4 @@
-import form as form
+from utility import form as form
 import tkinter as tk
 
 class Application(tk.Frame):

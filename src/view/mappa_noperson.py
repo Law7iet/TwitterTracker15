@@ -1,5 +1,6 @@
 import folium
 from folium.plugins import MarkerCluster
+import os
 
 
 class Map_Noperson(list):
@@ -56,7 +57,7 @@ class Map_Noperson(list):
     
     def generaMap(self):
         m = folium.Map(location=[44,14]) 
-        m.save("mappa.html")
+        m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
     
     # type of [text, coordinates, url_of_pictures, created_time,id]
@@ -64,7 +65,7 @@ class Map_Noperson(list):
         
         m=self.generaMap()
         
-        print("Dati;",datas)
+#        print("Dati;",datas)
         for dati in datas:
             
             
@@ -78,6 +79,6 @@ class Map_Noperson(list):
             folium.Marker(dati[1],popup=popup, tooltip=dati[3]).add_to(marker_cluster)
         #if non pictures, then show in popup just text
             m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
-            m.save('mappa.html')
-        m.save('mappa.html')
+            m.save(os.path.dirname(__file__) + "/../mappa.html")
+        m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
