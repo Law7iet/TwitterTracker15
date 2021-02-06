@@ -1,5 +1,8 @@
+import os
 import pandas as pd
-
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pyplot as plt
 
 class TweetChart():
     def __init__(self):
@@ -66,7 +69,6 @@ class TweetChart():
         return [tweet["created_at"] for tweet in self.loadJson(file_name)]
 
     def barChart(self,file_name="",tweets=""):
-        import matplotlib.pyplot as plt
         Xaxis=self.timeYMD(self.calDates(7),True)
         if ((file_name!="")&(tweets=="")):
             datess=self.datesJson(file_name)
@@ -74,12 +76,11 @@ class TweetChart():
         elif ((file_name=="")&(tweets!="")):
             x3=self.datesFunc(tweets)
             Yaxis=self.calCounts(self.calDates(7),self.timeYMD(x3))
-        df=pd.DataFrame({'dates':Xaxis,'counts': Yaxis})
-        ax=df.plot.bar(x='dates', y='counts',rot=0)
-        plt.savefig("barchart.jpeg")
+        df = pd.DataFrame({'dates': Xaxis, 'counts': Yaxis})
+        df.plot.bar(x='dates', y='counts',rot=0)
+        plt.savefig(os.path.dirname(__file__) + "/../barchart.jpeg")
 
     def pieChart(self,file_name="",tweets=""):
-        import matplotlib.pyplot as plt 
         if ((file_name!="")&(tweets=="")):
             Xaxis=self.goodL(self.sourceJson(file_name))
             Yaxis=self.calCounts(Xaxis,self.sourceJson(file_name))
@@ -89,4 +90,4 @@ class TweetChart():
             Yaxis=self.calCounts(Xaxis,allSource)
         pi = pd.Series(Yaxis, index=Xaxis, name='Sources')
         pi.plot.pie(fontsize=11, autopct='%.1f%%', figsize=(6, 6)) 
-        plt.savefig("piechart.jpeg")
+        plt.savefig(os.path.dirname(__file__) + "/../piechart.jpeg")

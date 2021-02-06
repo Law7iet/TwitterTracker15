@@ -202,12 +202,12 @@ class Form():
         if file_name == "":
             word_cloud_format = self.ricerca.get_tweets_for_wordcloud(self.tweets)       
             wordcloud.generate_wordcloud(1,word_cloud_format)
-#            self.tweetChart.barChart(tweets=self.tweets)
-#            self.tweetChart.pieChart(tweets=self.tweets)
+            self.tweetChart.barChart(tweets=self.tweets)
+            self.tweetChart.pieChart(tweets=self.tweets)
         else:
             wordcloud.generate_wordcloud(2, file_name)
-#            self.tweetChart.barChart(file_name=file_name)
-#            self.tweetChart.pieChart(file_name=file_name)
+            self.tweetChart.barChart(file_name=file_name)
+            self.tweetChart.pieChart(file_name=file_name)
        
         if mode == True:
             Map_Noperson(self.tweets)
