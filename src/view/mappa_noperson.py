@@ -56,29 +56,30 @@ class Map_Noperson(list):
         return(L)
     
     def generaMap(self):
-        m = folium.Map(location=[44,14]) 
+        m = folium.Map(location=[44.4933,11.3432]) #position of Bologna 
+        m.add_child(folium.LatLngPopup()) # if you click one point, it shows corrisponde coordinates
         m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
     
     # type of [text, coordinates, url_of_pictures, created_time,id]
     def Map(self,datas):
-        
-        m=self.generaMap()
-        
-#        print("Dati;",datas)
-        for dati in datas:
-            
-            
-            marker_cluster = MarkerCluster().add_to(m)
-            # print(dati[2])
-            html= '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
-            html+='<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/'+str(dati[4])+'?ref_src=twsrc%5Etfw"></a>'
-            html+='</blockquote>'
-            iframe = folium.IFrame(html,width=600,height=400,ratio='20%')
-            popup = folium.Popup(iframe,max_width=1000)
-            folium.Marker(dati[1],popup=popup, tooltip=dati[3]).add_to(marker_cluster)
-        #if non pictures, then show in popup just text
-            m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
-            m.save(os.path.dirname(__file__) + "/../mappa.html")
+        x2=[i[1]for i in datas] #all the coord
+        if (len(x2)==0): #if there is no coordinates in tweets, then the show the default map: start in Bologna
+            m=self.generaMap()
+            return m
+        else:
+            m = folium.Map(location=datas[0][1]) #position of Bologna 
+            for dati in datas:
+                marker_cluster = MarkerCluster().add_to(m)
+                # print(dati[2])
+                html= '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+                html+='<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/'+str(dati[4])+'?ref_src=twsrc%5Etfw"></a>'
+                html+='</blockquote>'
+                iframe = folium.IFrame(html,width=600,height=400,ratio='20%')
+                popup = folium.Popup(iframe,max_width=1000)
+                folium.Marker(dati[1],popup=popup, tooltip=dati[3]).add_to(marker_cluster)
+                #if non pictures, then show in popup just text
+                m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
+                m.save(os.path.dirname(__file__) + "/../mappa.html")
         m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m

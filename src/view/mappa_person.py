@@ -1,6 +1,7 @@
 # local modules
 
 # these liarbries are used for solo map:
+import os
 import folium
 from folium.plugins import MarkerCluster
 import random # get a random color code
@@ -14,28 +15,25 @@ class Mappa_Person(list):
         super().__init__(tweet)
         self.user_tweets = tweet
         self.FunDraw(self.person_to_list())
-        
-        
+          
     def person_to_list(self):
         L=[] # to save all tweets get from tweepy
-        for i in self.user_tweets:
-            for tweet in i:
-                # print(i)
-                if (tweet["place"]):
-                    l=[] #list for one person
-                    l.append(tweet["user"]["screen_name"])
-                    l.append(tweet['id'])
-                    l.append(tweet["text"])
-                    point=tweet["place"]["bounding_box"]["coordinates"][0]
-                    points=self.coordinate_calculator(point)
-                    l.append(points)
-                    if ('entities' in tweet.keys()):
-                        if ('media' in tweet['entities'].keys()):
-                            l.append(tweet['entities']['media'][0]['media_url_https'])
-                        else:
-                            l.append(None)
-                    l.append(tweet["created_at"])
-                    L.append(l)
+        for tweet in self.user_tweets:
+            if (tweet["place"]):
+                l=[] #list for one person
+                l.append(tweet["user"]["screen_name"])
+                l.append(tweet['id'])
+                l.append(tweet["text"])
+                point=tweet["place"]["bounding_box"]["coordinates"][0]
+                points=self.coordinate_calculator(point)
+                l.append(points)
+                if ('entities' in tweet.keys()):
+                    if ('media' in tweet['entities'].keys()):
+                        l.append(tweet['entities']['media'][0]['media_url_https'])
+                    else:
+                        l.append(None)
+                l.append(tweet["created_at"])
+                L.append(l)
         return (L)
     
     # function to calculate the coordinate. Wirten by Han, i've just made a little chang, now it return the coordinates in way reversed
@@ -54,8 +52,6 @@ class Mappa_Person(list):
             latitude = (float(bottom_right[1]) + float(top_right[1])) / 2
             return [latitude,longitude]
     
-    
-    
     # get a random color (type: #FFFFFF)
     # used in tracks of person
     def randomcolor(self):
@@ -68,13 +64,12 @@ class Mappa_Person(list):
     # generate an empty map
     # maybe is useless
     def generaMap(self):
-        m = folium.Map(location=[44,14])
-        # m = folium.Map(location=Datii[0][1]) 
-        # folium.Marker(Datii[0][1],tooltip=Datii[0][2],popup=Datii[0][4]).add_to(m)
-        m.save("addtomap1.html")
+        m = folium.Map(location=[44.4933,11.3432]) 
+        m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
+        m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
     
-    #return the numbers of all user_name, no duplicated
+    # return the numbers of all user_name, no duplicated
     def ids(self, dati):
         l=[]
         for i in dati:
@@ -85,27 +80,25 @@ class Mappa_Person(list):
     
     # ['Law_2885', 'Non sta nevicando.', [43.62071365, 13.375032650000001], None, 'Wed Dec 02 14:25:45 +0000 2020']
     # type if Datii[name, id, text, coordinate,picture_url, created_at]
-    def FunDraw(self, Datii):
-        m=self.generaMap()
-        LayName=self.ids(Datii)
-        names=locals()
-        for i in range(len(LayName)): # generate layers to show different person's movement, as many as the user has searched
-            names['feature_group'+str(i)] = folium.FeatureGroup(name=LayName[i],show=False) #the movement of person is default not showed
-            names['marker_cluster'+str(i)] = MarkerCluster().add_to(names['feature_group'+str(i)]) #for the markers of same person
-            names['list'+str(i)]=[] # to save the coordinated of same person
-        for dati in Datii:
+    def FunDraw(self, datas):
+        x2=[i[3]for i in datas] #all the coord
+        if (len(x2)==0):
+            m=self.generaMap()
+            return m
+        else:
+            m = folium.Map(location=datas[0][3])
+            for dati in datas:
+                # print(dati[2])
+                marker_cluster = MarkerCluster().add_to(m)
+                # print(dati[2])
                 html= '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
                 html+='<blockquote class="twitter-tweet" tw-align-center data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/'+str(dati[1])+'?ref_src=twsrc%5Etfw"></a>'
-                html+= '</blockquote>'
+                html+='</blockquote>'
                 iframe = folium.IFrame(html,width=600,height=400,ratio='20%')
                 popup = folium.Popup(iframe,max_width=1000)
-                for i in range(len(LayName)):
-                    tmp=LayName.index(dati[0])
-                    names['list'+str(tmp)].append(dati[3])
-                folium.Marker(dati[3],popup=popup, tooltip=dati[5]).add_to(names['marker_cluster'+str(tmp)])
-        for i in range(len(LayName)):
-            folium.PolyLine(names['list'+str(i)], color=self.randomcolor(),weight=5).add_to(names['marker_cluster'+str(i)])
-            m.add_child(names['feature_group'+str(i)])
-        folium.LayerControl().add_to(m)
-        m.save("mappa.html")
-        return  m
+                folium.Marker(dati[3],popup=popup, tooltip=dati[5]).add_to(marker_cluster)
+                folium.PolyLine(x2, color=self.randomcolor(),weight=5).add_to(m)
+                m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
+                m.save(os.path.dirname(__file__) + "/../mappa.html")
+        m.save(os.path.dirname(__file__) + "/../mappa.html")
+        return m
