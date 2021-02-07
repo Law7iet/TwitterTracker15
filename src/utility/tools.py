@@ -63,9 +63,7 @@ class Tools(ListTweets):
         # Aggiungo gli script della mappa al mio html
         self.add_map('script')
         
-        self.html += self.endHtml
-#        print(self.html)
-        
+        self.html += self.endHtml       
         # Sovrascrivo il mio html nel file creato dalla mappa
         htmlfile = open(os.path.dirname(__file__) + "/../mappa.html", "w")
         htmlfile.write(self.html)

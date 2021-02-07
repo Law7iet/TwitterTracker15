@@ -77,43 +77,49 @@ class Twitter_handler():
         data_inizio = data_inizio.split('-')
         data_fine = data_fine.split('-')
         months = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
-        tweets = self.api.user_timeline(identifier, count = 200)
-        tweets = self.convert_ItemIterator_to_list(tweets)
-        # cancella i nuovi tweet
-        i = 0
-        flag = True
-        while i < len(tweets) and flag:
-            tmp = tweets[i]
-            tmp = tmp['created_at'].split()
-            month = months[tmp[1]]
-            if int(tmp[5]) < int(data_fine[0]):
-                flag = False
-            elif int(tmp[5]) == int(data_fine[0]):
-                if int(month) < int(data_fine[1]):
+        try:
+            tweets = self.api.user_timeline(identifier, count = 200)
+            tweets = self.convert_ItemIterator_to_list(tweets)
+        except:
+            # Non si è trovato l'utente
+            return -1
+        else:
+            # L'utente è stato trovato
+            # cancella i nuovi tweet
+            i = 0
+            flag = True
+            while i < len(tweets) and flag:
+                tmp = tweets[i]
+                tmp = tmp['created_at'].split()
+                month = months[tmp[1]]
+                if int(tmp[5]) < int(data_fine[0]):
                     flag = False
-                elif int(month) == int(data_fine[1]):
-                    if int(tmp[2]) < int(data_fine[2]):
+                elif int(tmp[5]) == int(data_fine[0]):
+                    if int(month) < int(data_fine[1]):
                         flag = False
-            i += 1
-        tweets = tweets[(i - 1):]
-        # cancella i vecchi tweet
-        i = 0
-        flag = True
-        while i < len(tweets) and flag:
-            tmp = tweets[i]
-            tmp = tmp['created_at'].split()
-            month = months[tmp[1]]
-            if int(tmp[5]) < int(data_inizio[0]):
-                flag = False
-            elif int(tmp[5]) == int(data_inizio[0]):
-                if int(month) < int(data_inizio[1]):
+                    elif int(month) == int(data_fine[1]):
+                        if int(tmp[2]) < int(data_fine[2]):
+                            flag = False
+                i += 1
+            tweets = tweets[(i - 1):]
+            # cancella i vecchi tweet
+            i = 0
+            flag = True
+            while i < len(tweets) and flag:
+                tmp = tweets[i]
+                tmp = tmp['created_at'].split()
+                month = months[tmp[1]]
+                if int(tmp[5]) < int(data_inizio[0]):
                     flag = False
-                elif int(month) == int(data_inizio[1]):
-                    if int(tmp[2]) < int(data_inizio[2]):
+                elif int(tmp[5]) == int(data_inizio[0]):
+                    if int(month) < int(data_inizio[1]):
                         flag = False
-            i += 1
-        tweets = tweets[:(i -1)]
-        return tweets
+                    elif int(month) == int(data_inizio[1]):
+                        if int(tmp[2]) < int(data_inizio[2]):
+                            flag = False
+                i += 1
+            tweets = tweets[:(i -1)]
+            return tweets
     
     # Returning tweets in string format for the wordcloud 
     # TO ADD: CONVERTER 

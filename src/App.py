@@ -1,5 +1,6 @@
 from utility import form as form
 import tkinter as tk
+import os
 
 class Application(tk.Frame):
 
@@ -18,3 +19,14 @@ class Application(tk.Frame):
 root = tk.Tk().title("Tweets Analysis Team15")
 app = Application(root=root)
 app.mainloop()
+
+# Delete used files
+path = os.path.dirname(__file__)
+if os.path.exists(path + "/barchart.jpeg"):
+    os.remove(path + "/barchart.jpeg")
+if os.path.exists(path + "/piechart.jpeg"):
+    os.remove(path + "/piechart.jpeg")
+if os.path.exists(path + "/wordcloud.jpeg"):
+    os.remove(path + "/wordcloud.jpeg")
+if os.path.exists(path + "/mappa.html"):
+    os.remove(path + "/mappa.html")

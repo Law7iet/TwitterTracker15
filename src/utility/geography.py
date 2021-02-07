@@ -82,18 +82,43 @@ def is_in(coordinates, radius, place):
 # Il luogo è dato dalla stringa (può essere una via, una citta,..)
 # INPUT: una stringa
 # OUTPUT: una lista composta da due valori
-def address_to_coordinates(address):
+def address_to_coordinates(indirizzo):
     api_key = 'AIzaSyAR2Ha_6_KY2827W7UzJ2s3Y7tj6d4f0QI'
     endpoint = 'https://maps.googleapis.com/maps/api/geocode/json'
-    params = {'address': address, 'key': api_key}
+    params = {'address': indirizzo, 'key': api_key}
     url_params = urlencode(params)
     url = endpoint + '?' + url_params
     r = requests.get(url)
     if r.status_code not in range(200, 299):
-        return []
+        return -2
     else:
         try:
             coordinate = r.json()['results'][0]['geometry']['location']
             return [coordinate['lng'], coordinate['lat']]
         except:
-            return []
+            return -1
+
+# Cerca l'indirizzo dato un input.
+# Ritorna la stringa rappresentante la località cercata
+# INPUT: una stringa
+# OUTPUT: una stringa
+def address(indirizzo):
+    api_key = 'AIzaSyAR2Ha_6_KY2827W7UzJ2s3Y7tj6d4f0QI'
+    endpoint = 'https://maps.googleapis.com/maps/api/geocode/json'
+    params = {'address': indirizzo, 'key': api_key}
+    url_params = urlencode(params)
+    url = endpoint + '?' + url_params
+    r = requests.get(url)
+    if r.status_code not in range(200, 299):
+        return -2
+    else:
+        try:
+            x = (r.json()['results'][0]['address_components'])
+            indirizzo = ''
+            for i in x:
+                indirizzo += (i['long_name'] + ', ')
+            indirizzo = indirizzo[:-1]
+            return indirizzo
+        except:
+            return -1
+

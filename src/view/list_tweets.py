@@ -1,9 +1,4 @@
 '''
-Created on 19 dic 2020
-
-@author: andreamancini
-'''
-'''
 Classe della Lista dei Tweet
 '''
 class ListTweets(list):

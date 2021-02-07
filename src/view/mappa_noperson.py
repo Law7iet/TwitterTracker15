@@ -2,7 +2,6 @@ import folium
 from folium.plugins import MarkerCluster
 import os
 
-
 class Map_Noperson(list):
    
     tweets = None
@@ -75,7 +74,7 @@ class Map_Noperson(list):
                 html= '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
                 html+='<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/vitadiste/status/'+str(dati[4])+'?ref_src=twsrc%5Etfw"></a>'
                 html+='</blockquote>'
-                iframe = folium.IFrame(html,width=600,height=400,ratio='20%')
+                iframe = folium.IFrame(html,width=500,height=300,ratio='20%')
                 popup = folium.Popup(iframe,max_width=1000)
                 folium.Marker(dati[1],popup=popup, tooltip=dati[3]).add_to(marker_cluster)
                 #if non pictures, then show in popup just text
