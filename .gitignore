@@ -2,5 +2,8 @@
 .pydevproject
 .DS_Store
 .settings
+.vscode
 *.pyc
 */__pycache__/*
+*.jpeg
+*.html

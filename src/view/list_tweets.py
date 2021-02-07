@@ -1,9 +1,4 @@
 '''
-Created on 19 dic 2020
-
-@author: andreamancini
-'''
-'''
 Classe della Lista dei Tweet
 '''
 class ListTweets(list):
@@ -22,12 +17,10 @@ class ListTweets(list):
     #costruisce l'html per la lista dei tweet dalla ricerca per persona
     def build_list_person(self):
         
-        for tweets in self.user_tweets:
-            
-            for tweet in tweets:
+        for tweet in self.user_tweets:
                     
-                self.html +='<blockquote class="twitter-tweet tw-align-center" tw-align-center data-lang="en"><p lang="en" dir="ltr" style="vertical-align: middle;"><a href="https://twitter.com/vitadiste/status/'+str(tweet['id'])+'?ref_src=twsrc%5Etfw"></a>'
-                self.html +='</blockquote>\n'
+            self.html +='<blockquote class="twitter-tweet tw-align-center" tw-align-center data-lang="en"><p lang="en" dir="ltr" style="vertical-align: middle;"><a href="https://twitter.com/vitadiste/status/'+str(tweet['id'])+'?ref_src=twsrc%5Etfw"></a>'
+            self.html +='</blockquote>\n'
     
         self.html += "</div>\n"
         self.html += '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>\n'

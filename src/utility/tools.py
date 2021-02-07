@@ -1,21 +1,15 @@
-'''
-Created on 31 dic 2020
-
-@author: andreamancini
-'''
+import os.path
 import webview
 from bs4 import BeautifulSoup
-from list_tweets import ListTweets
+from view.list_tweets import ListTweets
 
-'''
-Classe per creazione della finestra web con i vari tools per l'analisi
-'''
 
+# Classe per creazione della finestra web con i vari tools per l'analisi
 class Tools(ListTweets):
     
     listatweet=""
     
-    #parte finale da aggiungere all'html
+    # Parte finale da aggiungere all'html
     endHtml = '''
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
@@ -26,7 +20,7 @@ class Tools(ListTweets):
         super().__init__(listtweet)
         self.listatweet = listtweet
         
-        #parte iniziale dell'html
+        # Parte iniziale dell'html
         self.html = '''
 <html>
     <head>
@@ -38,11 +32,11 @@ class Tools(ListTweets):
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     '''                                
        
-        #aggiunta dell'head del file html della mappa al mio nuovo html
+        # Aggiunta dell'head del file html della mappa al mio nuovo html
         self.add_map('head') 
         self.html +="</head>"
         
-        #html deila navbar e degli elementi wordcloud, piechart, barchart
+        # html della navbar e degli elementi wordcloud, piechart, barchart
         self.html += '''
     <body>
         <nav class="navbar navbar-expand-lg navbar-light mx-auto bg-dark">
@@ -58,31 +52,29 @@ class Tools(ListTweets):
         <img src="piechart.jpeg" class="chartTweet" alt=" Pie Chart "style="display:none; width:80%; margin: 20 auto auto auto;">
         <img src="barchart.jpeg" class="chartTweet" alt=" Bar Chart "style="display:none; width:80%; margin: 20 auto auto auto;">
 '''
-        #aggiungo all'html la lista dei tweet
+        # Aggiungo all'html la lista dei tweet
         self.html += self.listatweet.get_list()
-        #aggiungo il body della mappa al mio html
+        # Aggiungo il body della mappa al mio html
         self.add_map('body')
         
-        #aggiungo le funzioni per gestire la navbar (js)
+        # Aggiungo le funzioni per gestire la navbar (js)
         self.script_navbar()
         
-        #aggiungo gli script della mappa al mio html
+        # Aggiungo gli script della mappa al mio html
         self.add_map('script')
         
-        self.html += self.endHtml
-        print(self.html)
-        
-        #sovrascrivo il mio html nel file creato dalla mappa
-        htmlfile = open("mappa.html", "w")
+        self.html += self.endHtml       
+        # Sovrascrivo il mio html nel file creato dalla mappa
+        htmlfile = open(os.path.dirname(__file__) + "/../mappa.html", "w")
         htmlfile.write(self.html)
         htmlfile.close()
         
         webview.create_window("Analisi Tweet", url="mappa.html", width=800, height=600, resizable=True,fullscreen=False)
         
-        #lancio il browser
+        # Lancio il browser
         webview.start()
         
-        #crea funzioni per gestione navbar
+        # Crea funzioni per gestione navbar
     def script_navbar(self):
         
         self.html += "<script>\n"
@@ -122,8 +114,7 @@ function set_button(button){
             break;
             
     }
-}'''
-        
+}''' 
         self.html += '''
 function show_list(){
 
@@ -145,7 +136,6 @@ function show_list(){
 
 '''        
         self.html += '''
-   
 function show_map(){
 
     if(document.getElementById('listatweet').style.display === 'block')
@@ -162,10 +152,8 @@ function show_map(){
     
     set_button('map');
 
-}   
-     
-        
-'''        
+}        
+'''     
         self.html +='''
 function show_word_cloud(){
 
@@ -185,7 +173,6 @@ function show_word_cloud(){
 
 '''
         self.html +='''
-
 function show_chart(){
 
     if(document.getElementById('listatweet').style.display === 'block')
@@ -200,19 +187,17 @@ function show_chart(){
 }
 
 '''
-        
         self.html += "</script>\n"
               
-    #funzione per gestire l'integrazione della mappa al mio html
+    # Funzione per gestire l'integrazione della mappa al mio html
     def add_map(self, tag):
         
-        with open("mappa.html") as fp:
+        with open(os.path.dirname(__file__) + "/../mappa.html") as fp:
             soup = BeautifulSoup(fp, features="html5lib")
 
         if tag == 'head':
             
-            head = soup.find("head").findChildren()
-            
+            head = soup.find("head").findChildren()       
             for child in head:
                 
                 if str(child).find('bootstrap') == -1 and str(child).find('meta') == -1:
@@ -226,6 +211,3 @@ function show_chart(){
             
                 script = soup.find_all("script")
                 self.html += str(script[len(script) - 1])
-            
-
-        

@@ -1,5 +1,6 @@
 import json
 from tkinter.filedialog import askopenfile
+import os
 
 # Loader e' l'oggetto responsabile del caricamento e scaricamento dei tweet raccolti
 class Loader():
@@ -14,15 +15,15 @@ class Loader():
     def __init__(self):
         self.file_name = 'Tweets.json'
         try:
-            f = open(self.file_name)
+            f = open(os.path.dirname(__file__) + '/../' + self.file_name)
         except IOError:
-            f = open(self.file_name, 'w+')
+            f = open(os.path.dirname(__file__) + '/../' + self.file_name, 'w+')
             f.write(
-                '''
-                {
-                    "Tweets": []
-                }
-                ''')
+'''{
+    "Tweets": []
+}''')
+            f.close()
+            f = open(os.path.dirname(__file__) + '/../' + self.file_name)
         finally:
             self.data = json.load(f)
             f.close()

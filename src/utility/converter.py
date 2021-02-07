@@ -1,14 +1,4 @@
-'''
-Created on 20 nov 2020
-
-@author: L
-'''
-
 class Converter(object):
-    
-    '''
-    classdocs
-    '''
 
     def __init__(self):
         '''
