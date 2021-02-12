@@ -1,9 +1,8 @@
 from utility.geography import is_in
-from utility.converter import Converter
 import tweepy
 from twitter import twitter_app_credentials as credentials
 
-# E' la classe che si occupa di cercare i tweet usando le API di Twitter
+# Classe che si occupa di raccogliere i tweet
 class Twitter_handler():
 
     # Inizializza le credeziali
@@ -13,8 +12,7 @@ class Twitter_handler():
         self.auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         self.auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.api = tweepy.API(self.auth)
-        self.convertitore = Converter()
-        self.tweets = []
+        self.saved_tweets = []
         self.tweets_to_save = ""
         self.extended_lang = ""
 
@@ -44,8 +42,7 @@ class Twitter_handler():
         tweets = self.convert_ItemIterator_to_list(tweets)
         geolocated_tweets = []
         geo = geo.split(',')
-        
-        # controlla se il tweet è all'interno dell'area
+        # Controlla se il tweet è all'interno dell'area
         for tweet in tweets:
             if tweet["place"] != None:
                 place = tweet["place"]
@@ -54,7 +51,6 @@ class Twitter_handler():
                     coordinates = (coordinates["coordinates"])[0]
                     if is_in([geo[1], geo[0]], geo[2], coordinates) == True and len(geolocated_tweets) < int(counts):
                         geolocated_tweets.append(tweet)
-        
         return geolocated_tweets
 
     # Funzione di smistamento: in base agli argomenti ottenuti dal form chiama la specifica funzione di ricerca
@@ -84,7 +80,7 @@ class Twitter_handler():
             return -1
         else:
             # L'utente è stato trovato
-            # cancella i nuovi tweet
+            # Cancella i nuovi tweet
             i = 0
             flag = True
             while i < len(tweets) and flag:
@@ -101,7 +97,7 @@ class Twitter_handler():
                             flag = False
                 i += 1
             tweets = tweets[(i - 1):]
-            # cancella i vecchi tweet
+            # Cancella i vecchi tweet
             i = 0
             flag = True
             while i < len(tweets) and flag:
@@ -119,15 +115,19 @@ class Twitter_handler():
                 i += 1
             tweets = tweets[:(i -1)]
             return tweets
-    
-    # Returning tweets in string format for the wordcloud 
-    # TO ADD: CONVERTER 
+
+    # Unisce il testo di tutti i tweets di una lista in una stringa
+    # INPUT: la lista di tweets
+    # OUTPUT: una stringa
     def get_tweets_for_wordcloud(self, tweet_input):
         for tweet in tweet_input:
             self.tweets_to_save += tweet["text"] + " "
         return self.tweets_to_save
-    
-    # Return: extended language for the wordcloud
+
+    # Ritorna la stringa completa della lingua utilizzata nella ricerca
+    # La stringa in output serve per definire le stopwords
+    # INPUT: una stringa
+    # OUTPUT: una stringa
     def extend_lang(self, lang):
         if(lang == "it"):
             self.extended_lang = "italian"
@@ -136,7 +136,5 @@ class Twitter_handler():
         elif(lang == "fr"):
             self.extended_lang = "french"
         elif(lang == "es"):
-            self.extended_lang = "spanish"        
+            self.extended_lang = "spanish"
         return self.extended_lang
-
-

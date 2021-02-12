@@ -1,21 +1,19 @@
-# local modules
-
 # these liarbries are used for solo map:
 import os
 import folium
 from folium.plugins import MarkerCluster
 import random # get a random color code
 
-class Mappa_Person(list):
+class Map_user(list):
     # return result stored in nested list of search_user for map:
     # return type of each user: (user_name, id, text, coordinates, url_of_pictures, created_time)
     user_tweets = []
     def __init__(self, tweet=None):
-        
+
         super().__init__(tweet)
         self.user_tweets = tweet
         self.FunDraw(self.person_to_list())
-          
+
     def person_to_list(self):
         L=[] # to save all tweets get from tweepy
         for tweet in self.user_tweets:
@@ -35,14 +33,14 @@ class Mappa_Person(list):
                 l.append(tweet["created_at"])
                 L.append(l)
         return (L)
-    
+
     # function to calculate the coordinate. Wirten by Han, i've just made a little chang, now it return the coordinates in way reversed
     def coordinate_calculator(self,coordinates):
         bottom_left = coordinates[0]
         bottom_right = coordinates[1]
         top_right = coordinates[2]
         top_left = coordinates[3]
-        
+
         if bottom_left == bottom_right == top_right == top_left:
             # it's a place, so the coordinates are the same
             return [float(bottom_left[1]), float(bottom_left[0])]
@@ -51,7 +49,7 @@ class Mappa_Person(list):
             longitude = (float(bottom_left[0]) + float(bottom_right[0])) / 2
             latitude = (float(bottom_right[1]) + float(top_right[1])) / 2
             return [latitude,longitude]
-    
+
     # get a random color (type: #FFFFFF)
     # used in tracks of person
     def randomcolor(self):
@@ -60,15 +58,15 @@ class Mappa_Person(list):
             for i in range(6):
                 color+=colorNumber[random.randint(0,14)]
             return "#"+color
-    
+
     # generate an empty map
     # maybe is useless
     def generaMap(self):
-        m = folium.Map(location=[44.4933,11.3432]) 
+        m = folium.Map(location=[44.4933,11.3432])
         m.add_child(folium.LatLngPopup()) #when click in map, show the corrispond coordinates
         m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
-    
+
     # return the numbers of all user_name, no duplicated
     def ids(self, dati):
         l=[]
@@ -77,7 +75,7 @@ class Mappa_Person(list):
         L=[]
         [L.append(i) for i in l if not i in L]
         return L
-    
+
     # ['Law_2885', 'Non sta nevicando.', [43.62071365, 13.375032650000001], None, 'Wed Dec 02 14:25:45 +0000 2020']
     # type if Datii[name, id, text, coordinate,picture_url, created_at]
     def FunDraw(self, datas):

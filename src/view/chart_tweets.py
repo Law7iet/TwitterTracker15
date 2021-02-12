@@ -4,12 +4,12 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 
-class TweetChart():
+class Chart_tweets():
     def __init__(self):
         pass
-    
+
     def calDates(self,ddd):
-        import datetime as dt 
+        import datetime as dt
         halfAgo=dt.date.today()-dt.timedelta(days=ddd)
         days=[]
         for i in range(ddd+1):
@@ -31,24 +31,24 @@ class TweetChart():
     def goodL(self,dati):
         l=[]
         for i in dati:
-            if((type(i).__name__!='float')&(i!="")): 
+            if((type(i).__name__!='float')&(i!="")):
                 if i not in l:
                     l.append(i)
         return l
-    
-    # give a list with duplicated elements, and a sublist of this list, 
+
+    # give a list with duplicated elements, and a sublist of this list,
     # return a list without duplicated elements and the element of second list
     def goodLL(self, dati, list):
         l=[]
         for i in dati:
-            if((type(i).__name__!='float')&(i!="")): 
+            if((type(i).__name__!='float')&(i!="")):
                 if i not in l:
                     if i not in list:
                         l.append(i)
         return l
 
 
-# count 
+# count
 # para: a list including duplicated elements(dirty), a list without duplicated elements(clean)
 # def calCounts(self,dirty):
     def calCounts(self,clean,dirty):
@@ -57,7 +57,7 @@ class TweetChart():
         a=0 #record all data include duplicated data
         for i in dirty:
             if  i != " ": a=a+1
-            for element in range(len(clean)): 
+            for element in range(len(clean)):
                 if i == clean[element]:
                     count[element] += 1
                     pass
@@ -111,13 +111,13 @@ class TweetChart():
         import matplotlib.pyplot as plt
         from matplotlib.patches import ConnectionPatch
         import numpy as np
-        clean=['Twitter for Android', 'Twitter for iPhone', 'Twitter Web App', 'Others'] 
+        clean=['Twitter for Android', 'Twitter for iPhone', 'Twitter Web App', 'Others']
         if ((file_name!="")&(tweets=="")): #get data from the file
             Xaxis=['Twitter for Android', 'Twitter for iPhone', 'Twitter Web App', 'Others']
             Xaxis1=self.goodLL(self.sourceJson(file_name), Xaxis) #name of the sector
             Yaxis=self.calCounts(clean, self.sourceJson(file_name))
             Yaxis1=self.calCounts(Xaxis1, self.sourceJson(file_name))
-        elif ((file_name=="")&(tweets!="")): #get the data from the funtion 
+        elif ((file_name=="")&(tweets!="")): #get the data from the funtion
             Xaxis=['Twitter for Android', 'Twitter for iPhone', 'Twitter Web App', 'Others']
             Xaxis1=self.goodLL(self.sourceFunc(tweets), Xaxis)
             allSource=self.sourceFunc(tweets)
@@ -141,8 +141,8 @@ class TweetChart():
         explode = (0, 0, 0, 0.1)    # distance of explode
 
         ax1.pie(x=Yaxis,
-                # colors=['cornflowerblue', 'orange', 'limegreen', 'orchid'], 
-                colors=['deepskyblue', 'orange', 'limegreen', 'orchid'], 
+                # colors=['cornflowerblue', 'orange', 'limegreen', 'orchid'],
+                colors=['deepskyblue', 'orange', 'limegreen', 'orchid'],
                 explode=explode,
                 autopct='%1.1f%%',
                 startangle=360,

@@ -12,7 +12,6 @@ def coordinate_calculator(coordinates):
     bottom_right = coordinates[1]
     top_right = coordinates[2]
     top_left = coordinates[3]
-
     if bottom_left == bottom_right == top_right == top_left:
         # I 4 vertici sono uguali
         return [float(bottom_left[0]), float(bottom_left[1])]
@@ -48,41 +47,27 @@ def is_in(coordinates, radius, place):
     radius = radius[0 : -2]
     radius = float(radius)
     coordinates_km = convert_coordinates_to_km(coordinates)
-
     # Calcolo della coordinata in alto a sinistra dell'area
     y = coordinates_km[0] + radius
     x = coordinates_km[1] - radius
     bottom_right = convert_coordinates_to_degrees([y, x])
-
-#     # Calcolo della coordinata in alto a destra dell'area
-#     y = coordinates_km[0] + radius
-#     x = coordinates_km[1] + radius
-#     top_right = convert_coordinates_to_degrees([y, x])
-#
-#     # Calcolo della coordinata in basso a sinistra dell'area
-#     y = coordinates_km[0] - radius
-#     x = coordinates_km[1] - radius
-#     bottom_left = convert_coordinates_to_degrees([y, x])
-
     # Calcolo della coordinata in basso a destra dell'area
     y = coordinates_km[0] - radius
     x = coordinates_km[1] + radius
     top_left = convert_coordinates_to_degrees([y, x])
-
     # Calcolo del centro del luogo
     place = coordinate_calculator(place)
-
     # Controllo se il luogo e' all'interno dell'area
     if place[0] >= top_left[0] and place[0] <= bottom_right[0]:
         if place[1] >= bottom_right[1] and place[1] <= top_left[1]:
             return True
     return False
 
-# Cerca le coordinate di un luogo.
-# Il luogo è dato dalla stringa (può essere una via, una citta,..)
+# Cerca le coordinate di un luogo
+# Il luogo è dato dalla stringa
 # INPUT: una stringa
 # OUTPUT: una lista composta da due valori
-def address_to_coordinates(indirizzo):
+def convert_address_to_coordinates(indirizzo):
     api_key = 'AIzaSyAR2Ha_6_KY2827W7UzJ2s3Y7tj6d4f0QI'
     endpoint = 'https://maps.googleapis.com/maps/api/geocode/json'
     params = {'address': indirizzo, 'key': api_key}
@@ -98,11 +83,10 @@ def address_to_coordinates(indirizzo):
         except:
             return -1
 
-# Cerca l'indirizzo dato un input.
-# Ritorna la stringa rappresentante la località cercata
+# Converte il luogo in input in un indirizzo completo
 # INPUT: una stringa
 # OUTPUT: una stringa
-def address(indirizzo):
+def get_address(indirizzo):
     api_key = 'AIzaSyAR2Ha_6_KY2827W7UzJ2s3Y7tj6d4f0QI'
     endpoint = 'https://maps.googleapis.com/maps/api/geocode/json'
     params = {'address': indirizzo, 'key': api_key}
@@ -121,4 +105,3 @@ def address(indirizzo):
             return indirizzo
         except:
             return -1
-
