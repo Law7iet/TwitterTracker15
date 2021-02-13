@@ -21,15 +21,12 @@
     - urllib
     - webview
     - wordcloud
-    Inoltre bisogna eseguire il seguente codice per installare una componente di `nltk`:
-    ```
-    python -m nltk.downloader stopwords
-    ```
-
-
-## Struttura del codice
-`App.py` è il programma da eseguire.\n
-I folder contengono funzioni e classi per il programma, ed è diviso in 3 cartelle:
-- `twitter` contenente la parte di programma che interagisce con Twitter
-- `utility` contenente funzioni utili al programma
-- `view` contenente i modi per visualizzare le ricerche
+    
+Inoltre bisogna eseguire il seguente codice per installare una componente di `nltk`:
+```
+python -m nltk.downloader stopwords
+```
+Per eseguire il programma andare nella directory `/src` e digitare:
+```
+python3.9 App.py
+```
