@@ -2,22 +2,23 @@ import folium
 from folium.plugins import MarkerCluster
 import os
 
-class Map_Noperson(list):
-   
+class Map_tweets(list):
+
     tweets = None
+    
     def __init__(self, tweet_list=None):
-        
+
         super().__init__(tweet_list)
         self.tweets = self.search_to_list(tweet_list)
         self.Map(self.tweets)
-        
+
     # function to calculate the coordinate. Wirten by Han, i've just made a little chang, now it return the coordinates in way reversed
     def coordinate_calculator(self,coordinates):
         bottom_left = coordinates[0]
         bottom_right = coordinates[1]
         top_right = coordinates[2]
         top_left = coordinates[3]
-        
+
         if bottom_left == bottom_right == top_right == top_left:
             # it's a place, so the coordinates are the same
             return [float(bottom_left[1]), float(bottom_left[0])]
@@ -26,8 +27,8 @@ class Map_Noperson(list):
             longitude = (float(bottom_left[0]) + float(bottom_right[0])) / 2
             latitude = (float(bottom_right[1]) + float(top_right[1])) / 2
             return [latitude,longitude]
-        
-    
+
+
     # return type: (text, coordinates, url_of_pictures, created_time,id)
     def search_to_list(self,tweets):
         L=[] #list
@@ -51,15 +52,15 @@ class Map_Noperson(list):
                 l.append(tweet["id"])
                 # l.append(',')
                 L.append(l)
-    
+
         return(L)
-    
+
     def generaMap(self):
-        m = folium.Map(location=[44.4933,11.3432]) #position of Bologna 
+        m = folium.Map(location=[44.4933,11.3432]) #position of Bologna
         m.add_child(folium.LatLngPopup()) # if you click one point, it shows corrisponde coordinates
         m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
-    
+
     # type of [text, coordinates, url_of_pictures, created_time,id]
     def Map(self,datas):
         x2=[i[1]for i in datas] #all the coord
@@ -67,7 +68,7 @@ class Map_Noperson(list):
             m=self.generaMap()
             return m
         else:
-            m = folium.Map(location=datas[0][1]) #position of Bologna 
+            m = folium.Map(location=datas[0][1]) #position of Bologna
             for dati in datas:
                 marker_cluster = MarkerCluster().add_to(m)
                 # print(dati[2])

@@ -2,11 +2,8 @@ import json
 from tkinter.filedialog import askopenfile
 import os
 
-# Loader e' l'oggetto responsabile del caricamento e scaricamento dei tweet raccolti
+# Classe responsabile del caricamento e scaricamento dei tweet raccolti
 class Loader():
-
-    file_name = ''
-    data = {}
 
     # Inizializza il costruttore, selezionando il file Tweets.json come default
     # Se non esiste il file lo crea, altrimenti usa quello esistente
@@ -14,6 +11,7 @@ class Loader():
     # OUTPUT: niente
     def __init__(self):
         self.file_name = 'Tweets.json'
+        self.data = {}
         try:
             f = open(os.path.dirname(__file__) + '/../' + self.file_name)
         except IOError:
@@ -49,10 +47,8 @@ class Loader():
     # INPUT: una lista di tweet (dizionari)
     # OUTPUT: niente
     def store(self, tweets):
-        
         f = askopenfile(mode = 'r', filetypes = [('JSON Files', '*.json')])
         self.set(f.name)
-        
         tmp = self.data['Tweets']
         for tweet in tweets:
             copy = False

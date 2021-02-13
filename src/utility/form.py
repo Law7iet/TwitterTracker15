@@ -1,42 +1,42 @@
-import tkinter as tk
+# Importazione dei vari moduli
+from datetime import datetime, timedelta
 from sys import platform
+from tkinter import ttk
+from tkinter.constants import DISABLED, NORMAL
+from tkinter.filedialog import askopenfile
+from twitter.twitter_handler import Twitter_handler
+from utility.geography import convert_address_to_coordinates, get_address
+from utility.loader import Loader
+from utility.tools import Tools
+from view.chart_tweets import Chart_tweets
+from view.list_tweets import List_tweets
+from view.map_tweets import Map_tweets
+from view.map_user import Map_user
+from view.word_cloud import Word_cloud
+import tkcalendar
+import tkinter as tk
+# Definisce il modulo da usare in base al sistema operativo
 if platform == "darwin":
     from tkmacosx import Button as bt
 else:
     from tkinter import Button as bt
-import tkcalendar
-from view import list_tweets as listtw
-from view.mappa_person import Mappa_Person
-from view.mappa_noperson import Map_Noperson
-from utility.tools import Tools
-from twitter.twitter_handler import Twitter_handler
-from view.Word_cloud import Word_cloud
-from utility.loader import Loader
-from utility.geography import address_to_coordinates
-from utility.geography import address
-from tkinter import ttk
-from tkinter.constants import DISABLED, NORMAL
-from tkinter.filedialog import askopenfile
-from view.tweetChart import TweetChart
-from datetime import datetime, timedelta
 
+# Classe responsabile della finestra di ricerca
 class Form():
-
     caricatore = Loader()
-    tweetChart = TweetChart()
+    tweetChart = Chart_tweets()
     language = ["it", "en", "fr", "de", "es"]
     filter = ["mixed", "recent", "popular"]
     ricerca = Twitter_handler()
     tweets = []
 
+    # Crea la finestra principale
     def __init__(self):
         # Inizializzazione del frame
         self.container = tk.Frame()
-
         # Lo stile per il calendario
         stile = ttk.Style(self.container)
         stile.theme_use('clam')
-
         # Titolo
         self.titolo = tk.Label(self.container, text = "Ricerca dei tweets", fg = "white", bg = "blue")
         # Bottoni scelta tipologia form (parola chiave, persona/multipersona)
@@ -72,7 +72,6 @@ class Form():
         self.cerca = bt(self.container, text = "Cerca", command = self.check)
         self.carica = bt(self.container, text = "Carica Tweets", command = self.load)
         self.salva = bt(self.container, text = "Salva", command = self.save)
-
         # Grid
         self.titolo.grid(row = 0, column = 0, columnspan = 2, sticky = "nsew")
         self.button_parolachiave.grid(row = 1, column = 0, sticky = "nsew")
@@ -100,19 +99,8 @@ class Form():
         tk.Grid.columnconfigure(self.container, 0, weight = 1, uniform = 'equispaziato')
         tk.Grid.columnconfigure(self.container, 1, weight = 1, uniform = 'equispaziato')
 
-    # Funzione per la ricerca dei tweets con parola chiave
-    def get(self):
-        tmp1 = address_to_coordinates(self.coordinate.get())
-        tmp2 = self.raggio.get()
-        try:
-            geocodifica = str(tmp1[1]) + "," + str(tmp1[0]) + "," + str(tmp2) + "km"
-        except:
-            geocodifica = 'NULL'
-        self.tweets = self.ricerca.search(self.parola_chiave.get(), geocodifica, self.lingua.get(), self.filtro.get(), float(self.numero.get()), self.data_inizio.get_date(), self.data_fine.get_date())
-        self.set_tools(True)
-
-    # Funzione che controlla che i parametri in input siano tutti corretti
-    # Se non sono corretti, esce un popup
+    # Funzione che controlla che i parametri in input della ricerca per parola chiave siano tutti corretti
+    # Se non sono corretti, esce un popup e blocca la ricerca
     def check(self):
         # Parola chiave
         if self.parola_chiave.get() == "":
@@ -133,38 +121,55 @@ class Form():
         # C'è la località
         else:
             # Località
-            if address_to_coordinates(self.coordinate.get()) == -1:
+            if convert_address_to_coordinates(self.coordinate.get()) == -1:
                 tk.messagebox.showinfo('Errore nell\'input','Località non trovata.')
-            elif address_to_coordinates(self.coordinate.get()) == -2:
+            elif convert_address_to_coordinates(self.coordinate.get()) == -2:
                 tk.messagebox.showinfo('Errore nell\'input','Errore nella ricerca della località.')
             # Raggio
             else:
                 try:
+                    float(self.raggio.get())
+                except:
+                    tk.messagebox.showinfo('Errore nell\'input','Il raggio inserito non è un numero.')
+                else:
                     if float(self.raggio.get()) <= 0:
                         tk.messagebox.showinfo('Errore nell\'input','Il raggio inserito è invalido.')
                     else:
-                        result = tk.messagebox.askquestion('Località','La località indicata è: ' + address(self.coordinate.get()))
+                        self.tmp = get_address(self.coordinate.get())
+                        self.tmp = self.tmp[:-1]
+                        result = tk.messagebox.askquestion('Località','La località indicata è: ' + self.tmp)
                         if result == 'yes':
-                            self.get()                        
-                except:
-                    tk.messagebox.showinfo('Errore nell\'input','Il raggio inserito non è un numero.')       
-                    
+                            self.get()
+
+    # Funzione per la ricerca dei tweets con parola chiave
+    def get(self):
+        tmp1 = convert_address_to_coordinates(self.coordinate.get())
+        tmp2 = self.raggio.get()
+        try:
+            geocodifica = str(tmp1[1]) + "," + str(tmp1[0]) + "," + str(tmp2) + "km"
+        except:
+            geocodifica = 'NULL'
+        self.tweets = self.ricerca.search(self.parola_chiave.get(), geocodifica, self.lingua.get(), self.filtro.get(), float(self.numero.get()), self.data_inizio.get_date(), self.data_fine.get_date())
+        self.set_tools(True)
+
     # Funzione per la ricerca dei tweet tramite persona
     def get_person(self):
         self.tweets = self.ricerca.search_user(self.parola_chiave.get(), self.data_inizio.get_date(), self.data_fine.get_date())
         if self.tweets == -1:
             tk.messagebox.showinfo('Errore nell\'input','L\'ID utente è errato.')
-            return []
         else:
             self.set_tools(False)
-            return self.tweets
 
     # Funzione per caricamento tweets da file json
     def load(self):
-        f = askopenfile(mode = 'r', filetypes = [('JSON Files', '*.json')])
-        self.caricatore.set(f.name)
-        self.tweets = self.caricatore.load()
-        self.set_tools(True, file_name=f.name)
+        try:
+            f = askopenfile(mode = 'r', filetypes = [('JSON Files', '*.json')])
+            self.caricatore.set(f.name)
+        except:
+            pass
+        else:
+            self.tweets = self.caricatore.load()
+            self.set_tools(True, file_name=f.name)
 
     # Funzione per salvataggio tweets
     def save(self):
@@ -180,7 +185,7 @@ class Form():
             self.button_persona['state'] = NORMAL
             self.button_parolachiave['state'] = DISABLED
             self.show_parolaChiave()
-            
+
     # Attivazione dei bottoni nel form per la ricerca per parola chiave
     def show_parolaChiave(self):
         self.descr_parola_chiave['text']='Parola Chiave:'
@@ -203,7 +208,7 @@ class Form():
         self.carica.grid(row = 12, column = 0, sticky = "nsew")
         self.salva.grid(row = 12, column = 1, sticky = "nsew")
         self.cerca['command'] = self.check
-        
+
     # Attivazione dei bottoni del form per la ricerca per persona
     def show_persona(self):
         self.descr_parola_chiave['text']='Nome Utente:'
@@ -228,16 +233,15 @@ class Form():
     # Ritorna il form
     def get_container(self):
         return self.container
-    
+
     # Imposta i vari tools per l'analisi dei tweet con i tweets ricercati
     def set_tools(self, mode, file_name=""):
         if self.tweets:
             # Ci sono i tweet
-            lista = listtw.ListTweets(self.tweets)
+            lista = List_tweets(self.tweets)
             wordcloud = Word_cloud(self.ricerca.extend_lang(self.lingua.get()))
-            
             if file_name == "":
-                word_cloud_format = self.ricerca.get_tweets_for_wordcloud(self.tweets)       
+                word_cloud_format = self.ricerca.get_tweets_for_wordcloud(self.tweets)
                 wordcloud.generate_wordcloud(1,word_cloud_format)
                 self.tweetChart.barChart(tweets=self.tweets)
                 self.tweetChart.pieChart(tweets=self.tweets)
@@ -245,17 +249,13 @@ class Form():
                 wordcloud.generate_wordcloud(2, file_name)
                 self.tweetChart.barChart(file_name=file_name)
                 self.tweetChart.pieChart(file_name=file_name)
-        
             if mode == True:
-                Map_Noperson(self.tweets)
+                Map_tweets(self.tweets)
                 lista.build_list()
             else:
-                Mappa_Person(self.tweets)
+                Map_user(self.tweets)
                 lista.build_list_person()
-
             Tools(lista)
-
         else:
             # La ricerca non ha trovato tweet
             tk.messagebox.showinfo('Errore nell\'output','Non sono stati trovati tweet.')
-        
