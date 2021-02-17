@@ -120,6 +120,7 @@ class Twitter_handler():
     # INPUT: la lista di tweets
     # OUTPUT: una stringa
     def get_tweets_for_wordcloud(self, tweet_input):
+        self.tweets_to_save = ""
         for tweet in tweet_input:
             self.tweets_to_save += tweet["text"] + " "
         return self.tweets_to_save
