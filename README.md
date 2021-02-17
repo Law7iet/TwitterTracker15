@@ -26,7 +26,7 @@ Inoltre bisogna eseguire il seguente codice per installare una componente di `nl
 ```
 python -m nltk.downloader stopwords
 ```
-Per eseguire il programma andare nella directory `/src` e digitare:
+Per eseguire il programma scaricare la repository, andare nella directory `ingsw2020/src` e digitare:
 ```
 python3.9 App.py
 ```
