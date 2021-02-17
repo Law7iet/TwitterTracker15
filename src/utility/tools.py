@@ -68,7 +68,7 @@ class Tools(List_tweets):
         htmlfile.write(self.html)
         htmlfile.close()
 
-        webview.create_window("Analisi Tweet", url="mappa.html", width=800, height=600, resizable=True,fullscreen=False)
+        webview.create_window("Analisi Tweet", url="mappa.html", width=1000, height=750, resizable=True,fullscreen=False)
 
         # Lancio il browser
         webview.start()

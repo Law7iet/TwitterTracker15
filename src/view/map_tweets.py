@@ -56,7 +56,7 @@ class Map_tweets(list):
         return(L)
 
     def generaMap(self):
-        m = folium.Map(location=[44.4933,11.3432]) #position of Bologna
+        m = folium.Map(witdth='100%', height='90%', location=[44.4933,11.3432]) #position of Bologna
         m.add_child(folium.LatLngPopup()) # if you click one point, it shows corrisponde coordinates
         m.save(os.path.dirname(__file__) + "/../mappa.html")
         return m
