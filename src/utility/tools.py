@@ -40,10 +40,10 @@ class Tools(List_tweets):
     <body>
         <nav class="navbar navbar-expand-lg navbar-light mx-auto bg-dark">
           <form class="container-fluid justify-content-centers">
-            <button class="btn btn-primary" id="mappa" type="button" onclick="show_map()" disabled>Mappa</button>
-            <button class="btn btn-primary" id="list" type="button" onclick="show_list()">Lista Tweets</button>
+            <button class="btn btn-primary" id="mappa" type="button" onclick="show_map()">Mappa</button>
+            <button class="btn btn-primary" id="list" type="button" onclick="show_list()"disabled>Lista Tweets</button>
             <button class="btn btn-primary" id="wordcloud" type="button" onclick="show_word_cloud()">WordCloud</button>
-            <button class="btn btn-primary" class="button_chart" type="button" onclick="show_chart()">Tweet Chart</button>
+            <button class="btn btn-primary button_chart" type="button" onclick="show_chart()">Tweet Chart</button>
 
           </form>
         </nav>
@@ -86,7 +86,6 @@ function set_button(button){
             document.getElementById('mappa').disabled = false;
             document.getElementById('wordcloud').disabled = false;
             document.getElementsByClassName('button_chart')[0].disabled = false;
-            document.getElementsByClassName('button_chart')[1].disabled = false;
             break;
 
         case "map":
@@ -94,7 +93,6 @@ function set_button(button){
             document.getElementById('mappa').disabled = true;
             document.getElementById('wordcloud').disabled = false;
             document.getElementsByClassName('button_chart')[0].disabled = false;
-            document.getElementsByClassName('button_chart')[1].disabled = false;
             break;
 
         case "wordcloud":
@@ -102,14 +100,12 @@ function set_button(button){
             document.getElementById('mappa').disabled = false;
             document.getElementById('wordcloud').disabled = true;
             document.getElementsByClassName('button_chart')[0].disabled = false;
-            document.getElementsByClassName('button_chart')[1].disabled = false;
             break;
         case "tweetchart":
             document.getElementById('list').disabled = false;
             document.getElementById('mappa').disabled = false;
             document.getElementById('wordcloud').disabled = false;
             document.getElementsByClassName('button_chart')[0].disabled = true;
-            document.getElementsByClassName('button_chart')[1].disabled = true;
             break;
 
     }
@@ -120,8 +116,10 @@ function show_list(){
     if(document.getElementById('wc_image').style.display !== 'none')
         document.getElementById('wc_image').style.display = 'none';
 
-   else if ( document.getElementsByClassName('folium-map')[0].style.display !== 'none')
-        document.getElementsByClassName('folium-map')[0].style.display = 'none';
+    else if ( document.getElementsByClassName('folium-map')[0].style.visibility === 'visible'){
+        document.getElementsByTagName("BODY")[0].style.overflowY = 'scroll';
+        document.getElementsByClassName('folium-map')[0].style.visibility = 'hidden';
+    }
     else {
         document.getElementsByClassName('chartTweet')[0].style.display = 'none';
         document.getElementsByClassName('chartTweet')[1].style.display = 'none';
@@ -147,7 +145,8 @@ function show_map(){
 
     }
 
-    document.getElementsByClassName('folium-map')[0].style.display = 'block';
+    document.getElementsByClassName('folium-map')[0].style.visibility = 'visible';
+    document.getElementsByTagName("BODY")[0].style.overflowY = 'hidden';
 
     set_button('map');
 
@@ -158,8 +157,10 @@ function show_word_cloud(){
 
     if(document.getElementById('listatweet').style.display === 'block')
         document.getElementById('listatweet').style.display = 'none';
-    else if ( document.getElementsByClassName('folium-map')[0].style.display !== 'none')
-        document.getElementsByClassName('folium-map')[0].style.display = 'none';
+    else if ( document.getElementsByClassName('folium-map')[0].style.visibility === 'visible'){
+        document.getElementsByTagName("BODY")[0].style.overflowY = 'scroll';
+        document.getElementsByClassName('folium-map')[0].style.visibility = 'hidden';
+    }
     else {
         document.getElementsByClassName('chartTweet')[0].style.display = 'none';
         document.getElementsByClassName('chartTweet')[1].style.display = 'none';
@@ -176,10 +177,13 @@ function show_chart(){
 
     if(document.getElementById('listatweet').style.display === 'block')
         document.getElementById('listatweet').style.display = 'none';
-    else if ( document.getElementsByClassName('folium-map')[0].style.display !== 'none')
-        document.getElementsByClassName('folium-map')[0].style.display = 'none';
+    else if (document.getElementsByClassName('folium-map')[0].style.visibility === 'visible'){
+        document.getElementsByTagName("BODY")[0].style.overflowY = 'scroll';
+        document.getElementsByClassName('folium-map')[0].style.visibility = 'hidden';
+    }
     else
         document.getElementById('wc_image').style.display = 'none';
+        
     document.getElementsByClassName('chartTweet')[0].style.display = 'block';
     document.getElementsByClassName('chartTweet')[1].style.display = 'block';
     set_button('tweetchart');
@@ -203,8 +207,11 @@ function show_chart(){
                     self.html += str(child)+'\n'
 
         elif tag == 'body':
-
-            self.html += str(soup.find("div"))+'\n'
+            div_map = soup.find("div")
+            
+            
+            div_map['style'] = 'visibility: hidden;'
+            self.html += str(div_map)+'\n'
 
         elif tag == 'script':
 

@@ -16,10 +16,7 @@ class Application(tk.Frame):
         self.form = form.Form()
         self.form.get_container().grid(row=0, column=0)
 
-#root = tk.Tk().title("Tweets Analysis Team15")
-root = tk.Tk()
-root.title("Tweet Analysis Team 15")
-root.resizable(width=False, height=False)
+root = tk.Tk().title("Tweets Analysis Team15")
 app = Application(root=root)
 app.mainloop()
 

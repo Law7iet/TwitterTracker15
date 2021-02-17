@@ -12,7 +12,7 @@ from view.chart_tweets import Chart_tweets
 from view.list_tweets import List_tweets
 from view.map_tweets import Map_tweets
 from view.map_user import Map_user
-from view.word_cloud import Word_cloud
+from view.Word_cloud import Word_cloud
 import tkcalendar
 import tkinter as tk
 # Definisce il modulo da usare in base al sistema operativo

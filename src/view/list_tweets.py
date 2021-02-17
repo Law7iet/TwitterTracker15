@@ -1,7 +1,7 @@
 # Classe della Lista dei Tweet
 class List_tweets(list):
 
-    html = "<div id='listatweet' style='display:none;'>\n"
+    html = "<div id='listatweet' style='display: block;'>\n"
     user_tweets = []
 
     def __init__(self, tweet=None):
